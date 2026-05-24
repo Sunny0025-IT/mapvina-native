@@ -1,0 +1,4 @@
+rootProject.name = 'mapvina-tiles'
+
+include 'mlt-core'
+include 'mlt-cli'
