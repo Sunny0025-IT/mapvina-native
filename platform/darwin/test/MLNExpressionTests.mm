@@ -349,7 +349,7 @@ using namespace std::string_literals;
     NSDictionary *context = @{@"loremIpsum" : MLNConstantExpression(@"Lorem ipsum dolor sit amet")};
 #if TARGET_OS_IPHONE
     XCTExpectFailure(@"Awaiting unit test refactoring for "
-                     @"https://github.com/mapvina/mapvina-native/issues/331");
+                     @"https://github.io/github/mapvina/mapvina-native/issues/331");
 #endif
     NSExpression *expression = [NSExpression
         expressionWithFormat:
@@ -756,7 +756,7 @@ using namespace std::string_literals;
   {
 #if TARGET_OS_IPHONE
     XCTExpectFailure(@"Awaiting unit test refactoring for "
-                     @"https://github.com/mapvina/mapvina-native/issues/331");
+                     @"https://github.io/github/mapvina/mapvina-native/issues/331");
 #endif
     NSExpression *expression =
         [NSExpression expressionForFunction:@"mgl_round:"
@@ -808,7 +808,7 @@ using namespace std::string_literals;
   {
 #if TARGET_OS_IPHONE
     XCTExpectFailure(@"Awaiting unit test refactoring for "
-                     @"https://github.com/mapvina/mapvina-native/issues/331");
+                     @"https://github.io/github/mapvina/mapvina-native/issues/331");
 #endif
     NSExpression *expression =
         [NSExpression expressionForFunction:@"mgl_log2:"
@@ -906,7 +906,7 @@ using namespace std::string_literals;
     point.coordinate = CLLocationCoordinate2DMake(1, -1);
 #if TARGET_OS_IPHONE
     XCTExpectFailure(@"Awaiting unit test refactoring for "
-                     @"https://github.com/mapvina/mapvina-native/issues/331");
+                     @"https://github.io/github/mapvina/mapvina-native/issues/331");
 #endif
     NSExpression *expression =
         [NSExpression expressionForFunction:@"mgl_distanceFrom:"
@@ -929,7 +929,7 @@ using namespace std::string_literals;
         expressionWithFormat:@"FUNCTION('Old', 'stringByAppendingString:', 'MacDonald')"];
 #if TARGET_OS_IPHONE
     XCTExpectFailure(@"Awaiting unit test refactoring for "
-                     @"https://github.com/mapvina/mapvina-native/issues/331");
+                     @"https://github.io/github/mapvina/mapvina-native/issues/331");
 #endif
     NSExpression *aftermarketExpression =
         [NSExpression expressionWithFormat:@"mgl_join({'Old', 'MacDonald'})"];
@@ -1074,7 +1074,7 @@ using namespace std::string_literals;
   {
 #if TARGET_OS_IPHONE
     XCTExpectFailure(@"Awaiting unit test refactoring for "
-                     @"https://github.com/mapvina/mapvina-native/issues/331");
+                     @"https://github.io/github/mapvina/mapvina-native/issues/331");
 #endif
     NSExpression *expression =
         [NSExpression expressionWithFormat:@"MLN_FUNCTION('to-color', x, y, z)"];
@@ -1107,7 +1107,7 @@ using namespace std::string_literals;
   {
     NSDictionary *stops = @{@0 : MLNConstantExpression(@100), @10 : MLNConstantExpression(@200)};
     XCTExpectFailure(@"Awaiting unit test refactoring for "
-                     @"https://github.com/mapvina/mapvina-native/issues/331");
+                     @"https://github.io/github/mapvina/mapvina-native/issues/331");
     NSExpression *expression = [NSExpression
         expressionWithFormat:
             @"mgl_interpolate:withCurveType:parameters:stops:(x, 'linear', nil, %@)", stops];
@@ -1185,7 +1185,7 @@ using namespace std::string_literals;
   {
 #if TARGET_OS_IPHONE
     XCTExpectFailure(@"Awaiting unit test refactoring for "
-                     @"https://github.com/mapvina/mapvina-native/issues/331");
+                     @"https://github.io/github/mapvina/mapvina-native/issues/331");
 #endif
     NSExpression *expression = [NSExpression
         expressionWithFormat:@"MLN_MATCH(2 - 1,  %@, %@, %@, %@, 'default')",
@@ -1235,7 +1235,7 @@ using namespace std::string_literals;
   {
 #if TARGET_OS_IPHONE
     XCTExpectFailure(@"Awaiting unit test refactoring for "
-                     @"https://github.com/mapvina/mapvina-native/issues/331");
+                     @"https://github.io/github/mapvina/mapvina-native/issues/331");
 #endif
     NSExpression *expression = [NSExpression expressionWithFormat:@"mgl_coalesce(%@)", @[
       [NSExpression expressionForKeyPath:@"x"], [NSExpression expressionForKeyPath:@"y"],
@@ -1282,7 +1282,7 @@ using namespace std::string_literals;
   {
 #if TARGET_OS_IPHONE
     XCTExpectFailure(@"Awaiting unit test refactoring for "
-                     @"https://github.com/mapvina/mapvina-native/issues/331");
+                     @"https://github.io/github/mapvina/mapvina-native/issues/331");
 #endif
     NSExpression *expression = [NSExpression
         expressionWithFormat:@"MLN_IF(%@, %@, %@)",
@@ -1388,7 +1388,7 @@ using namespace std::string_literals;
   {
 #if TARGET_OS_IPHONE
     XCTExpectFailure(@"Awaiting unit test refactoring for "
-                     @"https://github.com/mapvina/mapvina-native/issues/331");
+                     @"https://github.io/github/mapvina/mapvina-native/issues/331");
 #endif
     NSExpression *expression =
         [NSExpression expressionForFunction:@"mgl_does:have:"
@@ -1470,7 +1470,7 @@ using namespace std::string_literals;
                    fontScale:nil];
 #if TARGET_OS_IPHONE
     XCTExpectFailure(@"Awaiting unit test refactoring for "
-                     @"https://github.com/mapvina/mapvina-native/issues/331");
+                     @"https://github.io/github/mapvina/mapvina-native/issues/331");
 #endif
     NSExpression *expression = [NSExpression
         expressionWithFormat:@"mgl_attributed:(%@, %@, %@, %@)", MLNConstantExpression(attribute1),
@@ -1677,7 +1677,7 @@ using namespace std::string_literals;
   {
 #if TARGET_OS_IPHONE
     XCTExpectFailure(@"Awaiting unit test refactoring for "
-                     @"https://github.com/mapvina/mapvina-native/issues/331");
+                     @"https://github.io/github/mapvina/mapvina-native/issues/331");
 #endif
     NSExpression *expression =
         [NSExpression expressionWithFormat:@"MLN_FUNCTION('random', 1, 2, 3, 4, 5)"];
@@ -1769,7 +1769,7 @@ using namespace std::string_literals;
 
 #if TARGET_OS_IPHONE
     XCTExpectFailure(@"Awaiting unit test refactoring for "
-                     @"https://github.com/mapvina/mapvina-native/issues/331");
+                     @"https://github.io/github/mapvina/mapvina-native/issues/331");
 #endif
     NSExpression *coalesceExpression =
         [NSExpression expressionWithFormat:@"mgl_coalesce({%K, %K})", @"name_en", @"name"];

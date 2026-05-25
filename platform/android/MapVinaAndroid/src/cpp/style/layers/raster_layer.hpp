@@ -14,7 +14,7 @@ namespace android {
 class RasterLayer : public Layer {
 public:
     using SuperTag = Layer;
-    static constexpr auto Name() { return "org/mapvina/android/style/layers/RasterLayer"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/style/layers/RasterLayer"; };
 
     RasterLayer(jni::JNIEnv&, jni::String&, jni::String&);
 

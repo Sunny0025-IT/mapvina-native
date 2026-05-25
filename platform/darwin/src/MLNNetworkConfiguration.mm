@@ -27,7 +27,7 @@ NSString *const kMLNDownloadPerformanceEvent = @"mobile.performance_trace";
     self.sessionConfiguration = nil;
     _events = [NSMutableDictionary dictionary];
     _eventsQueue =
-        dispatch_queue_create("com.mapvina.network-configuration", DISPATCH_QUEUE_CONCURRENT);
+        dispatch_queue_create("io.github.mapvina.network-configuration", DISPATCH_QUEUE_CONCURRENT);
   }
 
   return self;

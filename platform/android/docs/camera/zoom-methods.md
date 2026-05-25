@@ -15,29 +15,29 @@ Each method uses `MapVinaMap.animateCamera`, but with a different `CameraUpdateF
 #### Zooming In
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/ManualZoomActivity.kt:zoomIn"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/ManualZoomActivity.kt:zoomIn"
 ```
 
 #### Zooming Out
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/ManualZoomActivity.kt:zoomOut"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/ManualZoomActivity.kt:zoomOut"
 ```
 
 #### Zoom By Some Amount of Zoom Levels
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/ManualZoomActivity.kt:zoomBy"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/ManualZoomActivity.kt:zoomBy"
 ```
 
 #### Zoom to a Zoom Level
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/ManualZoomActivity.kt:zoomTo"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/ManualZoomActivity.kt:zoomTo"
 ```
 
 #### Zoom to a Point
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/ManualZoomActivity.kt:zoomToPoint"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/ManualZoomActivity.kt:zoomToPoint"
 ```

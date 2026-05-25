@@ -44,7 +44,7 @@
 
 const CGPoint MLNLogoImagePosition = CGPointMake(8, 8);
 const CGFloat MLNSnapshotterMinimumPixelSize = 64;
-NSString *const MLNSnapshotterAnnotationSpritePrefix = @"com.mapvina.sprites.";
+NSString *const MLNSnapshotterAnnotationSpritePrefix = @"io.github.mapvina.sprites.";
 
 MLNImage *MLNAttributedSnapshot(mbgl::MapSnapshotter::Attributions attributions, MLNImage *mglImage,
                                 mbgl::MapSnapshotter::PointForFn pointForFn,

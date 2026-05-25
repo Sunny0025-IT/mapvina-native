@@ -9,5 +9,5 @@ This example demonstrates how you can add markers in bulk.
 </div>
 
 ```kotlin title="BulkMarkerActivity.kt"
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/annotation/BulkMarkerActivity.kt"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/annotation/BulkMarkerActivity.kt"
 ```

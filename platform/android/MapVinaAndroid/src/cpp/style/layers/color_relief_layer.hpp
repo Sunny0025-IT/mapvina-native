@@ -14,7 +14,7 @@ namespace android {
 class ColorReliefLayer : public Layer {
 public:
     using SuperTag = Layer;
-    static constexpr auto Name() { return "org/mapvina/android/style/layers/ColorReliefLayer"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/style/layers/ColorReliefLayer"; };
 
     ColorReliefLayer(jni::JNIEnv&, jni::String&, jni::String&);
 

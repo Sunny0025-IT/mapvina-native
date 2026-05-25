@@ -14,11 +14,11 @@ This example demonstrates setting the camera to some bounds defined by some feat
 Here you can see how the feature collection is loaded and how `MapVinaMap.getCameraForLatLngBounds` is used to set the bounds during map initialization:
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/LatLngBoundsActivity.kt:featureCollection"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/LatLngBoundsActivity.kt:featureCollection"
 ```
 
 The `createBounds` function uses the `LatLngBounds` API to include all points within the bounds:
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/LatLngBoundsActivity.kt:createBounds"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/LatLngBoundsActivity.kt:createBounds"
 ```

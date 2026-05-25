@@ -11,7 +11,7 @@ To install the required Visual Studio components, open Visual Studio Installer a
 Open `x64 Native Tools Command Prompt for VS 2022` and then clone the repository:
 
 ```cmd
-git clone --config core.longpaths=true --depth 1 --recurse-submodules -j8 https://github.com/mapvina/mapvina-native.git
+git clone --config core.longpaths=true --depth 1 --recurse-submodules -j8 https://github.io/github/mapvina/mapvina-native.git
 cd mapvina-native
 ```
 
@@ -51,10 +51,10 @@ Once configure is done, open the file `build-windows-<preset>\MapVina Native.sln
 If all went well and target `mbgl-render` or `ALL_BUILD` was chosen, there should now be a `build-windows-<preset>\bin\mbgl-render.exe` binary that you can run to generate map tile images. To test that it is working properly, run the following command.
 
 ```cmd
-.\build-windows-<preset>\bin\mbgl-render.exe --style https://raw.githubusercontent.com/mapvina/demotiles/gh-pages/style.json --output out.png
+.\build-windows-<preset>\bin\mbgl-render.exe --style https://raw.githubusercontent.io/github/mapvina/demotiles/gh-pages/style.json --output out.png
 ```
 
-This should produce an `out.png` map tile image with the default MapVina styling from [the MapVina demo](https://mapvina.com/mapvina-gl-js/docs/examples/display-a-map/).
+This should produce an `out.png` map tile image with the default MapVina styling from [the MapVina demo](https://mapvina.io/github/mapvina-gl-js/docs/examples/display-a-map/).
 
 ![Sample image of world from mbgl-render command](images/sample-mapvina-style-mbgl-render-out.png)
 

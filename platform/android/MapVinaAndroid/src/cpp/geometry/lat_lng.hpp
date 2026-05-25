@@ -11,7 +11,7 @@ namespace android {
 
 class LatLng : private mbgl::util::noncopyable {
 public:
-    static constexpr auto Name() { return "org/mapvina/android/geometry/LatLng"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/geometry/LatLng"; };
 
     static jni::Local<jni::Object<LatLng>> New(jni::JNIEnv&, const mbgl::LatLng&);
 

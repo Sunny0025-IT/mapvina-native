@@ -233,7 +233,7 @@ static MLNMapView *mapView;
 
     XCTAssertNotNil(mapView.style);
     XCTAssertNotNil(mapView.style.sources);
-    // source "com.mapvina.annotations" is added by default
+    // source "io.github.mapvina.annotations" is added by default
     XCTAssertEqual(mapView.style.sources.count, 2UL);
 
     // Test invalid JSON syntax

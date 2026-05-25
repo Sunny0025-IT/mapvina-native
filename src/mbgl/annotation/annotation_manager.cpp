@@ -32,9 +32,9 @@ namespace mbgl {
 
 using namespace style;
 
-const std::string AnnotationManager::SourceID = "com.mapvina.annotations";
-const std::string AnnotationManager::PointLayerID = "com.mapvina.annotations.points";
-const std::string AnnotationManager::ShapeLayerID = "com.mapvina.annotations.shape.";
+const std::string AnnotationManager::SourceID = "io.github.mapvina.annotations";
+const std::string AnnotationManager::PointLayerID = "io.github.mapvina.annotations.points";
+const std::string AnnotationManager::ShapeLayerID = "io.github.mapvina.annotations.shape.";
 
 AnnotationManager::AnnotationManager(Style& style_)
     : style(style_) {}
@@ -237,7 +237,7 @@ void AnnotationManager::removeTile(AnnotationTile& tile) {
 namespace {
 
 // To ensure that annotation images do not collide with images from the style,
-// we prefix input image IDs with "com.mapvina.annotations".
+// we prefix input image IDs with "io.github.mapvina.annotations".
 std::string prefixedImageID(const std::string& id) {
     return AnnotationManager::SourceID + "." + id;
 }

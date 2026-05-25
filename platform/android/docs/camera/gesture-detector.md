@@ -1,13 +1,13 @@
 # Gesture Detector
 
-The gesture detector of MapVina Android is encapsulated in the [`mapvina-gestures-android`](https://github.com/mapvina/mapvina-gestures-android) package.
+The gesture detector of MapVina Android is encapsulated in the [`mapvina-gestures-android`](https://github.io/github/mapvina/mapvina-gestures-android) package.
 
 #### Gesture Listeners
 
 You can add listeners for move, rotate, scale and shove gestures. For example, adding a move gesture listener with `MapVinaMap.addOnRotateListener`:
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/GestureDetectorActivity.kt:addOnMoveListener"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/GestureDetectorActivity.kt:addOnMoveListener"
 ```
 
 Refer to the full example below for examples of listeners for the other gesture types.
@@ -24,5 +24,5 @@ You can access an `UISettings` object via `MapVinaMap.uiSettings`. Available set
 ## Full Example Activity
 
 ```kotlin title="GestureDetectorActivity.kt"
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/GestureDetectorActivity.kt"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/GestureDetectorActivity.kt"
 ```

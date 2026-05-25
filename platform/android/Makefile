@@ -146,8 +146,8 @@ run-android-benchmark-$1-%: android-benchmark-$1
 # Run the test app on connected android device with specified abi
 .PHONY: run-android-$1
 run-android-$1:
-	-adb uninstall com.mapvina.testapp 2> /dev/null
-	$(MLN_ANDROID_GRADLE) -Pmapvina.abis=$2 :MapVinaAndroidTestApp:install$(BUILDTYPE) && adb shell am start -n com.mapvina.testapp/.activity.FeatureOverviewActivity
+	-adb uninstall io.github.mapvina.testapp 2> /dev/null
+	$(MLN_ANDROID_GRADLE) -Pmapvina.abis=$2 :MapVinaAndroidTestApp:install$(BUILDTYPE) && adb shell am start -n io.github.mapvina.testapp/.activity.FeatureOverviewActivity
 
 # Build test app instrumentation tests apk and test app apk for specified abi
 .PHONY: android-ui-test-$1
@@ -157,12 +157,12 @@ android-ui-test-$1:
 # Run test app instrumentation tests on a connected android device or emulator with specified abi
 .PHONY: run-android-ui-test-$1
 run-android-ui-test-$1:
-	-adb uninstall com.mapvina.testapp 2> /dev/null
+	-adb uninstall io.github.mapvina.testapp 2> /dev/null
 	$(MLN_ANDROID_GRADLE) -Pmapvina.abis=$2 :MapVinaAndroidTestApp:connectedAndroidTest
 
 # Run Java Instrumentation tests on a connected android device or emulator with specified abi and test filter
 run-android-ui-test-$1-%:
-	-adb uninstall com.mapvina.testapp 2> /dev/null
+	-adb uninstall io.github.mapvina.testapp 2> /dev/null
 	$(MLN_ANDROID_GRADLE) -Pmapvina.abis=$2 :MapVinaAndroidTestApp:connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class="$$*"
 
 # Symbolicate native stack trace with the specified abi
@@ -173,7 +173,7 @@ android-ndk-stack-$1:
 # Run render tests with pixelmatch
 .PHONY: run-android-render-test-$1
 run-android-render-test-$1: $(BUILD_DEPS)
-	-adb uninstall com.mapvina.testapp 2> /dev/null
+	-adb uninstall io.github.mapvina.testapp 2> /dev/null
 	# delete old test results
 	rm -rf build/render-test/mapvina/
   # copy test definitions & ignore file to test app assets folder, clear old ones first
@@ -181,7 +181,7 @@ run-android-render-test-$1: $(BUILD_DEPS)
 	cp -r metrics/integration MapVinaAndroidTestApp/src/main/assets
 	cp platform/node/test/ignores.json MapVinaAndroidTestApp/src/main/assets/integration/ignores.json
 	# run RenderTest.java to generate static map images
-	$(MLN_ANDROID_GRADLE) -Pmapvina.abis=$2 :MapVinaAndroidTestApp:connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class="com.mapvina.testapp.render.RenderTest"
+	$(MLN_ANDROID_GRADLE) -Pmapvina.abis=$2 :MapVinaAndroidTestApp:connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class="io.github.mapvina.testapp.render.RenderTest"
 	# pull generated images from the device
 	adb pull "`adb shell 'printenv EXTERNAL_STORAGE' | tr -d '\r'`/mapvina/render" build/render-test
 	# copy expected result and run pixelmatch
@@ -251,7 +251,7 @@ run-android-publish:
 # Dump system graphics information for the test app
 .PHONY: android-gfxinfo
 android-gfxinfo:
-	adb shell dumpsys gfxinfo com.mapvina.testapp reset
+	adb shell dumpsys gfxinfo io.github.mapvina.testapp reset
 
 # Runs checkstyle and lint on the java code
 .PHONY: android-check
@@ -309,7 +309,7 @@ clean:
 	-rm -rf ./MapVinaAndroid/build \
 	        ./MapVinaAndroid/.externalNativeBuild \
 	        ./MapVinaAndroidTestApp/build \
-	        ./MapVinaAndroidTestApp/src/androidTest/java/org/mapvina/android/testapp/activity/gen \
+	        ./MapVinaAndroidTestApp/src/androidTest/java/io/github/mapvina/android/testapp/activity/gen \
 	        ./MapVinaAndroid/src/main/assets \
 		    ./MapVinaAndroidTestApp/src/main/assets/integration
 

@@ -455,7 +455,7 @@ global.propertyDoc = function (propertyName, property, layerType, kind) {
                     anchor = `paint-${property.original}`;
                     break;
             }
-            doc += `\n\nThis attribute corresponds to the <a href="https://mapvina.com/mapvina-style-spec/#${anchor}"><code>${property.original}</code></a> layout property in the MapVina Style Spec.`;
+            doc += `\n\nThis attribute corresponds to the <a href="https://mapvina.io/github/mapvina-style-spec/#${anchor}"><code>${property.original}</code></a> layout property in the MapVina Style Spec.`;
         }
         doc += '\n\nYou can set this property to an expression containing any of the following:\n\n';
         doc += `* Constant ${describeType(property)} values`;

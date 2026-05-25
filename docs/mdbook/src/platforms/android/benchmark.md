@@ -20,7 +20,7 @@ We have hardcoded various styles, which you can override with a `developer-confi
 Results are logged to the console as they come in. After the benchmark is done running a `benchmark_results.json` file is generated. You can pull it off the device with for example adb:
 
 ```
-adb shell "run-as com.mapvina.android.testapp cat files/benchmark_results.json" \
+adb shell "run-as io.github.mapvina.android.testapp cat files/benchmark_results.json" \
   > benchmark_results.json
 ```
 
@@ -72,7 +72,7 @@ The meaning of the keys is as follows.
 
 ## Large Scale Benchmarks on AWS Device Farm
 
-Sometimes we do a large scale benchmark across a variety of devices on AWS Device Farm. We ran one such test in [November 2024](https://github.com/mapvina/mapvina-native/issues/2787#issuecomment-2466948888) to compare the performance of the then new Vulkan rendering backend against the OpenGL ES backend. There are some scripts in the repo to kick off the tests and to collect and plot the results:
+Sometimes we do a large scale benchmark across a variety of devices on AWS Device Farm. We ran one such test in [November 2024](https://github.io/github/mapvina/mapvina-native/issues/2787#issuecomment-2466948888) to compare the performance of the then new Vulkan rendering backend against the OpenGL ES backend. There are some scripts in the repo to kick off the tests and to collect and plot the results:
 
 ```
 scripts/aws-device-farm/aws-device-farm-run.sh

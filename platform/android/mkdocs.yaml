@@ -1,6 +1,6 @@
 site_name: MapVina Android Examples
-site_url: https://www.mapvina.com/mapvina-native/android/examples
-repo_url: https://github.com/mapvina/mapvina-native
+site_url: https://www.mapvina.io/github/mapvina-native/android/examples
+repo_url: https://github.io/github/mapvina/mapvina-native
 site_description: MapVina Android Examples
 edit_uri: edit/main/platform/android/docs
 copyright: Map data from <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>
@@ -59,13 +59,13 @@ extra:
     - icon: fontawesome/brands/mastodon
       link: https://mastodon.social/@mapvina
     - icon: fontawesome/brands/x-twitter
-      link: https://twitter.com/mapvina
+      link: https://twitter.io/github/mapvina
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/mapvina
     - icon: fontawesome/brands/slack
       link: https://osmus.slack.com/archives/C01G3D28DAB
     - icon: fontawesome/brands/github
-      link: https://github.com/mapvina
+      link: https://github.io/github/mapvina
 plugins:
   - search
   - macros:

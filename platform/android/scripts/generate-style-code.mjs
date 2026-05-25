@@ -458,21 +458,21 @@ global.supportsPropertyFunction = function (property) {
 // Template processing //
 
 // Java + JNI Light (Peer model)
-const lightJava = ejs.compile(fs.readFileSync(absPath('MapVinaAndroid/src/main/java/org/mapvina/android/style/light/light.java.ejs'), 'utf8'), {strict: true});
-const lightJavaUnitTests = ejs.compile(fs.readFileSync(absPath('MapVinaAndroidTestApp/src/androidTest/java/org/mapvina/android/testapp/style/light.junit.ejs'), 'utf8'), {strict: true});
-writeIfModified(absPath(`MapVinaAndroid/src/main/java/org/mapvina/android/style/light/Light.java`), lightJava({properties: lightProperties}));
-writeIfModified(absPath(`MapVinaAndroidTestApp/src/androidTest/java/org/mapvina/android/testapp/style/LightTest.java`), lightJavaUnitTests({properties: lightProperties}));
+const lightJava = ejs.compile(fs.readFileSync(absPath('MapVinaAndroid/src/main/java/io/github/mapvina/android/style/light/light.java.ejs'), 'utf8'), {strict: true});
+const lightJavaUnitTests = ejs.compile(fs.readFileSync(absPath('MapVinaAndroidTestApp/src/androidTest/java/io/github/mapvina/android/testapp/style/light.junit.ejs'), 'utf8'), {strict: true});
+writeIfModified(absPath(`MapVinaAndroid/src/main/java/io/github/mapvina/android/style/light/Light.java`), lightJava({properties: lightProperties}));
+writeIfModified(absPath(`MapVinaAndroidTestApp/src/androidTest/java/io/github/mapvina/android/testapp/style/LightTest.java`), lightJavaUnitTests({properties: lightProperties}));
 
 // Java
-const layerJava = ejs.compile(fs.readFileSync(absPath('MapVinaAndroid/src/main/java/org/mapvina/android/style/layers/layer.java.ejs'), 'utf8'), {strict: true});
-const layerJavaUnitTests = ejs.compile(fs.readFileSync(absPath('MapVinaAndroidTestApp/src/androidTest/java/org/mapvina/android/testapp/style/layer.junit.ejs'), 'utf8'), {strict: true});
+const layerJava = ejs.compile(fs.readFileSync(absPath('MapVinaAndroid/src/main/java/io/github/mapvina/android/style/layers/layer.java.ejs'), 'utf8'), {strict: true});
+const layerJavaUnitTests = ejs.compile(fs.readFileSync(absPath('MapVinaAndroidTestApp/src/androidTest/java/io/github/mapvina/android/testapp/style/layer.junit.ejs'), 'utf8'), {strict: true});
 
 for (const layer of layers) {
-  var srcDir = 'MapVinaAndroid/src/main/java/org/mapvina/android/style/layers/'
-  var testDir = 'MapVinaAndroidTestApp/src/androidTest/java/org/mapvina/android/testapp/style/'
+  var srcDir = 'MapVinaAndroid/src/main/java/io/github/mapvina/android/style/layers/'
+  var testDir = 'MapVinaAndroidTestApp/src/androidTest/java/io/github/mapvina/android/testapp/style/'
   if (layer.type === 'location-indicator') {
-    srcDir = 'MapVinaAndroid/src/main/java/org/mapvina/android/location/'
-    testDir = 'MapVinaAndroidTestApp/src/androidTest/java/org/mapvina/android/location/'
+    srcDir = 'MapVinaAndroid/src/main/java/io/github/mapvina/android/location/'
+    testDir = 'MapVinaAndroidTestApp/src/androidTest/java/io/github/mapvina/android/location/'
   }
 
   writeIfModified(absPath(srcDir + `${camelize(layer.type)}Layer.java`), layerJava(layer));
@@ -491,23 +491,23 @@ for (const layer of layers) {
 }
 
 // Java PropertyFactory
-const propertyFactoryTemplate = ejs.compile(fs.readFileSync(absPath('MapVinaAndroid/src/main/java/org/mapvina/android/style/layers/property_factory.java.ejs'), 'utf8'), {strict: true});
+const propertyFactoryTemplate = ejs.compile(fs.readFileSync(absPath('MapVinaAndroid/src/main/java/io/github/mapvina/android/style/layers/property_factory.java.ejs'), 'utf8'), {strict: true});
 
-const propertyFactorySrcDir = absPath('MapVinaAndroid/src/main/java/org/mapvina/android/style/layers/PropertyFactory.java')
+const propertyFactorySrcDir = absPath('MapVinaAndroid/src/main/java/io/github/mapvina/android/style/layers/PropertyFactory.java')
 writeIfModified(
     propertyFactorySrcDir,
     propertyFactoryTemplate({layoutProperties: layoutProperties, paintProperties: paintProperties, locationIndicator: false})
 );
 
-const locationPropertyFactorySrcDir = absPath('MapVinaAndroid/src/main/java/org/mapvina/android/location/LocationPropertyFactory.java')
+const locationPropertyFactorySrcDir = absPath('MapVinaAndroid/src/main/java/io/github/mapvina/android/location/LocationPropertyFactory.java')
 writeIfModified(
     locationPropertyFactorySrcDir,
     propertyFactoryTemplate({layoutProperties: locationLayoutProperties, paintProperties: locationPaintProperties, locationIndicator: true})
 );
 
 // Java Property
-const enumPropertyJavaTemplate = ejs.compile(fs.readFileSync(absPath('MapVinaAndroid/src/main/java/org/mapvina/android/style/layers/property.java.ejs'), 'utf8'), {strict: true});
+const enumPropertyJavaTemplate = ejs.compile(fs.readFileSync(absPath('MapVinaAndroid/src/main/java/io/github/mapvina/android/style/layers/property.java.ejs'), 'utf8'), {strict: true});
 writeIfModified(
-    absPath(`MapVinaAndroid/src/main/java/org/mapvina/android/style/layers/Property.java`),
+    absPath(`MapVinaAndroid/src/main/java/io/github/mapvina/android/style/layers/Property.java`),
     enumPropertyJavaTemplate({properties: enumProperties})
 );

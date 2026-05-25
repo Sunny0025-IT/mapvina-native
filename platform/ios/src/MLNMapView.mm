@@ -305,7 +305,7 @@ static NSString *const MLNInvisibleStyleMarkerSymbolName = @"invisible_marker";
 
 /// Prefix that denotes a sprite installed by MLNMapView, to avoid collisions
 /// with style-defined sprites.
-NSString *const MLNAnnotationSpritePrefix = @"com.mapvina.sprites.";
+NSString *const MLNAnnotationSpritePrefix = @"io.github.mapvina.sprites.";
 
 /// Slop area around the hit testing point, allowing for imprecise annotation selection.
 const CGFloat MLNAnnotationImagePaddingForHitTest = 5;
@@ -1782,7 +1782,7 @@ public:
                        context:windowScreenContext];
     }
 
-    // https://github.com/mapvina/mapvina-native/issues/4204
+    // https://github.io/github/mapvina/mapvina-native/issues/4204
     [self setNeedsLayout];
   }
 }

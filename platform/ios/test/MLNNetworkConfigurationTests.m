@@ -12,7 +12,7 @@
     MLNNetworkConfiguration *configuration = [[MLNNetworkConfiguration alloc] init];
 
     // Concurrent
-    dispatch_queue_t queue = dispatch_queue_create("com.mapvina.testAccessingEventsFromMultipleThreads", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t queue = dispatch_queue_create("io.github.mapvina.testAccessingEventsFromMultipleThreads", DISPATCH_QUEUE_CONCURRENT);
 
     NSUInteger numberOfConcurrentBlocks = 20;
 

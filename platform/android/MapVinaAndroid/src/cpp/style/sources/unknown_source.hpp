@@ -10,7 +10,7 @@ namespace android {
 class UnknownSource : public Source {
 public:
     using SuperTag = Source;
-    static constexpr auto Name() { return "org/mapvina/android/style/sources/UnknownSource"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/style/sources/UnknownSource"; };
 
     static void registerNative(jni::JNIEnv&);
 

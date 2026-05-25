@@ -13,7 +13,7 @@ This example showcases how to listen to camera change events.
 The camera animation is kicked off with this code:
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/CameraPositionActivity.kt:cameraPosition"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/CameraPositionActivity.kt:cameraPosition"
 ```
 
 Notice how the color of the button in the bottom right changes color. Depending on the state of the camera.
@@ -21,13 +21,13 @@ Notice how the color of the button in the bottom right changes color. Depending 
 We can listen for changes to the state of the camera by registering a `OnCameraMoveListener`, `OnCameraIdleListener`, `OnCameraMoveCanceledListener` or `OnCameraMoveStartedListener` with the `MapVinaMap`. For example, the `OnCameraMoveListener` is defined with:
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/CameraPositionActivity.kt:moveListener"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/CameraPositionActivity.kt:moveListener"
 ```
 
 And registered with:
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/CameraPositionActivity.kt:addOnCameraMoveListener"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/CameraPositionActivity.kt:addOnCameraMoveListener"
 ```
 
 Refer to the full example to learn the methods to register the other types of camera change events.

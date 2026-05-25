@@ -9,7 +9,7 @@ namespace android {
 
 class FormattedSection : private mbgl::util::noncopyable {
 public:
-    static constexpr auto Name() { return "org/mapvina/android/style/types/FormattedSection"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/style/types/FormattedSection"; };
 
     static void registerNative(jni::JNIEnv&);
 };

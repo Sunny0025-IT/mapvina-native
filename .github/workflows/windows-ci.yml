@@ -3,7 +3,7 @@ name: windows-ci
 on:
   workflow_dispatch:
   # temporarily disabled
-  # https://github.com/mapvina/mapvina-native/issues/3670
+  # https://github.io/github/mapvina/mapvina-native/issues/3670
   # push:
   #   branches:
   #     - main

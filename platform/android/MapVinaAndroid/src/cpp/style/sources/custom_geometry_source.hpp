@@ -16,7 +16,7 @@ namespace android {
 class CustomGeometrySource : public Source {
 public:
     using SuperTag = Source;
-    static constexpr auto Name() { return "org/mapvina/android/style/sources/CustomGeometrySource"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/style/sources/CustomGeometrySource"; };
 
     static void registerNative(jni::JNIEnv&);
 

@@ -3,7 +3,7 @@
 ## Upcoming
 
 MapVina native Qt bindings have been moved to
-[mapvina-native-qt](https://github.com/mapvina/mapvina-native-qt) repository.
+[mapvina-native-qt](https://github.io/github/mapvina/mapvina-native-qt) repository.
 
 ## v2.0.1
 
@@ -16,5 +16,5 @@ MapVina native Qt bindings have been moved to
 ### ✨ New features
 
 - Full Qt5 and Qt6 support for macOS, Linux, Windows, iOS and Android.
-- Rename to `QMapVinaGL` ([#338](https://github.com/mapvina/mapvina-native/pull/338)).
-- Build user agent based on `ClientOptions`, if available ([#365](https://github.com/mapvina/mapvina-native/pull/365)).
+- Rename to `QMapVinaGL` ([#338](https://github.io/github/mapvina/mapvina-native/pull/338)).
+- Build user agent based on `ClientOptions`, if available ([#365](https://github.io/github/mapvina/mapvina-native/pull/365)).

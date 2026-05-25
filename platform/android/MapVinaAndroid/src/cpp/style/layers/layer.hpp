@@ -15,7 +15,7 @@ namespace android {
 
 class Layer {
 public:
-    static constexpr auto Name() { return "org/mapvina/android/style/layers/Layer"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/style/layers/Layer"; };
 
     static void registerNative(jni::JNIEnv&);
 

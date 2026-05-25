@@ -78,7 +78,7 @@ MLN_EXPORT
  * on ``MLNMapViewDelegate``.
  *
  * The JSON must conform to the
- * <a href="https://mapvina.com/mapvina-style-spec/">MapVina Style Specification</a>.
+ * <a href="https://mapvina.io/github/mapvina-style-spec/">MapVina Style Specification</a>.
  *
  * @throws NSInvalidArgumentException if styleJSON is nil or invalid JSON
  */

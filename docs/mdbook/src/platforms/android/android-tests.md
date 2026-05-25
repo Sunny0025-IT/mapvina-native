@@ -14,19 +14,19 @@ std::vector<std::string> arguments = {..., "-f", "background-color/literal"};
 
 ### Viewing the Results
 
-Once the application quits, use the Device Explorer to navigate to `/data/data/com.mapvina.render_test_runner/files`.
+Once the application quits, use the Device Explorer to navigate to `/data/data/io.github.mapvina.render_test_runner/files`.
 
-<img width="980" alt="image" src="https://github.com/mapvina/mapvina-native/assets/649392/0dc42d4a-6221-46b6-8352-1eb24d466e91">
+<img width="980" alt="image" src="https://github.io/github/mapvina/mapvina-native/assets/649392/0dc42d4a-6221-46b6-8352-1eb24d466e91">
 
 Double click `android-render-test-runner-style.html`. Right click on the opened tab and select _Open In > Browser_. You should see that a single render test passed.
 
-<img width="801" alt="image" src="https://github.com/mapvina/mapvina-native/assets/649392/33e88999-7787-492f-afd9-f5a3e3fd61f7">
+<img width="801" alt="image" src="https://github.io/github/mapvina/mapvina-native/assets/649392/33e88999-7787-492f-afd9-f5a3e3fd61f7">
 
 Alternatively to download (and open) the results from the command line, use:
 
 ```
 filename=android-render-test-runner-style.html
-adb shell "run-as com.mapvina.render_test_runner cat files/metrics/$filename" > $filename
+adb shell "run-as io.github.mapvina.render_test_runner cat files/metrics/$filename" > $filename
 open $filename
 ```
 
@@ -56,16 +56,16 @@ We need to make sure that the new `data.zip` with the data for the render tests 
 tar chf render-test/android/app/src/main/assets/data.zip --format=zip --files-from=render-test/android/app/src/main/assets/to_zip.txt
 adb push render-test/android/app/src/main/assets/data.zip /data/local/tmp/data.zip
 adb shell chmod 777 /data/local/tmp/data.zip
-adb shell "run-as com.mapvina.render_test_runner unzip -o /data/local/tmp/data.zip -d files"
+adb shell "run-as io.github.mapvina.render_test_runner unzip -o /data/local/tmp/data.zip -d files"
 ```
 
 Rerun the render test app and reload the Device Explorer. When you re-open the HTML file with the results you should now see a failing test:
 
-<img width="685" alt="image" src="https://github.com/mapvina/mapvina-native/assets/649392/303ad75a-cf74-4b8c-927c-c9bd59a79de4">
+<img width="685" alt="image" src="https://github.io/github/mapvina/mapvina-native/assets/649392/303ad75a-cf74-4b8c-927c-c9bd59a79de4">
 
 Now download the `actual.png` in `metrics/integration/render-tests/background-color/literal` with the Device Explorer. Replace the corresponding `expected.png` on your local file system. Upload the new render test data again and run the test app once more.
 
-<img width="800" alt="image" src="https://github.com/mapvina/mapvina-native/assets/649392/04734c6a-9cf1-489a-b9bb-8d857581261c">
+<img width="800" alt="image" src="https://github.io/github/mapvina/mapvina-native/assets/649392/04734c6a-9cf1-489a-b9bb-8d857581261c">
 
 Of we don't want to commit this change. But know you can add and debug (Android) render tests.
 
@@ -75,7 +75,7 @@ You can add alternate expected images by coping the `actual.png` to a file that 
 
 ```
 render_test_name=tile-lod/zoom-shift
-adb exec-out run-as com.mapvina.render_test_runner cat files/metrics/integration/render-tests/$render_test_name/actual.png > metrics/integration/render-tests/$render_test_name/expected-android.png
+adb exec-out run-as io.github.mapvina.render_test_runner cat files/metrics/integration/render-tests/$render_test_name/actual.png > metrics/integration/render-tests/$render_test_name/expected-android.png
 ```
 
 Which will pull `tile-lod/zoom-shift/actual.png` and save it as `tile-lod/zoom-shift/expected-android.png`.

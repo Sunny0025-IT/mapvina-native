@@ -1,59 +1,59 @@
 # Changelog for MapVina Native for iOS
 
-MapVina welcomes participation and contributions from everyone. Please read [`MapVina iOS Developer Guide`](https://mapvina.com/mapvina-native/docs/book/ios/index.html) to get started.
+MapVina welcomes participation and contributions from everyone. Please read [`MapVina iOS Developer Guide`](https://mapvina.io/github/mapvina-native/docs/book/ios/index.html) to get started.
 
 ## 6.26.0
 
 Note: this release has some changes to how icon offsets behave on pitched maps. If this causes a regression for your use case please open an issue on `mapvina/mapvina-native`.
 
-- core: Handle allocation failure ([#4178](https://github.com/mapvina/mapvina-native/pull/4178)).
-- Disable icon scaling with offsets ([#3928](https://github.com/mapvina/mapvina-native/pull/3928)).
-- Fix: unconditionally rewriting contentScaleFactor/drawableSize every layout pass caused a feedback loop under iOS 26 Smart Display Zoom ([#4251](https://github.com/mapvina/mapvina-native/pull/4251)). This resolves CarPlay users were experiencing.
-- iOS: Fix case image expression crash ([#4269]((https://github.com/mapvina/mapvina-native/pull/4269))).
+- core: Handle allocation failure ([#4178](https://github.io/github/mapvina/mapvina-native/pull/4178)).
+- Disable icon scaling with offsets ([#3928](https://github.io/github/mapvina/mapvina-native/pull/3928)).
+- Fix: unconditionally rewriting contentScaleFactor/drawableSize every layout pass caused a feedback loop under iOS 26 Smart Display Zoom ([#4251](https://github.io/github/mapvina/mapvina-native/pull/4251)). This resolves CarPlay users were experiencing.
+- iOS: Fix case image expression crash ([#4269]((https://github.io/github/mapvina/mapvina-native/pull/4269))).
 
 ## 6.25.1
 
-- iOS: Force `MLNMapView` layout after transitions ([#4225](https://github.com/mapvina/mapvina-native/pull/4225)).
+- iOS: Force `MLNMapView` layout after transitions ([#4225](https://github.io/github/mapvina/mapvina-native/pull/4225)).
 
 ## 6.25.0
 
-- Expose Offline Region ID property on MLNOfflinePack for Darwin/iOS ([#4161](https://github.com/mapvina/mapvina-native/pull/4161)).
-- fix color-relief/hillshade invisible above fill layers on Metal/Vulkan/WebGPU ([#4166](https://github.com/mapvina/mapvina-native/pull/4166)).
-- core: better handle tile compression in PMTiles sources ([#4159](https://github.com/mapvina/mapvina-native/pull/4159)).
-- core: Use interleaved buffer for paint property binders ([#4124](https://github.com/mapvina/mapvina-native/pull/4124)).
-- Make sure MLNScaleBar is exported ([#4198](https://github.com/mapvina/mapvina-native/pull/4198)).
+- Expose Offline Region ID property on MLNOfflinePack for Darwin/iOS ([#4161](https://github.io/github/mapvina/mapvina-native/pull/4161)).
+- fix color-relief/hillshade invisible above fill layers on Metal/Vulkan/WebGPU ([#4166](https://github.io/github/mapvina/mapvina-native/pull/4166)).
+- core: better handle tile compression in PMTiles sources ([#4159](https://github.io/github/mapvina/mapvina-native/pull/4159)).
+- core: Use interleaved buffer for paint property binders ([#4124](https://github.io/github/mapvina/mapvina-native/pull/4124)).
+- Make sure MLNScaleBar is exported ([#4198](https://github.io/github/mapvina/mapvina-native/pull/4198)).
 
 ## 6.24.0
 
-- Fix crashing of iOS test apps and add Heatmap ([#4099](https://github.com/mapvina/mapvina-native/pull/4099)).
-- Fix incorrect shader selection for text labels with inline images ([#4082](https://github.com/mapvina/mapvina-native/pull/4082)).
-- core: Update Hillshade Algorithms and add Color-Relief Layer support ([#3965](https://github.com/mapvina/mapvina-native/pull/3965)).
-- core: Fix scissor rectangle size ([#4147](https://github.com/mapvina/mapvina-native/pull/4147)).
+- Fix crashing of iOS test apps and add Heatmap ([#4099](https://github.io/github/mapvina/mapvina-native/pull/4099)).
+- Fix incorrect shader selection for text labels with inline images ([#4082](https://github.io/github/mapvina/mapvina-native/pull/4082)).
+- core: Update Hillshade Algorithms and add Color-Relief Layer support ([#3965](https://github.io/github/mapvina/mapvina-native/pull/3965)).
+- core: Fix scissor rectangle size ([#4147](https://github.io/github/mapvina/mapvina-native/pull/4147)).
 
 ## 6.23.0
 
-- Add basic support for setting camera roll ([#4061](https://github.com/mapvina/mapvina-native/pull/4059)).
-- Make rendering stats thread safe ([#4059](https://github.com/mapvina/mapvina-native/pull/4059)).
+- Add basic support for setting camera roll ([#4061](https://github.io/github/mapvina/mapvina-native/pull/4059)).
+- Make rendering stats thread safe ([#4059](https://github.io/github/mapvina/mapvina-native/pull/4059)).
 
 ## 6.22.2
 
-- Metal backend resource for MacOS fixes ([#4020](https://github.com/mapvina/mapvina-native/pull/4020)).
-- Port several iOS fixes from GrabMaps ([#4023](https://github.com/mapvina/mapvina-native/pull/4023)).
-- Metal: only update offset if we call setVertexBuffer previously ([#4049](https://github.com/mapvina/mapvina-native/pull/4049)).
+- Metal backend resource for MacOS fixes ([#4020](https://github.io/github/mapvina/mapvina-native/pull/4020)).
+- Port several iOS fixes from GrabMaps ([#4023](https://github.io/github/mapvina/mapvina-native/pull/4023)).
+- Metal: only update offset if we call setVertexBuffer previously ([#4049](https://github.io/github/mapvina/mapvina-native/pull/4049)).
 
 ## 6.22.1
 
-- Fix issue caused by frustum offset when map is resized [#4015](https://github.com/mapvina/mapvina-native/pull/4015).
+- Fix issue caused by frustum offset when map is resized [#4015](https://github.io/github/mapvina/mapvina-native/pull/4015).
 
 ## 6.22.0
 
-- Implemented synchronous update for GeoJSON source ([#3968](https://github.com/mapvina/mapvina-native/pull/3968)).
-- Cancel pending style request when loading style JSON ([#3989](https://github.com/mapvina/mapvina-native/pull/3989)).
-- Fix pure virtual function call v2 ([#3996](https://github.com/mapvina/mapvina-native/pull/3996)).
+- Implemented synchronous update for GeoJSON source ([#3968](https://github.io/github/mapvina/mapvina-native/pull/3968)).
+- Cancel pending style request when loading style JSON ([#3989](https://github.io/github/mapvina/mapvina-native/pull/3989)).
+- Fix pure virtual function call v2 ([#3996](https://github.io/github/mapvina/mapvina-native/pull/3996)).
 
 ## 6.21.2
 
-- Fix crash due to pure virtual function call ([#3979](https://github.com/mapvina/mapvina-native/pull/3979)).
+- Fix crash due to pure virtual function call ([#3979](https://github.io/github/mapvina/mapvina-native/pull/3979)).
 
 ## 6.21.1
 
@@ -61,311 +61,311 @@ Note: this release has some changes to how icon offsets behave on pitched maps. 
 
 ## 6.21.0
 
-- Allow setting frustum offset to not render edges of the screen ([#3676](https://github.com/mapvina/mapvina-native/pull/3676)).
-- Support hiding attribution on iOS ([#3952](https://github.com/mapvina/mapvina-native/pull/3952)).
-- Support extra annotations for snapshotter for iOS ([#3963](https://github.com/mapvina/mapvina-native/pull/3963)).
+- Allow setting frustum offset to not render edges of the screen ([#3676](https://github.io/github/mapvina/mapvina-native/pull/3676)).
+- Support hiding attribution on iOS ([#3952](https://github.io/github/mapvina/mapvina-native/pull/3952)).
+- Support extra annotations for snapshotter for iOS ([#3963](https://github.io/github/mapvina/mapvina-native/pull/3963)).
 
 ## 6.20.1
 
-- Update to latest MLT submodule ([#3945](https://github.com/mapvina/mapvina-native/pull/3945)).
-- Fix LineBucket::addGeometry() empty coordinates. ([#2959](https://github.com/mapvina/mapvina-native/pull/2959)).
+- Update to latest MLT submodule ([#3945](https://github.io/github/mapvina/mapvina-native/pull/3945)).
+- Fix LineBucket::addGeometry() empty coordinates. ([#2959](https://github.io/github/mapvina/mapvina-native/pull/2959)).
 
 ## 6.20.0
 
-- Add configurable threshold for rotate gesture snapping to north ([#3914](https://github.com/mapvina/mapvina-native/pull/3914)).
-- Add support for parsing MLT-format vector tile sources ([#3246](https://github.com/mapvina/mapvina-native/pull/3246)).
-- Adds some network delegate methods ([#3917](https://github.com/mapvina/mapvina-native/pull/3917)).
-- Add accessibility annotation check ([#3926](https://github.com/mapvina/mapvina-native/pull/3926)).
+- Add configurable threshold for rotate gesture snapping to north ([#3914](https://github.io/github/mapvina/mapvina-native/pull/3914)).
+- Add support for parsing MLT-format vector tile sources ([#3246](https://github.io/github/mapvina/mapvina-native/pull/3246)).
+- Adds some network delegate methods ([#3917](https://github.io/github/mapvina/mapvina-native/pull/3917)).
+- Add accessibility annotation check ([#3926](https://github.io/github/mapvina/mapvina-native/pull/3926)).
 
 ## 6.19.3
 
-- fix number-format/currency expression test for darwin ([#3900](https://github.com/mapvina/mapvina-native/pull/3900)).
-- Updates drawable size of metal view after it is attached to display hierarchy. ([#3903](https://github.com/mapvina/mapvina-native/pull/3903)).
+- fix number-format/currency expression test for darwin ([#3900](https://github.io/github/mapvina/mapvina-native/pull/3900)).
+- Updates drawable size of metal view after it is attached to display hierarchy. ([#3903](https://github.io/github/mapvina/mapvina-native/pull/3903)).
 
 ## 6.19.2
 
-- [metal] OffscreenTextureResource: fix compilation warnings ([#3727](https://github.com/mapvina/mapvina-native/pull/3727)).
-- Apply symbol shader changes from JS  for Metal, Vulkan, and OpenGL ([#3873](https://github.com/mapvina/mapvina-native/pull/3873)).
-- Fixes wrong map view dimension on CarPlay. ([#3890](https://github.com/mapvina/mapvina-native/pull/3890)).
+- [metal] OffscreenTextureResource: fix compilation warnings ([#3727](https://github.io/github/mapvina/mapvina-native/pull/3727)).
+- Apply symbol shader changes from JS  for Metal, Vulkan, and OpenGL ([#3873](https://github.io/github/mapvina/mapvina-native/pull/3873)).
+- Fixes wrong map view dimension on CarPlay. ([#3890](https://github.io/github/mapvina/mapvina-native/pull/3890)).
 
 ## 6.19.1
 
-- Tweak layer depth distribution ([#3738](https://github.com/mapvina/mapvina-native/pull/3738)).
-- Add weak pointer handling ([#3763](https://github.com/mapvina/mapvina-native/pull/3763)).
-- Apply just the changes from the MLT branch which aren't really part of that work ([#3793](https://github.com/mapvina/mapvina-native/pull/3793)).
-- Add extra UI settings and location manager settings. ([#3817](https://github.com/mapvina/mapvina-native/pull/3817)).
-- fix misplaced LineOffset and LineGapWidth ([#3840](https://github.com/mapvina/mapvina-native/pull/3840)).
+- Tweak layer depth distribution ([#3738](https://github.io/github/mapvina/mapvina-native/pull/3738)).
+- Add weak pointer handling ([#3763](https://github.io/github/mapvina/mapvina-native/pull/3763)).
+- Apply just the changes from the MLT branch which aren't really part of that work ([#3793](https://github.io/github/mapvina/mapvina-native/pull/3793)).
+- Add extra UI settings and location manager settings. ([#3817](https://github.io/github/mapvina/mapvina-native/pull/3817)).
+- fix misplaced LineOffset and LineGapWidth ([#3840](https://github.io/github/mapvina/mapvina-native/pull/3840)).
 
 ## 6.18.1
 
-- Fix for raster dem encoding override in style.json ([#3570](https://github.com/mapvina/mapvina-native/pull/3570)).
-- Fix UB in TaggedString constructor ([#3748](https://github.com/mapvina/mapvina-native/pull/3748)).
-- Add weak pointer management to RasterSource and derived classes ([#3726](https://github.com/mapvina/mapvina-native/pull/3726)).
+- Fix for raster dem encoding override in style.json ([#3570](https://github.io/github/mapvina/mapvina-native/pull/3570)).
+- Fix UB in TaggedString constructor ([#3748](https://github.io/github/mapvina/mapvina-native/pull/3748)).
+- Add weak pointer management to RasterSource and derived classes ([#3726](https://github.io/github/mapvina/mapvina-native/pull/3726)).
 
 ## 6.18.0
 
-- add the ability to have ios camera animation durations dynamic during navigation ([#3568](https://github.com/mapvina/mapvina-native/pull/3568)).
-- Fix dashed line issue when style change ([#3675](https://github.com/mapvina/mapvina-native/pull/3675)).
-- Add rendering info reports to `ActionJournal` ([#3545](https://github.com/mapvina/mapvina-native/pull/3545)).
-- Add HarfBuzz Text Shaping and Font Fallback Support ([#3611](https://github.com/mapvina/mapvina-native/pull/3611)).
-  This implements the [`font-faces` property of the MapVina Style Spec](https://mapvina.com/mapvina-style-spec/font-faces/).
+- add the ability to have ios camera animation durations dynamic during navigation ([#3568](https://github.io/github/mapvina/mapvina-native/pull/3568)).
+- Fix dashed line issue when style change ([#3675](https://github.io/github/mapvina/mapvina-native/pull/3675)).
+- Add rendering info reports to `ActionJournal` ([#3545](https://github.io/github/mapvina/mapvina-native/pull/3545)).
+- Add HarfBuzz Text Shaping and Font Fallback Support ([#3611](https://github.io/github/mapvina/mapvina-native/pull/3611)).
+  This implements the [`font-faces` property of the MapVina Style Spec](https://mapvina.io/github/mapvina-style-spec/font-faces/).
 
 ## 6.17.1
 
-- Revert "Fix the symbol blink issue by only placing the symbol in current level", as this was causing regressions ([#3610](https://github.com/mapvina/mapvina-native/pull/3610)).
+- Revert "Fix the symbol blink issue by only placing the symbol in current level", as this was causing regressions ([#3610](https://github.io/github/mapvina/mapvina-native/pull/3610)).
 
 ## 6.17.0
 
-- Fix render pipeline state bug ([#3598](https://github.com/mapvina/mapvina-native/pull/3598)).
-- Added the nearClippedProjMatrix to the drawing context ([#3599](https://github.com/mapvina/mapvina-native/pull/3599)).
-- feat: add clusterMinPoints option Android and iOS ([#3601](https://github.com/mapvina/mapvina-native/pull/3601)).
+- Fix render pipeline state bug ([#3598](https://github.io/github/mapvina/mapvina-native/pull/3598)).
+- Added the nearClippedProjMatrix to the drawing context ([#3599](https://github.io/github/mapvina/mapvina-native/pull/3599)).
+- feat: add clusterMinPoints option Android and iOS ([#3601](https://github.io/github/mapvina/mapvina-native/pull/3601)).
 
 ## 6.16.0
 
-- Add run-time plug-in layer support to iOS ([#3430](https://github.com/mapvina/mapvina-native/pull/3430)).
-  Documentation: https://mapvina.com/mapvina-native/ios/latest/documentation/mapvina-native-for-ios/pluginlayers
+- Add run-time plug-in layer support to iOS ([#3430](https://github.io/github/mapvina/mapvina-native/pull/3430)).
+  Documentation: https://mapvina.io/github/mapvina-native/ios/latest/documentation/mapvina-native-for-ios/pluginlayers
 
-- Fix nullability of attributionHtmlString ([#3551](https://github.com/mapvina/mapvina-native/pull/3551)).
-- Fix the symbol blink issue by only placing the symbol in current level ([#3534](https://github.com/mapvina/mapvina-native/pull/3534)).
-- add functionality to metal render pass to cache winding order and cull mode ([#3566](https://github.com/mapvina/mapvina-native/pull/3566)).
-- Add polylines with geographic coordinates for custom drawables ([#3547](https://github.com/mapvina/mapvina-native/pull/3547)).
-- Reduce duplicate GPU buffer uploads ([#3577](https://github.com/mapvina/mapvina-native/pull/3577)).
-- Symbol Shader Performance Improvments ([#3576](https://github.com/mapvina/mapvina-native/pull/3576)).
-- Add an option to reverse the direction of the quick zoom gesture ([#3587](https://github.com/mapvina/mapvina-native/pull/3587)).
+- Fix nullability of attributionHtmlString ([#3551](https://github.io/github/mapvina/mapvina-native/pull/3551)).
+- Fix the symbol blink issue by only placing the symbol in current level ([#3534](https://github.io/github/mapvina/mapvina-native/pull/3534)).
+- add functionality to metal render pass to cache winding order and cull mode ([#3566](https://github.io/github/mapvina/mapvina-native/pull/3566)).
+- Add polylines with geographic coordinates for custom drawables ([#3547](https://github.io/github/mapvina/mapvina-native/pull/3547)).
+- Reduce duplicate GPU buffer uploads ([#3577](https://github.io/github/mapvina/mapvina-native/pull/3577)).
+- Symbol Shader Performance Improvments ([#3576](https://github.io/github/mapvina/mapvina-native/pull/3576)).
+- Add an option to reverse the direction of the quick zoom gesture ([#3587](https://github.io/github/mapvina/mapvina-native/pull/3587)).
 
 ## 6.15.0
 
-- Add action journal ([#3409](https://github.com/mapvina/mapvina-native/pull/3409)). Documentation: https://mapvina.com/mapvina-native/ios/latest/documentation/mapvina-native-for-ios/actionjournalexample
-- Expose MLNSource.attributionHtmlString ([#3502](https://github.com/mapvina/mapvina-native/pull/3502)).
-- Rendering statistics view ([#3322](https://github.com/mapvina/mapvina-native/pull/3322)). Documentation: https://mapvina.com/mapvina-native/ios/latest/documentation/mapvina-native-for-ios/renderingstatisticshud
+- Add action journal ([#3409](https://github.io/github/mapvina/mapvina-native/pull/3409)). Documentation: https://mapvina.io/github/mapvina-native/ios/latest/documentation/mapvina-native-for-ios/actionjournalexample
+- Expose MLNSource.attributionHtmlString ([#3502](https://github.io/github/mapvina/mapvina-native/pull/3502)).
+- Rendering statistics view ([#3322](https://github.io/github/mapvina/mapvina-native/pull/3322)). Documentation: https://mapvina.io/github/mapvina-native/ios/latest/documentation/mapvina-native-for-ios/renderingstatisticshud
 
-- Clean legacy code ([#3469](https://github.com/mapvina/mapvina-native/pull/3469)).
-- Rename Symbol SDF shader ([#3473](https://github.com/mapvina/mapvina-native/pull/3473)).
-- Clean more legacy code ([#3478](https://github.com/mapvina/mapvina-native/pull/3478)).
-- Remove some of unused legacy uniforms ([#3481](https://github.com/mapvina/mapvina-native/pull/3481)).
-- Pattern layout performance improvement ([#3495](https://github.com/mapvina/mapvina-native/pull/3495)).
-- Improve weak pointer use ([#3510](https://github.com/mapvina/mapvina-native/pull/3510)).
-- Fix incomplete feature state updates in GeometryTile and SourceFeatureState [Vector Tile Layer]. ([#3406](https://github.com/mapvina/mapvina-native/pull/3406)).
+- Clean legacy code ([#3469](https://github.io/github/mapvina/mapvina-native/pull/3469)).
+- Rename Symbol SDF shader ([#3473](https://github.io/github/mapvina/mapvina-native/pull/3473)).
+- Clean more legacy code ([#3478](https://github.io/github/mapvina/mapvina-native/pull/3478)).
+- Remove some of unused legacy uniforms ([#3481](https://github.io/github/mapvina/mapvina-native/pull/3481)).
+- Pattern layout performance improvement ([#3495](https://github.io/github/mapvina/mapvina-native/pull/3495)).
+- Improve weak pointer use ([#3510](https://github.io/github/mapvina/mapvina-native/pull/3510)).
+- Fix incomplete feature state updates in GeometryTile and SourceFeatureState [Vector Tile Layer]. ([#3406](https://github.io/github/mapvina/mapvina-native/pull/3406)).
 
 ## 6.14.0
 
 > [!IMPORTANT]
-> Please verify glyphs are loading correctly for your styles with this release. Despite careful testing, we also rely on our users to help test the new dynamic texture atlas and to [report any issues](https://github.com/mapvina/mapvina-native/issues/new?template=ios-bug-report.yml).
+> Please verify glyphs are loading correctly for your styles with this release. Despite careful testing, we also rely on our users to help test the new dynamic texture atlas and to [report any issues](https://github.io/github/mapvina/mapvina-native/issues/new?template=ios-bug-report.yml).
 
-- Force PMTiles metadata to always have XYZ tile scheme ([#3403](https://github.com/mapvina/mapvina-native/pull/3403)).
-- Add support to range requests in AssetFileSource ([#3404](https://github.com/mapvina/mapvina-native/pull/3404)).
-- Implement dynamic texture atlas ([#3198](https://github.com/mapvina/mapvina-native/pull/3198)).
+- Force PMTiles metadata to always have XYZ tile scheme ([#3403](https://github.io/github/mapvina/mapvina-native/pull/3403)).
+- Add support to range requests in AssetFileSource ([#3404](https://github.io/github/mapvina/mapvina-native/pull/3404)).
+- Implement dynamic texture atlas ([#3198](https://github.io/github/mapvina/mapvina-native/pull/3198)).
 
 ## 6.13.0
 
-- Allow initializing MLNMapView with style JSON ([#3240](https://github.com/mapvina/mapvina-native/pull/3240)).
-- Remove legacy renderer from source, build files and CI ([#3384](https://github.com/mapvina/mapvina-native/pull/3384)). Should have no impact on iOS since releases where already using the new drawable renderer architecture since 6.0.0.
-- Add missing `sourceDidChange` event ([#3421](https://github.com/mapvina/mapvina-native/pull/3421)).
-- Fix: follow with heading tracking mode cancels user location indicator update ([#3401](https://github.com/mapvina/mapvina-native/pull/3401)).
+- Allow initializing MLNMapView with style JSON ([#3240](https://github.io/github/mapvina/mapvina-native/pull/3240)).
+- Remove legacy renderer from source, build files and CI ([#3384](https://github.io/github/mapvina/mapvina-native/pull/3384)). Should have no impact on iOS since releases where already using the new drawable renderer architecture since 6.0.0.
+- Add missing `sourceDidChange` event ([#3421](https://github.io/github/mapvina/mapvina-native/pull/3421)).
+- Fix: follow with heading tracking mode cancels user location indicator update ([#3401](https://github.io/github/mapvina/mapvina-native/pull/3401)).
 
 ## 6.12.3
 
-- add MLNDefines.h to make sure Metal backend is available in headers ([#3335](https://github.com/mapvina/mapvina-native/issues/3335)).
+- add MLNDefines.h to make sure Metal backend is available in headers ([#3335](https://github.io/github/mapvina/mapvina-native/issues/3335)).
 
 ## 6.12.2
 
-- Strip punctuation from attribution ([#3287](https://github.com/mapvina/mapvina-native/pull/3287)).
-- Revert [#3035](https://github.com/mapvina/mapvina-native/pull/3035) which was causing memory growth issue (#3315).
-- Apply clang-tidy fixes (mostly use designated initializers) ([#3328](https://github.com/mapvina/mapvina-native/pull/3328)).
+- Strip punctuation from attribution ([#3287](https://github.io/github/mapvina/mapvina-native/pull/3287)).
+- Revert [#3035](https://github.io/github/mapvina/mapvina-native/pull/3035) which was causing memory growth issue (#3315).
+- Apply clang-tidy fixes (mostly use designated initializers) ([#3328](https://github.io/github/mapvina/mapvina-native/pull/3328)).
 
 ## 6.12.1
 
-- Use double quotes for MLNTileOperation.h import ([#3277](https://github.com/mapvina/mapvina-native/issues/3277)).
-- Warn on rejected line geometry ([#3088](https://github.com/mapvina/mapvina-native/pull/3088)).
+- Use double quotes for MLNTileOperation.h import ([#3277](https://github.io/github/mapvina/mapvina-native/issues/3277)).
+- Warn on rejected line geometry ([#3088](https://github.io/github/mapvina/mapvina-native/pull/3088)).
 
 ## 6.12.0
 
-- Eliminate copies in deferred cleanup ([#3035](https://github.com/mapvina/mapvina-native/pull/3035)).
-- (Drawable Custom Layers) Reset depth stencil state for render pass ([#3230](https://github.com/mapvina/mapvina-native/pull/3230)).
-- Add documentation page for iOS dev apps ([#3244](https://github.com/mapvina/mapvina-native/pull/3244)).
-- Remove unused files reachability.h, reachability.m ([#3243](https://github.com/mapvina/mapvina-native/pull/3243)).
-- Reduce texture sampler state changes in Metal ([#3236](https://github.com/mapvina/mapvina-native/pull/3236)).
-- Add iOS/macOS observer hooks ([#3245](https://github.com/mapvina/mapvina-native/pull/3245)).
-- Custom drawable layer v3 ([#3210](https://github.com/mapvina/mapvina-native/pull/3210)).
+- Eliminate copies in deferred cleanup ([#3035](https://github.io/github/mapvina/mapvina-native/pull/3035)).
+- (Drawable Custom Layers) Reset depth stencil state for render pass ([#3230](https://github.io/github/mapvina/mapvina-native/pull/3230)).
+- Add documentation page for iOS dev apps ([#3244](https://github.io/github/mapvina/mapvina-native/pull/3244)).
+- Remove unused files reachability.h, reachability.m ([#3243](https://github.io/github/mapvina/mapvina-native/pull/3243)).
+- Reduce texture sampler state changes in Metal ([#3236](https://github.io/github/mapvina/mapvina-native/pull/3236)).
+- Add iOS/macOS observer hooks ([#3245](https://github.io/github/mapvina/mapvina-native/pull/3245)).
+- Custom drawable layer v3 ([#3210](https://github.io/github/mapvina/mapvina-native/pull/3210)).
 
 ## 6.11.0
 
-- Add NSString initializer MLNVectorTileSource ([#3163](https://github.com/mapvina/mapvina-native/pull/3163)).
-- Support defining a custom style layer from iOS Swift ([#3154](https://github.com/mapvina/mapvina-native/pull/3154)).
-- Add iOS trigger repaint method ([#3182](https://github.com/mapvina/mapvina-native/pull/3182)).
-- Bind global uniform buffers at the end of the custom layer tweaker ([#3186](https://github.com/mapvina/mapvina-native/pull/3186)).
-- Change runtime error to the nullptr returning ([#3184](https://github.com/mapvina/mapvina-native/pull/3184)).
+- Add NSString initializer MLNVectorTileSource ([#3163](https://github.io/github/mapvina/mapvina-native/pull/3163)).
+- Support defining a custom style layer from iOS Swift ([#3154](https://github.io/github/mapvina/mapvina-native/pull/3154)).
+- Add iOS trigger repaint method ([#3182](https://github.io/github/mapvina/mapvina-native/pull/3182)).
+- Bind global uniform buffers at the end of the custom layer tweaker ([#3186](https://github.io/github/mapvina/mapvina-native/pull/3186)).
+- Change runtime error to the nullptr returning ([#3184](https://github.io/github/mapvina/mapvina-native/pull/3184)).
 
 ## 6.10.0
 
-- Fix icon label isn't centered with the icon for CJK/local glyphy on iOS ([#3108](https://github.com/mapvina/mapvina-native/pull/3108)).
-- Add support for [PMTiles](https://docs.protomaps.com/pmtiles/) with `pmtiles://` URL scheme ([#2882](https://github.com/mapvina/mapvina-native/pull/2882)).
-- Consolidate UBOs ([#3089](https://github.com/mapvina/mapvina-native/pull/3089)).
-- Allow constraining camera to maximum bounds ([#2475](https://github.com/mapvina/mapvina-native/pull/2475)).
+- Fix icon label isn't centered with the icon for CJK/local glyphy on iOS ([#3108](https://github.io/github/mapvina/mapvina-native/pull/3108)).
+- Add support for [PMTiles](https://docs.protomaps.com/pmtiles/) with `pmtiles://` URL scheme ([#2882](https://github.io/github/mapvina/mapvina-native/pull/2882)).
+- Consolidate UBOs ([#3089](https://github.io/github/mapvina/mapvina-native/pull/3089)).
+- Allow constraining camera to maximum bounds ([#2475](https://github.io/github/mapvina/mapvina-native/pull/2475)).
 
 ## 6.9.0
 
-- Batch up scheduling of deferred deletions ([#3030](https://github.com/mapvina/mapvina-native/pull/3030)).
-- Remove `Pass3D`  ([#3077](https://github.com/mapvina/mapvina-native/pull/3077)).
-- Add bold support for CJK characters ([#3069](https://github.com/mapvina/mapvina-native/pull/3069)).
+- Batch up scheduling of deferred deletions ([#3030](https://github.io/github/mapvina/mapvina-native/pull/3030)).
+- Remove `Pass3D`  ([#3077](https://github.io/github/mapvina/mapvina-native/pull/3077)).
+- Add bold support for CJK characters ([#3069](https://github.io/github/mapvina/mapvina-native/pull/3069)).
 
 ## 6.8.1
 
-- Update Bazel dependencies ([#3000](https://github.com/mapvina/mapvina-native/pull/3000)).
-- Reuse allocated descriptor sets ([#3002](https://github.com/mapvina/mapvina-native/pull/3002)).
-- Line SDF shader fix ([#3010](https://github.com/mapvina/mapvina-native/pull/3010)).
-- Revert "Encode the style URL in iOS. This change was causing several regressions with styles not loading ([#3024](https://github.com/mapvina/mapvina-native/pull/3024)).
+- Update Bazel dependencies ([#3000](https://github.io/github/mapvina/mapvina-native/pull/3000)).
+- Reuse allocated descriptor sets ([#3002](https://github.io/github/mapvina/mapvina-native/pull/3002)).
+- Line SDF shader fix ([#3010](https://github.io/github/mapvina/mapvina-native/pull/3010)).
+- Revert "Encode the style URL in iOS. This change was causing several regressions with styles not loading ([#3024](https://github.io/github/mapvina/mapvina-native/pull/3024)).
 
 ## 6.8.0
 
 ### Features
 
-- Add support for `text-variable-anchor-offset` property ([#2921](https://github.com/mapvina/mapvina-native/pull/2921)).
-- Encode the style URL in iOS ([#2965](https://github.com/mapvina/mapvina-native/pull/2965)).
+- Add support for `text-variable-anchor-offset` property ([#2921](https://github.io/github/mapvina/mapvina-native/pull/2921)).
+- Encode the style URL in iOS ([#2965](https://github.io/github/mapvina/mapvina-native/pull/2965)).
 
 ### Rendering Improvements
 
-- Revert index buffers to dirty flag instead of timestamps ([#2927](https://github.com/mapvina/mapvina-native/pull/2927)).
-- Group descriptor sets by binding frequency ([#2892](https://github.com/mapvina/mapvina-native/pull/2892)).
-- Change `parameters.currentLayer` to index instead of layerIndex ([#2956](https://github.com/mapvina/mapvina-native/pull/2956)).
+- Revert index buffers to dirty flag instead of timestamps ([#2927](https://github.io/github/mapvina/mapvina-native/pull/2927)).
+- Group descriptor sets by binding frequency ([#2892](https://github.io/github/mapvina/mapvina-native/pull/2892)).
+- Change `parameters.currentLayer` to index instead of layerIndex ([#2956](https://github.io/github/mapvina/mapvina-native/pull/2956)).
 
 ## 6.7.1
 
-- Fix line atlas, which was causing an issue with `line-pattern`s ([#2908](https://github.com/mapvina/mapvina-native/pull/2908)).
+- Fix line atlas, which was causing an issue with `line-pattern`s ([#2908](https://github.io/github/mapvina/mapvina-native/pull/2908)).
 
 ## 6.7.0
 
-- Add array support for icon-padding ([#2845](https://github.com/mapvina/mapvina-native/pull/2845)).
-  More information can be found in the [MapVina Style Spec Documentation](https://mapvina.com/mapvina-style-spec/types/#padding). This is the first (code) contribution from [@random3940](https://github.com/random3940)! 🎉
-- Fix updates hillshade geometry ([#2842](https://github.com/mapvina/mapvina-native/pull/2842)).
-- Use `thread_local` for thread local scheduler ([#2863](https://github.com/mapvina/mapvina-native/pull/2863)).
+- Add array support for icon-padding ([#2845](https://github.io/github/mapvina/mapvina-native/pull/2845)).
+  More information can be found in the [MapVina Style Spec Documentation](https://mapvina.io/github/mapvina-style-spec/types/#padding). This is the first (code) contribution from [@random3940](https://github.com/random3940)! 🎉
+- Fix updates hillshade geometry ([#2842](https://github.io/github/mapvina/mapvina-native/pull/2842)).
+- Use `thread_local` for thread local scheduler ([#2863](https://github.io/github/mapvina/mapvina-native/pull/2863)).
 
 ## 6.6.0
 
-- Add `textFitWidth` and `textFitHeight` properties to sprites ([#2780](https://github.com/mapvina/mapvina-native/pull/2780)).
-  More information can be found in the [MapVina Style Spec](https://mapvina.com/mapvina-style-spec/sprite/#text-fit-properties).
-- Toggle tile cache final API ([#2723](https://github.com/mapvina/mapvina-native/pull/2723)).
+- Add `textFitWidth` and `textFitHeight` properties to sprites ([#2780](https://github.io/github/mapvina/mapvina-native/pull/2780)).
+  More information can be found in the [MapVina Style Spec](https://mapvina.io/github/mapvina-style-spec/sprite/#text-fit-properties).
+- Toggle tile cache final API ([#2723](https://github.io/github/mapvina/mapvina-native/pull/2723)).
   Using this API can reduce memory usage at the cost of having to parse tile data again when the zoom level changes.
-- Fixed annotation delay in demo app for 120Hz devices ([#2775](https://github.com/mapvina/mapvina-native/pull/2775)).
+- Fixed annotation delay in demo app for 120Hz devices ([#2775](https://github.io/github/mapvina/mapvina-native/pull/2775)).
   Some users reported synchronization issues when panning the map. The issue is only present on devices with ProMotion (120Hz) displays and can be fixed by updating the Info.plist for your app (see [Apple documentation](https://developer.apple.com/documentation/quartzcore/optimizing_promotion_refresh_rates_for_iphone_13_pro_and_ipad_pro?language=objc)).
-- Use timestamps for attribute updates ([#2629](https://github.com/mapvina/mapvina-native/pull/2629)).
-- Reuse prefetched tiles to avoid empty screen ([#2668](https://github.com/mapvina/mapvina-native/pull/2668)).
-- Cleanup mbgl/actor/mailbox* implementation for repetition in ensuring valid weakScheduler exists before usage ([#2733](https://github.com/mapvina/mapvina-native/pull/2733)).
-- Fix raster masking bug ([#2798](https://github.com/mapvina/mapvina-native/pull/2798)).
-- Ensure that all depth values are rendered before any color values ([#2811](https://github.com/mapvina/mapvina-native/pull/2811)).
-- Move UBO updates from render layers to tweakers ([#2703](https://github.com/mapvina/mapvina-native/pull/2703)).
-- Fix update time not being set when only drawable indexes are set ([#2743](https://github.com/mapvina/mapvina-native/pull/2743)).
-- Add guard blocks and checks to `SymbolInstance` ([#2744](https://github.com/mapvina/mapvina-native/pull/2744)).
-- Fix accidental regression conditional layer evaluation ([#2705](https://github.com/mapvina/mapvina-native/pull/2705)).
-- Use C++20 ([#2659](https://github.com/mapvina/mapvina-native/pull/2659)).
+- Use timestamps for attribute updates ([#2629](https://github.io/github/mapvina/mapvina-native/pull/2629)).
+- Reuse prefetched tiles to avoid empty screen ([#2668](https://github.io/github/mapvina/mapvina-native/pull/2668)).
+- Cleanup mbgl/actor/mailbox* implementation for repetition in ensuring valid weakScheduler exists before usage ([#2733](https://github.io/github/mapvina/mapvina-native/pull/2733)).
+- Fix raster masking bug ([#2798](https://github.io/github/mapvina/mapvina-native/pull/2798)).
+- Ensure that all depth values are rendered before any color values ([#2811](https://github.io/github/mapvina/mapvina-native/pull/2811)).
+- Move UBO updates from render layers to tweakers ([#2703](https://github.io/github/mapvina/mapvina-native/pull/2703)).
+- Fix update time not being set when only drawable indexes are set ([#2743](https://github.io/github/mapvina/mapvina-native/pull/2743)).
+- Add guard blocks and checks to `SymbolInstance` ([#2744](https://github.io/github/mapvina/mapvina-native/pull/2744)).
+- Fix accidental regression conditional layer evaluation ([#2705](https://github.io/github/mapvina/mapvina-native/pull/2705)).
+- Use C++20 ([#2659](https://github.io/github/mapvina/mapvina-native/pull/2659)).
 
 ## 6.5.4
 
-- Fix crash when feature contains invalid UTF-8 data ([#2693](https://github.com/mapvina/mapvina-native/pull/2693)).
-- Bazel updates ([#2696](https://github.com/mapvina/mapvina-native/pull/2696)).
+- Fix crash when feature contains invalid UTF-8 data ([#2693](https://github.io/github/mapvina/mapvina-native/pull/2693)).
+- Bazel updates ([#2696](https://github.io/github/mapvina/mapvina-native/pull/2696)).
 
 ## 6.5.3
 
-- Disabled iOS 14 metal options ([#2620](https://github.com/mapvina/mapvina-native/pull/2620)).
-- Don't unbind texture units in release builds ([#2630](https://github.com/mapvina/mapvina-native/pull/2630)).
-- Avoid re-creating fill extrusion drawables unnecessarily ([#2624](https://github.com/mapvina/mapvina-native/pull/2624)).
-- Take locks before signaling thread condition variables ([#2636](https://github.com/mapvina/mapvina-native/pull/2636)).
+- Disabled iOS 14 metal options ([#2620](https://github.io/github/mapvina/mapvina-native/pull/2620)).
+- Don't unbind texture units in release builds ([#2630](https://github.io/github/mapvina/mapvina-native/pull/2630)).
+- Avoid re-creating fill extrusion drawables unnecessarily ([#2624](https://github.io/github/mapvina/mapvina-native/pull/2624)).
+- Take locks before signaling thread condition variables ([#2636](https://github.io/github/mapvina/mapvina-native/pull/2636)).
 
 ## 6.5.2
 
-- Fix Cocoapods release ([#2599](https://github.com/mapvina/mapvina-native/pull/2599)).
-- Experimental API to toggle tile cache in map view ([#2590](https://github.com/mapvina/mapvina-native/pull/2590)). This can reduce memory usage at the cost of having to parse tile data again when the zoom level changes.
-- Allow changing color of scalebar on iOS ([#2614](https://github.com/mapvina/mapvina-native/pull/2614)).
-- Fix version in action sheet ([#2602](https://github.com/mapvina/mapvina-native/pull/2602)).
-- Fixed attribution link in action sheets ([#2587](https://github.com/mapvina/mapvina-native/pull/2587)).
-- Internal: Add TaggedScheduler, couple lifetime of tasks and orchestrator ([#2398](https://github.com/mapvina/mapvina-native/pull/2398)).
+- Fix Cocoapods release ([#2599](https://github.io/github/mapvina/mapvina-native/pull/2599)).
+- Experimental API to toggle tile cache in map view ([#2590](https://github.io/github/mapvina/mapvina-native/pull/2590)). This can reduce memory usage at the cost of having to parse tile data again when the zoom level changes.
+- Allow changing color of scalebar on iOS ([#2614](https://github.io/github/mapvina/mapvina-native/pull/2614)).
+- Fix version in action sheet ([#2602](https://github.io/github/mapvina/mapvina-native/pull/2602)).
+- Fixed attribution link in action sheets ([#2587](https://github.io/github/mapvina/mapvina-native/pull/2587)).
+- Internal: Add TaggedScheduler, couple lifetime of tasks and orchestrator ([#2398](https://github.io/github/mapvina/mapvina-native/pull/2398)).
 
 ## 6.5.1
 
-- Enable LTO ([#2504](https://github.com/mapvina/mapvina-native/pull/2504)).
-- Enable vertex instance drawing on simulator ([#2518](https://github.com/mapvina/mapvina-native/pull/2518)).
-- Change default `MLNMapSnapshotter` logo to the MapVina logo ([#2541](https://github.com/mapvina/mapvina-native/pull/2541)). Note that showing the MapVina logo is never required. You can configure whether to show the logo with the (now public) `showsLogo` property of `MLNMapSnapshotterOptions`. Check with your tile provider if you need to show a logo.
-- Add [Privacy Manifest](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files). MapVina Native iOS has no built-in tracking, but it does use some system APIs for functional purposes that are marked by Apple as privacy sensitive ([#2480](https://github.com/mapvina/mapvina-native/pull/2480)).
-- Fixed attribution link in action sheets ([#2587](https://github.com/mapvina/mapvina-native/pull/2587)).
-- Update included third-party licenses ([#2491](https://github.com/mapvina/mapvina-native/pull/2491)).
+- Enable LTO ([#2504](https://github.io/github/mapvina/mapvina-native/pull/2504)).
+- Enable vertex instance drawing on simulator ([#2518](https://github.io/github/mapvina/mapvina-native/pull/2518)).
+- Change default `MLNMapSnapshotter` logo to the MapVina logo ([#2541](https://github.io/github/mapvina/mapvina-native/pull/2541)). Note that showing the MapVina logo is never required. You can configure whether to show the logo with the (now public) `showsLogo` property of `MLNMapSnapshotterOptions`. Check with your tile provider if you need to show a logo.
+- Add [Privacy Manifest](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files). MapVina Native iOS has no built-in tracking, but it does use some system APIs for functional purposes that are marked by Apple as privacy sensitive ([#2480](https://github.io/github/mapvina/mapvina-native/pull/2480)).
+- Fixed attribution link in action sheets ([#2587](https://github.io/github/mapvina/mapvina-native/pull/2587)).
+- Update included third-party licenses ([#2491](https://github.io/github/mapvina/mapvina-native/pull/2491)).
 
 ## 6.5.0
 
-- Allow uses to handle authorization for location services ([#2453](https://github.com/mapvina/mapvina-native/pull/2453)). See [`MLNMapview.shouldRequestAuthorizationToUseLocationServices`](https://mapvina.com/mapvina-native/ios/latest/documentation/mapvina/mlnmapview/shouldrequestauthorizationtouselocationservices).
-- Fixed memory usage high in some cases ([#2442](https://github.com/mapvina/mapvina-native/pull/2442)).
-- Avoid processing raster tiles after destruction mailbox ([#2443](https://github.com/mapvina/mapvina-native/pull/2443)).
-- Annotation view recycling re-enabled ([#2454](https://github.com/mapvina/mapvina-native/pull/2454)). Fixes some issues with Annotations.
-- Increase the deferred cleanup timeout ([#2455](https://github.com/mapvina/mapvina-native/pull/2455)). Workaround for rare crash.
-- Fixes crash that happened with some PBF files ([#795](https://github.com/mapvina/mapvina-native/issues/795), [#2460](https://github.com/mapvina/mapvina-native/pull/2460)).
-- Allow using MapVina Native on iPad Air 2. Note: tests your styles! iPad Air 2 has one of the oldest GPUs that support Metal ([#2470](https://github.com/mapvina/mapvina-native/pull/2470)).
+- Allow uses to handle authorization for location services ([#2453](https://github.io/github/mapvina/mapvina-native/pull/2453)). See [`MLNMapview.shouldRequestAuthorizationToUseLocationServices`](https://mapvina.io/github/mapvina-native/ios/latest/documentation/mapvina/mlnmapview/shouldrequestauthorizationtouselocationservices).
+- Fixed memory usage high in some cases ([#2442](https://github.io/github/mapvina/mapvina-native/pull/2442)).
+- Avoid processing raster tiles after destruction mailbox ([#2443](https://github.io/github/mapvina/mapvina-native/pull/2443)).
+- Annotation view recycling re-enabled ([#2454](https://github.io/github/mapvina/mapvina-native/pull/2454)). Fixes some issues with Annotations.
+- Increase the deferred cleanup timeout ([#2455](https://github.io/github/mapvina/mapvina-native/pull/2455)). Workaround for rare crash.
+- Fixes crash that happened with some PBF files ([#795](https://github.io/github/mapvina/mapvina-native/issues/795), [#2460](https://github.io/github/mapvina/mapvina-native/pull/2460)).
+- Allow using MapVina Native on iPad Air 2. Note: tests your styles! iPad Air 2 has one of the oldest GPUs that support Metal ([#2470](https://github.io/github/mapvina/mapvina-native/pull/2470)).
 
 ## 6.4.2
 
-- Fix Metal frame glitch on older devices ([#2379](https://github.com/mapvina/mapvina-native/pull/2379)).
-- Fix style switching delay fix when annotations are visible ([#2395](https://github.com/mapvina/mapvina-native/pull/2395)).
+- Fix Metal frame glitch on older devices ([#2379](https://github.io/github/mapvina/mapvina-native/pull/2379)).
+- Fix style switching delay fix when annotations are visible ([#2395](https://github.io/github/mapvina/mapvina-native/pull/2395)).
 - Small performance and memory usage optimizations.
 
 ## 6.4.1
 
-- Update user agent from Mapbox to MapVinaNative ([#2367](https://github.com/mapvina/mapvina-native/pull/2367)).
-- Synchronous rendering on Metal when annotation views are visible ([#2334](https://github.com/mapvina/mapvina-native/pull/2334)).
+- Update user agent from Mapbox to MapVinaNative ([#2367](https://github.io/github/mapvina/mapvina-native/pull/2367)).
+- Synchronous rendering on Metal when annotation views are visible ([#2334](https://github.io/github/mapvina/mapvina-native/pull/2334)).
 - Various performance optimizations.
 
 ## 6.4.0
 
-- User-Agent in network requests can now be changed via `MLNNativeNetworkManager.sharedManager.sessionConfiguration` ([#2293](https://github.com/mapvina/mapvina-native/pull/2293)).
+- User-Agent in network requests can now be changed via `MLNNativeNetworkManager.sharedManager.sessionConfiguration` ([#2293](https://github.io/github/mapvina/mapvina-native/pull/2293)).
 
 ## 6.3.3
 
-- Fix memory leak in Metal shader compilation ([#2257](https://github.com/mapvina/mapvina-native/pull/2257)).
-- Improved iOS UI tests ([#2258](https://github.com/mapvina/mapvina-native/pull/2258))
-- Add wide vector shader option to Custom Drawable Layer ([#2183](https://github.com/mapvina/mapvina-native/pull/2183))
-- Guard against potential crash when the Metal drawable is now unavailable ([#2272](https://github.com/mapvina/mapvina-native/pull/2272))
-- Eliminate spurious log output when using triangulated fill outlines ([#2279](https://github.com/mapvina/mapvina-native/pull/2279))
-- Fix projection matrix for raster image drawables ([#2242](https://github.com/mapvina/mapvina-native/pull/2242))
+- Fix memory leak in Metal shader compilation ([#2257](https://github.io/github/mapvina/mapvina-native/pull/2257)).
+- Improved iOS UI tests ([#2258](https://github.io/github/mapvina/mapvina-native/pull/2258))
+- Add wide vector shader option to Custom Drawable Layer ([#2183](https://github.io/github/mapvina/mapvina-native/pull/2183))
+- Guard against potential crash when the Metal drawable is now unavailable ([#2272](https://github.io/github/mapvina/mapvina-native/pull/2272))
+- Eliminate spurious log output when using triangulated fill outlines ([#2279](https://github.io/github/mapvina/mapvina-native/pull/2279))
+- Fix projection matrix for raster image drawables ([#2242](https://github.io/github/mapvina/mapvina-native/pull/2242))
 
 ## 6.3.2
 
-- Fix potential memory leak ([#2254](https://github.com/mapvina/mapvina-native/pull/2254)).
+- Fix potential memory leak ([#2254](https://github.io/github/mapvina/mapvina-native/pull/2254)).
 
 ## 6.3.1
 
-- Add debug symbols to releases (see [Releases on GitHub](https://github.com/mapvina/mapvina-native/releases?q=ios&expanded=true)).
+- Add debug symbols to releases (see [Releases on GitHub](https://github.io/github/mapvina/mapvina-native/releases?q=ios&expanded=true)).
 
 ## 6.3.0
 
-- Temporary workaround for map display freeze / stutter when using annotation views with Metal backend. [Issue 2117](https://github.com/mapvina/mapvina-native/issues/2117) fixed by [PR 2148](https://github.com/mapvina/mapvina-native/pull/2148).
-- Make setURL method on MLNImageSource public ([#2197](https://github.com/mapvina/mapvina-native/pull/2197)).
-- Make setCoordinates method on MLNImageSource public ([#2198](https://github.com/mapvina/mapvina-native/pull/2198)).
+- Temporary workaround for map display freeze / stutter when using annotation views with Metal backend. [Issue 2117](https://github.io/github/mapvina/mapvina-native/issues/2117) fixed by [PR 2148](https://github.io/github/mapvina/mapvina-native/pull/2148).
+- Make setURL method on MLNImageSource public ([#2197](https://github.io/github/mapvina/mapvina-native/pull/2197)).
+- Make setCoordinates method on MLNImageSource public ([#2198](https://github.io/github/mapvina/mapvina-native/pull/2198)).
 
 ## 6.2.0
 
-- Add support for [multi sprites](https://github.com/mapvina/mapvina-native/pull/1858). More information on this feature can be found in the [Style Spec Documentation](https://mapvina.com/mapvina-style-spec/sprite/#multiple-sprite-sources).
-- Fix for C++ header in public Objective-C header ([#2156](https://github.com/mapvina/mapvina-native/pull/q 56)).
+- Add support for [multi sprites](https://github.io/github/mapvina/mapvina-native/pull/1858). More information on this feature can be found in the [Style Spec Documentation](https://mapvina.io/github/mapvina-style-spec/sprite/#multiple-sprite-sources).
+- Fix for C++ header in public Objective-C header ([#2156](https://github.io/github/mapvina/mapvina-native/pull/q 56)).
 
 ## 6.1.1
 
-- Tighten camera equality requirements ([#2139](https://github.com/mapvina/mapvina-native/pull/2139)).
+- Tighten camera equality requirements ([#2139](https://github.io/github/mapvina/mapvina-native/pull/2139)).
 
 ## 6.1.0
 
-- Addition of an MLNCustomStyleLayer that allows running custom Metal shaders and code. Example included in the PR. ([#2006](https://github.com/mapvina/mapvina-native/pull/2006))
+- Addition of an MLNCustomStyleLayer that allows running custom Metal shaders and code. Example included in the PR. ([#2006](https://github.io/github/mapvina/mapvina-native/pull/2006))
 - Various performance optimizations.
-  - Avoid redundant bindings/states based on Metal profiler feedback. ([#2006](https://github.com/mapvina/mapvina-native/pull/2006))
-  - Eliminate the remaining examples of tweakers being re-created on each update, which reduced reuse of uniform buffers. ([#2050](https://github.com/mapvina/mapvina-native/pull/2050))
-  - Eliminate an extra vector allocation for many attributes ([#2049](https://github.com/mapvina/mapvina-native/pull/2049))
-  - Don't save an extra copy of properties-as-uniforms set with symbol data, or re-build it when updating properties on existing drawables. ([#2054](https://github.com/mapvina/mapvina-native/pull/2054))
-  - Combine multiple segments into a drawable when `sortFeaturesByKey` is not used ([#2060](https://github.com/mapvina/mapvina-native/pull/2060))
-  - UBO by index instead of map ([#1980](https://github.com/mapvina/mapvina-native/pull/1980))
-  - Use `enableDepth` option ([#2073](https://github.com/mapvina/mapvina-native/pull/2073))
-  - Minor optimizations ([#2091](https://github.com/mapvina/mapvina-native/pull/2091))
+  - Avoid redundant bindings/states based on Metal profiler feedback. ([#2006](https://github.io/github/mapvina/mapvina-native/pull/2006))
+  - Eliminate the remaining examples of tweakers being re-created on each update, which reduced reuse of uniform buffers. ([#2050](https://github.io/github/mapvina/mapvina-native/pull/2050))
+  - Eliminate an extra vector allocation for many attributes ([#2049](https://github.io/github/mapvina/mapvina-native/pull/2049))
+  - Don't save an extra copy of properties-as-uniforms set with symbol data, or re-build it when updating properties on existing drawables. ([#2054](https://github.io/github/mapvina/mapvina-native/pull/2054))
+  - Combine multiple segments into a drawable when `sortFeaturesByKey` is not used ([#2060](https://github.io/github/mapvina/mapvina-native/pull/2060))
+  - UBO by index instead of map ([#1980](https://github.io/github/mapvina/mapvina-native/pull/1980))
+  - Use `enableDepth` option ([#2073](https://github.io/github/mapvina/mapvina-native/pull/2073))
+  - Minor optimizations ([#2091](https://github.io/github/mapvina/mapvina-native/pull/2091))
 
 ## 6.0.0
 
 * This is the first release that uses **Metal** for rendering. This is a graphics API from Apple that replaces OpenGL ES on Apple platforms.
-  * Note that the [snapshotter](https://github.com/mapvina/mapvina-native/issues/1862) has not been implemented yet for the Metal renderer. Hold off updating if your application requires this functionality.
+  * Note that the [snapshotter](https://github.io/github/mapvina/mapvina-native/issues/1862) has not been implemented yet for the Metal renderer. Hold off updating if your application requires this functionality.
   * While we had a long period of pre-releases and testing leading up to this release, and no crashes have been reported, it is possible that you come across inconsistencies or problems in production apps. Please report them on GitHub.
-* 💥 Breaking: Changed the prefix of files, classes, methods, variables and everything from `MGL` to `MLN`. ([#919](https://github.com/mapvina/mapvina-native/pull/919)).
+* 💥 Breaking: Changed the prefix of files, classes, methods, variables and everything from `MGL` to `MLN`. ([#919](https://github.io/github/mapvina/mapvina-native/pull/919)).
 
   > To migrate:
   > Change all your `MGL` prefixes to `MLN`. If you are using `NSKeyedArchiver` or similar mechanishm to save the state, the app may crash after this change when trying to unarchive the state using old names of the classes. You need to clean the saved state of the app and save it using new classes.
@@ -374,55 +374,55 @@ Note: this release has some changes to how icon offsets behave on pitched maps. 
 
 ## 5.13.0 - January 05, 2023
 
-* Fix missing attribution [#236](https://github.com/mapvina/mapvina-native/pull/236)
-* Fix logging format strings [#266](https://github.com/mapvina/mapvina-native/pull/266)
-* Implement map projection functionality [#254](https://github.com/mapvina/mapvina-native/pull/254)
-* Fix warnings, mainly casting to smaller types [#270](https://github.com/mapvina/mapvina-native/pull/270)
+* Fix missing attribution [#236](https://github.io/github/mapvina/mapvina-native/pull/236)
+* Fix logging format strings [#266](https://github.io/github/mapvina/mapvina-native/pull/266)
+* Implement map projection functionality [#254](https://github.io/github/mapvina/mapvina-native/pull/254)
+* Fix warnings, mainly casting to smaller types [#270](https://github.io/github/mapvina/mapvina-native/pull/270)
 * Remove an unused static library (savings of 97 KB from iOS binary)
-* Add ClientOptions to be able to pass around client name and version [#365](https://github.com/mapvina/mapvina-native/pull/365)
-* Remove account from xcconfig [#382](https://github.com/mapvina/mapvina-native/pull/382)
-* Remove observation of key-path [#380](https://github.com/mapvina/mapvina-native/pull/380)
-* Fix for "NSExpression function is forbidden" [#411](https://github.com/mapvina/mapvina-native/pull/411)
-* Xcode 14 compatibility [#494](https://github.com/mapvina/mapvina-native/pull/494) [#599](https://github.com/mapvina/mapvina-native/pull/599)
+* Add ClientOptions to be able to pass around client name and version [#365](https://github.io/github/mapvina/mapvina-native/pull/365)
+* Remove account from xcconfig [#382](https://github.io/github/mapvina/mapvina-native/pull/382)
+* Remove observation of key-path [#380](https://github.io/github/mapvina/mapvina-native/pull/380)
+* Fix for "NSExpression function is forbidden" [#411](https://github.io/github/mapvina/mapvina-native/pull/411)
+* Xcode 14 compatibility [#494](https://github.io/github/mapvina/mapvina-native/pull/494) [#599](https://github.io/github/mapvina/mapvina-native/pull/599)
 
 ## 5.12.2 - December 02, 2021
 
 ### Improvements
 
-* Exposes the windowBit value from zlib in the compress/decompress helper utils [#147](https://github.com/mapvina/mapvina-native/pull/147)
-* Fix camera paddings reset on map view gestures performing [#188](https://github.com/mapvina/mapvina-native/pull/188)
+* Exposes the windowBit value from zlib in the compress/decompress helper utils [#147](https://github.io/github/mapvina/mapvina-native/pull/147)
+* Fix camera paddings reset on map view gestures performing [#188](https://github.io/github/mapvina/mapvina-native/pull/188)
 
 ## 5.12.1 - September 06, 2021
 
 ### Bug Fixes
 
-* ScaleBar enhancements [#120](https://github.com/mapvina/mapvina-native/pull/120), [#121](https://github.com/mapvina/mapvina-native/pull/121)
-* Invalid tile url template for MapVina style [#107](https://github.com/mapvina/mapvina-native/pull/107)
-* Address crash when localFontFamilyName is nil [#109](https://github.com/mapvina/mapvina-native/pull/109)
-* Fix for annotations stuttering and drifting when panning [#113](https://github.com/mapvina/mapvina-native/pull/113)
-* Adjust local glyphs [#122](https://github.com/mapvina/mapvina-native/pull/122)
-* Return correct Mapbox TileServerOptions [#132](https://github.com/mapvina/mapvina-native/pull/132)
+* ScaleBar enhancements [#120](https://github.io/github/mapvina/mapvina-native/pull/120), [#121](https://github.io/github/mapvina/mapvina-native/pull/121)
+* Invalid tile url template for MapVina style [#107](https://github.io/github/mapvina/mapvina-native/pull/107)
+* Address crash when localFontFamilyName is nil [#109](https://github.io/github/mapvina/mapvina-native/pull/109)
+* Fix for annotations stuttering and drifting when panning [#113](https://github.io/github/mapvina/mapvina-native/pull/113)
+* Adjust local glyphs [#122](https://github.io/github/mapvina/mapvina-native/pull/122)
+* Return correct Mapbox TileServerOptions [#132](https://github.io/github/mapvina/mapvina-native/pull/132)
 
 ### Other
 
-* Fix perf regression in cached tiles of tile pyramid [#129](https://github.com/mapvina/mapvina-native/pull/129)
-* Upgrade to newest protozero [#148](https://github.com/mapvina/mapvina-native/pull/148)
-* Fix build for Xcode 12.5 & 13-beta. [#153](https://github.com/mapvina/mapvina-native/pull/153)
+* Fix perf regression in cached tiles of tile pyramid [#129](https://github.io/github/mapvina/mapvina-native/pull/129)
+* Upgrade to newest protozero [#148](https://github.io/github/mapvina/mapvina-native/pull/148)
+* Fix build for Xcode 12.5 & 13-beta. [#153](https://github.io/github/mapvina/mapvina-native/pull/153)
 
 ## 5.12.0 - June 29, 2021
 
 ### Features
 
-* Added allowScrollGesturesDuringRotateOrZoom [#60](https://github.com/mapvina/mapvina-native/pull/62)
-* Replacing hardcoded configuration with configurable API and removing Mapbox assets and dependencies [#90](https://github.com/mapvina/mapvina-native/pull/90)
+* Added allowScrollGesturesDuringRotateOrZoom [#60](https://github.io/github/mapvina/mapvina-native/pull/62)
+* Replacing hardcoded configuration with configurable API and removing Mapbox assets and dependencies [#90](https://github.io/github/mapvina/mapvina-native/pull/90)
 
 ### Bug Fixes
 
-* Fix map stuttering by switching render call to use setNeedsDisplay [#60](https://github.com/mapvina/mapvina-native/pull/60)
-* Dispatch to main queue, rather than global [#64](https://github.com/mapvina/mapvina-native/pull/64)
-* Use DisplayLink to prevent crashes in willResignActive [#68](https://github.com/mapvina/mapvina-native/pull/68)
-* Ignore sizing and positioning for hidden elements in assertions [#80](https://github.com/mapvina/mapvina-native/pull/80)
-* Disable map snapshots by default [#83](https://github.com/mapvina/mapvina-native/pull/83)
+* Fix map stuttering by switching render call to use setNeedsDisplay [#60](https://github.io/github/mapvina/mapvina-native/pull/60)
+* Dispatch to main queue, rather than global [#64](https://github.io/github/mapvina/mapvina-native/pull/64)
+* Use DisplayLink to prevent crashes in willResignActive [#68](https://github.io/github/mapvina/mapvina-native/pull/68)
+* Ignore sizing and positioning for hidden elements in assertions [#80](https://github.io/github/mapvina/mapvina-native/pull/80)
+* Disable map snapshots by default [#83](https://github.io/github/mapvina/mapvina-native/pull/83)
 
 ## 5.11.0 - March 12, 2021
 
@@ -439,14 +439,14 @@ Note: this release has some changes to how icon offsets behave on pitched maps. 
 ### Bug Fixes
 
 * Fixed an issue that caused a crash when custom location managers did not implement `MLNLocationManager.accuracyAuthorization`. (cherry pick from [#474](https://github.com/mapbox/mapbox-gl-native-ios/pull/474))
-* Fixed an issue where symbols flickered when zooming out. [#16](https://github.com/mapvina/mapvina-native/issues/16)
+* Fixed an issue where symbols flickered when zooming out. [#16](https://github.io/github/mapvina/mapvina-native/issues/16)
 * Benchmark app updated and fixes to the latest xcode version
-* iOS performance improvements [#44](https://github.com/mapvina/mapvina-native/pull/44)
+* iOS performance improvements [#44](https://github.io/github/mapvina/mapvina-native/pull/44)
 
 ### Other
 
 * mapbox-gl-js submodule has been replaced with mapvina-gl-js
-* Removed Mapbox Mobile Events and Telemetry [#7](https://github.com/mapvina/mapvina-native/pull/7)
+* Removed Mapbox Mobile Events and Telemetry [#7](https://github.io/github/mapvina/mapvina-native/pull/7)
 
 ## 5.10.0 - January 6, 2021
 
@@ -1756,7 +1756,7 @@ This is the final scheduled version of the Mapbox iOS SDK that supports iOS 7. (
 - A two-finger vertical swipe now tilts the map into perspective mode. ([#2116](https://github.com/mapbox/mapbox-gl-native/pull/2116))
 - A new `MLNMapCamera` API allows you to transition multiple viewpoint properties, including rotation and pitch, simultaneously with an optional custom duration and timing function. ([#2193](https://github.com/mapbox/mapbox-gl-native/pull/2193))
 - A new user tracking mode, `MLNUserTrackingModeFollowWithCourse`, has been added for indicating the current direction of travel. ([#2068](https://github.com/mapbox/mapbox-gl-native/pull/2068))
-- Version 8 (`v8`) of the [Mapbox GL style spec](https://mapvina.com/mapvina-style-spec/) is now required. If you are using a custom `v7` style, it needs to be upgraded using [this migrator script](https://github.com/mapbox/mapbox-gl-style-spec/blob/mb-pages/migrations/v7.js). ([#2052](https://github.com/mapbox/mapbox-gl-native/pull/2052))
+- Version 8 (`v8`) of the [Mapbox GL style spec](https://mapvina.io/github/mapvina-style-spec/) is now required. If you are using a custom `v7` style, it needs to be upgraded using [this migrator script](https://github.com/mapbox/mapbox-gl-style-spec/blob/mb-pages/migrations/v7.js). ([#2052](https://github.com/mapbox/mapbox-gl-native/pull/2052))
 - Applications built with Mapbox GL no longer crash when Location Services launches them in background mode. ([#1821](https://github.com/mapbox/mapbox-gl-native/pull/1821), [#1869](https://github.com/mapbox/mapbox-gl-native/pull/1869))
 - Fixed a crash when adding annotations to an `MLNMapView` inside `-viewDidLoad`. ([#1874](https://github.com/mapbox/mapbox-gl-native/pull/1874))
 - The user location annotation view now indicates the location reading’s accuracy and the device’s heading. ([#2010](https://github.com/mapbox/mapbox-gl-native/pull/2010))

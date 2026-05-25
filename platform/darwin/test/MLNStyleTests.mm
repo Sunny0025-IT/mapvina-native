@@ -67,7 +67,7 @@
 
 - (void)testSources {
   NSSet<MLNSource *> *initialSources = self.style.sources;
-  if ([initialSources.anyObject.identifier isEqualToString:@"com.mapvina.annotations"]) {
+  if ([initialSources.anyObject.identifier isEqualToString:@"io.github.mapvina.annotations"]) {
     XCTAssertEqual(self.style.sources.count, 1UL);
   } else {
     XCTAssertEqual(self.style.sources.count, 0UL);
@@ -220,7 +220,7 @@
 
 - (void)testLayers {
   NSArray<MLNStyleLayer *> *initialLayers = self.style.layers;
-  if ([initialLayers.firstObject.identifier isEqualToString:@"com.mapvina.annotations.points"]) {
+  if ([initialLayers.firstObject.identifier isEqualToString:@"io.github.mapvina.annotations.points"]) {
     XCTAssertEqual(self.style.layers.count, 1UL);
   } else {
     XCTAssertEqual(self.style.layers.count, 0UL);
@@ -325,7 +325,7 @@
                                                               options:nil];
   MLNSymbolStyleLayer *layer = [[MLNSymbolStyleLayer alloc] initWithIdentifier:@"layerID"
                                                                         source:source];
-  // Reproduces https://github.com/mapvina/mapvina-native/issues/3477.
+  // Reproduces https://github.io/github/mapvina/mapvina-native/issues/3477.
   NSArray *jsonExpression = @[
     @"case", @[ @"==", @[ @"get", @"icon" ], @"1" ], @[ @"image", @"icon1" ],
     @[ @"==", @[ @"get", @"icon" ], @"2" ], @[ @"image", @"icon2" ], @[ @"image", @"icon3" ]
@@ -474,7 +474,7 @@
 
   NSArray<MLNStyleLayer *> *layers = [self.style layers];
   NSUInteger startIndex = 0;
-  if ([layers.firstObject.identifier isEqualToString:@"com.mapvina.annotations.points"]) {
+  if ([layers.firstObject.identifier isEqualToString:@"io.github.mapvina.annotations.points"]) {
     startIndex++;
   }
 

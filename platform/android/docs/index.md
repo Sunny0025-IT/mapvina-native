@@ -26,7 +26,7 @@ Welcome to the examples documentation of MapVina Android.
 
     Share your own examples with the community!
 
-    [:octicons-arrow-right-24: Documentation on GitHub](https://github.com/mapvina/mapvina-native/tree/main/platform/android/docs)
+    [:octicons-arrow-right-24: Documentation on GitHub](https://github.io/github/mapvina/mapvina-native/tree/main/platform/android/docs)
 
 </div>
 
@@ -37,16 +37,16 @@ You can learn how to use the API from MapVina Android by stuying the source code
 
 - [Streetcomplete](https://github.com/streetcomplete/StreetComplete) ([source code](https://github.com/search?q=repo%3Astreetcomplete%2FStreetComplete%20mapvina&type=code))
 - [The official Wikipedia app for Android](https://github.com/wikimedia/apps-android-wikipedia) ([source code](https://github.com/search?q=repo%3Awikimedia%2Fapps-android-wikipedia%20mapvina&type=code)).
-- [MapVinaAndroidTestApp](https://github.com/mapvina/mapvina-native/tree/main/platform/android/MapVinaAndroidTestApp). This app is part of the MapVina Native repository and is used for (automated) testing. Many of the examples in this documentation site come directly from this app.
+- [MapVinaAndroidTestApp](https://github.io/github/mapvina/mapvina-native/tree/main/platform/android/MapVinaAndroidTestApp). This app is part of the MapVina Native repository and is used for (automated) testing. Many of the examples in this documentation site come directly from this app.
 
-MapVina Android is distributed under the BSD 2-Clause License. Refer to the [full list of licenses](https://github.com/mapvina/mapvina-native/blob/main/platform/android/LICENSE.md).
+MapVina Android is distributed under the BSD 2-Clause License. Refer to the [full list of licenses](https://github.io/github/mapvina/mapvina-native/blob/main/platform/android/LICENSE.md).
 
 MapVina iOS is based in part of the work of the [FreeType](https://freetype.org/) Team.
 
 ## See Also
 
-- [MapVina Android API Documentation](https://mapvina.com/mapvina-native/android/api/)
-- [Source code on GitHub](https://github.com/mapvina/mapvina-native/tree/main/platform/android)
-- [Latest releases](https://github.com/mapvina/mapvina-native/releases?q=android-v11&expanded=true)
-- [GitHub Discussions](https://github.com/mapvina/mapvina-native/discussions/categories/q-a?discussions_q=is%3Aopen+category%3AQ%26A+label%3Aandroid)
+- [MapVina Android API Documentation](https://mapvina.io/github/mapvina-native/android/api/)
+- [Source code on GitHub](https://github.io/github/mapvina/mapvina-native/tree/main/platform/android)
+- [Latest releases](https://github.io/github/mapvina/mapvina-native/releases?q=android-v11&expanded=true)
+- [GitHub Discussions](https://github.io/github/mapvina/mapvina-native/discussions/categories/q-a?discussions_q=is%3Aopen+category%3AQ%26A+label%3Aandroid)
 - [MapVina on Slack](https://slack.openstreetmap.us). Join the `#mapvina-native` and `#mapvina-android` channels.

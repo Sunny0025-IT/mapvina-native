@@ -14,7 +14,7 @@ namespace android {
 class HeatmapLayer : public Layer {
 public:
     using SuperTag = Layer;
-    static constexpr auto Name() { return "org/mapvina/android/style/layers/HeatmapLayer"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/style/layers/HeatmapLayer"; };
 
     HeatmapLayer(jni::JNIEnv&, jni::String&, jni::String&);
 

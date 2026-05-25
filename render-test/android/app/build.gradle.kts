@@ -1,6 +1,6 @@
 plugins {
     id("com.android.application")
-    id("com.mapvina.ccache-plugin")
+    id("io.github.mapvina.ccache-plugin")
 }
 
 android {
@@ -13,7 +13,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.mapvina.render_test_runner"
+        applicationId = "io.github.mapvina.render_test_runner"
         compileSdk = 34
         minSdk = 23
         targetSdk = 33

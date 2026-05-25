@@ -54,7 +54,7 @@ function formatMessageToMarkdownLink(message) {
   // Check if a match is found
   if (match) {
     const issueNumber = match[1];
-    const link = `https://github.com/mapvina/mapvina-native/pull/${issueNumber}`;
+    const link = `https://github.io/github/mapvina/mapvina-native/pull/${issueNumber}`;
     // Replace the issue number in the message with the Markdown link
     return message.replace(regex, `[#${issueNumber}](${link})`);
   }

@@ -9,14 +9,14 @@
 
     <fragment
         android:id="@+id/user_map"
-        class="com.mapvina.android.testapp.activity.stability.UserMap"
+        class="io.github.mapvina.android.testapp.activity.stability.UserMap"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.5" />
 
     <fragment
         android:id="@+id/navigation_map"
-        class="com.mapvina.android.testapp.activity.stability.NavigationMap"
+        class="io.github.mapvina.android.testapp.activity.stability.NavigationMap"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.5" />

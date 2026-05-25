@@ -165,7 +165,7 @@ jobs:
         run: .github/scripts/install-linux-deps
 
       - name: Run Benchmarks
-        # excluding the API tests because they hang https://github.com/mapvina/mapvina-native/issues/1808
+        # excluding the API tests because they hang https://github.io/github/mapvina/mapvina-native/issues/1808
         run: python3 vendor/benchmark/tools/compare.py --no-color benchmarks ./mbgl-benchmark-runner-main ./mbgl-benchmark-runner --benchmark_filter='^[^A][^P][^I].*' > benchmark_out.txt
 
       - name: Configure AWS Credentials

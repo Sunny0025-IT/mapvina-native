@@ -12,14 +12,14 @@ dependencies {
   implementation("com.android.tools.build:gradle:9.1.1")
 }
 
-group = "com.mapvina"
+group = "io.github.mapvina"
 version = "0.0.1"
 
 gradlePlugin {
   plugins {
     create("cmakePlugin") {
-      id = "com.mapvina.ccache-plugin"
-      implementationClass = "com.mapvina.CcachePlugin"
+      id = "io.github.mapvina.ccache-plugin"
+      implementationClass = "io.github.mapvina.CcachePlugin"
     }
   }
 }

@@ -12,7 +12,7 @@ namespace geojson {
 
 class FeatureCollection {
 public:
-    static constexpr auto Name() { return "org/mapvina/geojson/FeatureCollection"; };
+    static constexpr auto Name() { return "io/github/mapvina/geojson/FeatureCollection"; };
 
     static mbgl::FeatureCollection convert(jni::JNIEnv&, const jni::Object<FeatureCollection>&);
 

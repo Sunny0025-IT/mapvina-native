@@ -8,7 +8,7 @@ The Action Journal provides functionality for persistent logging of top level ma
 
 Its primary use case is to assist in debugging problematic sessions and crashes by offering additional insight into the actions performed by the map at the time of failure. Data is stored in human readable format, which is useful for analyzing individual cases, but can also be easily translated and aggregated into a database, allowing for efficient analysis of multiple cases and helping to identify recurring patterns (Google BigQuery, AWS Glue + S3 + Athena, etc).
 
-We are always interested in improving observability, so if you have a special use case, feel free to [open an issue or pull request](https://github.com/mapvina/mapvina-native) to extend the types of observability methods.
+We are always interested in improving observability, so if you have a special use case, feel free to [open an issue or pull request](https://github.io/github/mapvina/mapvina-native) to extend the types of observability methods.
 
 ## Enabling the Action Journal
 
@@ -70,7 +70,7 @@ Events are stored as JSON objects with the following format:
 ## Usage
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/events/ObserverActivity.kt:printActionJournal"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/events/ObserverActivity.kt:printActionJournal"
 ```
 
 ## Alternative

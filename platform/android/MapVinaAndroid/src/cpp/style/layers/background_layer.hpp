@@ -14,7 +14,7 @@ namespace android {
 class BackgroundLayer : public Layer {
 public:
     using SuperTag = Layer;
-    static constexpr auto Name() { return "org/mapvina/android/style/layers/BackgroundLayer"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/style/layers/BackgroundLayer"; };
 
     BackgroundLayer(jni::JNIEnv&, jni::String&);
 

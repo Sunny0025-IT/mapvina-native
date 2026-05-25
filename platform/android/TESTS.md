@@ -54,5 +54,5 @@ To exercise Monkey on the test app, install the package on the device (e.g. via 
 and then:
 
 ```
-$ adb shell monkey -p com.mapvina.testapp -v 500
+$ adb shell monkey -p io.github.mapvina.testapp -v 500
 ```

@@ -14,7 +14,7 @@ namespace android {
 class SymbolLayer : public Layer {
 public:
     using SuperTag = Layer;
-    static constexpr auto Name() { return "org/mapvina/android/style/layers/SymbolLayer"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/style/layers/SymbolLayer"; };
 
     SymbolLayer(jni::JNIEnv&, jni::String&, jni::String&);
 

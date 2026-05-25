@@ -2,11 +2,11 @@
 
 ## API Documentation
 
-We use Dokka for the MapVina Android API documentation. The live documentation site can be found [here](https://mapvina.com/mapvina-native/android/api/).
+We use Dokka for the MapVina Android API documentation. The live documentation site can be found [here](https://mapvina.io/github/mapvina-native/android/api/).
 
 ## Examples Documentation
 
-The documentation site with examples uses MkDocs along with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). You can check out the site [here](https://mapvina.com/mapvina-native/android/examples/).
+The documentation site with examples uses MkDocs along with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). You can check out the site [here](https://mapvina.io/github/mapvina-native/android/examples/).
 
 ### Building
 

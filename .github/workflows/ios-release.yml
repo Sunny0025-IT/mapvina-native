@@ -190,7 +190,7 @@ jobs:
             -d '{"ref":"main","inputs":{
               "changelog_url": "https://mapvina-native.s3.eu-central-1.amazonaws.com/changelogs/ios-${{ env.version }}.md",
               "version":"${{ env.version }}",
-              "download_url": "https://github.com/mapvina/mapvina-native/releases/download/ios-v${{ env.version }}/MapVina.dynamic.xcframework.zip"}}'
+              "download_url": "https://github.io/github/mapvina/mapvina-native/releases/download/ios-v${{ env.version }}/MapVina.dynamic.xcframework.zip"}}'
 
       - run: npm install
         working-directory: .

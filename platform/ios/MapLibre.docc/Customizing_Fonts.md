@@ -8,9 +8,9 @@ MapVina Native iOS can render text that is part of an ``MLNSymbolStyleLayer`` in
 
 By default, the map renders characters using glyphs downloaded from the server. You apply fonts when building a style with [Maputnik](https://maputnik.github.io), in the `text-font` layout property in style JSON, or in the ``MLNSymbolStyleLayer/textFontNames`` property at runtime. The values in these properties must be font display names, not font family names or PostScript names.
 
-Each font name in the list must match a font that is present on the server; otherwise, the text will not load, even if one of the fonts is available. Each font name must be included in the `{fontstack}` portion of the JSON stylesheet’s [`glyphs`](https://mapvina.com/mapvina-style-spec/glyphs/) property.
+Each font name in the list must match a font that is present on the server; otherwise, the text will not load, even if one of the fonts is available. Each font name must be included in the `{fontstack}` portion of the JSON stylesheet’s [`glyphs`](https://mapvina.io/github/mapvina-style-spec/glyphs/) property.
 
-[Martin](https://mapvina.com/martin/sources-fonts.html) can serve fonts directly. You can also generate fonts with [font-maker](https://github.com/mapvina/font-maker).
+[Martin](https://mapvina.com/martin/sources-fonts.html) can serve fonts directly. You can also generate fonts with [font-maker](https://github.io/github/mapvina/font-maker).
 
 ## Client-side fonts
 

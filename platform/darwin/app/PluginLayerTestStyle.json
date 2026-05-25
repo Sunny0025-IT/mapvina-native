@@ -2118,7 +2118,7 @@
     },
     "version": 8,
     "metadata": {
-        "maptiler:copyright": "This style was generated on MapTiler Cloud. Usage is governed by the license terms in https://github.com/mapvina/demotiles/blob/gh-pages/LICENSE",
+        "maptiler:copyright": "This style was generated on MapTiler Cloud. Usage is governed by the license terms in https://github.io/github/mapvina/demotiles/blob/gh-pages/LICENSE",
         "openmaptiles:version": "3.x"
     }
 }

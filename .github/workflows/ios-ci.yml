@@ -94,7 +94,7 @@ jobs:
       #- name: Running iOS UI tests (Thread Sanitizer)
       #  run: bazel test //platform/ios/iosapp-UITests:uitest --test_output=errors --//:renderer=metal --features=tsan
 
-      # https://github.com/mapvina/mapvina-native/issues/3642
+      # https://github.io/github/mapvina/mapvina-native/issues/3642
       # - name: Running iOS UI tests (Address+UB Sanitizer)
       #   run: |
       #     retry_count=0

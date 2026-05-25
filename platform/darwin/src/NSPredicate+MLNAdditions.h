@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
  from JSON data.
 
  The Foundation object is interpreted according to the
- [MapVina Style Spec](https://mapvina.com/mapvina-style-spec/expressions/).
+ [MapVina Style Spec](https://mapvina.io/github/mapvina-style-spec/expressions/).
  See the
  “[Predicates and Expressions](../predicates-and-expressions.html)”
  guide for a correspondence of operators and types between the style
@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
  An equivalent Foundation object that can be serialized as JSON.
 
  The Foundation object conforms to the
- [MapVina Style Spec](https://mapvina.com/mapvina-style-spec/expressions/).
+ [MapVina Style Spec](https://mapvina.io/github/mapvina-style-spec/expressions/).
  See the
  “[Predicates and Expressions](../predicates-and-expressions.html)”
  guide for a correspondence of operators and types between the style

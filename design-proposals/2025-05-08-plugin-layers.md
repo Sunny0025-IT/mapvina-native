@@ -18,7 +18,7 @@ Future features:
 * Placeholder for ideas that could be implemented in the future
 
 ## Example IOS Utilization
-An example implemention is shown in the PR: https://github.com/mapvina/mapvina-native/pull/3430
+An example implemention is shown in the PR: https://github.io/github/mapvina/mapvina-native/pull/3430
 The platform/darwin/app/PluginLayerExampleMetalRendering.h/mm class shows how the layer manages it's own rendering and how properties from the style are passed to it.  In platform/ios/app/MBXViewController.mm there's a single line where the plug-in layer class is registered with the map view
 ```
     [self.mapView addPluginLayerType:[PluginLayerExampleMetalRendering class]];

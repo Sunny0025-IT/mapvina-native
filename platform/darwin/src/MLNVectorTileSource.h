@@ -26,7 +26,7 @@ typedef NS_ENUM(NSUInteger, MLNVectorTileSourceEncoding) {
   MLNVectorTileSourceEncodingMapbox = 0,
 
   /**
-   Vector tiles in [MLT format](https://github.com/mapvina/mapvina-tile-spec).
+   Vector tiles in [MLT format](https://github.io/github/mapvina/mapvina-tile-spec).
   */
   MLNVectorTileSourceEncodingMLT = 1,
 };
@@ -50,7 +50,7 @@ typedef NS_ENUM(NSUInteger, MLNVectorTileSourceEncoding) {
  class may be a suitable alternative.
 
  Each
- <a href="https://mapvina.com/mapvina-style-spec/sources/#vector"><code>vector</code></a>
+ <a href="https://mapvina.io/github/mapvina-style-spec/sources/#vector"><code>vector</code></a>
  source defined by the style JSON file is represented at runtime by an
  ``MLNVectorTileSource`` object that you can use to initialize new style layers.
  You can also add and remove sources dynamically using methods such as

@@ -19,14 +19,14 @@ fun obtainTestBuildType(): String {
 android {
     ndkVersion = Versions.ndkVersion
 
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.mapvina.android.testapp"
+        applicationId = "io.github.mapvina.android.testapp"
         minSdk = 23
         targetSdk = 33
         versionCode = 14
-        testInstrumentationRunner = "com.mapvina.android.InstrumentationRunner"
+        testInstrumentationRunner = "io.github.mapvina.android.InstrumentationRunner"
         multiDexEnabled = true
         versionName = file("../VERSION").readText().trim()
 
@@ -120,7 +120,7 @@ android {
         buildConfig = true
     }
 
-    namespace = "com.mapvina.android.testapp"
+    namespace = "io.github.mapvina.android.testapp"
 
     lint {
         abortOnError = false

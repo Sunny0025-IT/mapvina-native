@@ -1,14 +1,14 @@
 # Release MapVina iOS
 
-We make iOS releases to GitHub (a downloadable XCFramework), the [Swift Package Index](https://swiftpackageindex.com/mapvina/mapvina-gl-native-distribution) and [CocoaPods](https://cocoapods.org/). Everyone with write access to the repository is able to make releases using the instructions below.
+We make iOS releases to GitHub (a downloadable XCFramework), the [Swift Package Index](https://swiftpackageindex.io/github/mapvina/mapvina-gl-native-distribution) and [CocoaPods](https://cocoapods.org/). Everyone with write access to the repository is able to make releases using the instructions below.
 
 Also see the current [release policy](../release-policy.md).
 
 ## Making a release
 
-1. Prepare a PR, see [this PR](https://github.com/mapvina/mapvina-native/pull/3193) as an example.
+1. Prepare a PR, see [this PR](https://github.io/github/mapvina/mapvina-native/pull/3193) as an example.
 
-    - Update the [changelog](https://github.com/mapvina/mapvina-native/blob/main/platform/ios/CHANGELOG.md). The changelog should contain links to all relevant PRs for iOS since the last release. You can use the script below with a [GitHub access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with the `public_repo` scope. You will need to filter out PRs that do not relate to iOS.
+    - Update the [changelog](https://github.io/github/mapvina/mapvina-native/blob/main/platform/ios/CHANGELOG.md). The changelog should contain links to all relevant PRs for iOS since the last release. You can use the script below with a [GitHub access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with the `public_repo` scope. You will need to filter out PRs that do not relate to iOS.
       ```
       GITHUB_ACCESS_TOKEN=... node scripts/generate-changelog.mjs ios
       ```

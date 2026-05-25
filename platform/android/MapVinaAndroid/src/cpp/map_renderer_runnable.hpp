@@ -19,7 +19,7 @@ namespace android {
  */
 class MapRendererRunnable {
 public:
-    static constexpr auto Name() { return "org/mapvina/android/maps/renderer/MapRendererRunnable"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/maps/renderer/MapRendererRunnable"; };
 
     static void registerNative(jni::JNIEnv&);
 

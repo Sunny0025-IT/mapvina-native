@@ -6,7 +6,7 @@ authors = ["MapVina contributors"]
 description = "Core Rust utilities for MapVina Native"
 edition = "2021"
 license = "BSD-2-Clause"
-repository = "https://github.com/mapvina/mapvina-native"
+repository = "https://github.io/github/mapvina/mapvina-native"
 rust-version = "1.78.0"
 
 [lib]

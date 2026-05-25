@@ -84,7 +84,7 @@ xed build-ios/MapVina\ Native.xcodeproj
 
 ## Distribution
 
-MapVina iOS is distributed as an XCFramework via the [mapvina/mapvina-gl-native-distribution](https://github.com/mapvina/mapvina-gl-native-distribution) repository. See [Release MapVina iOS](./release.md) for the release process. Refer to the [`ios-ci.yml`](https://github.com/mapvina/mapvina-native/blob/main/.github/workflows/ios-ci.yml) workflow for an up-to-date recipe for building an XCFramework. As of February 2025 we use:
+MapVina iOS is distributed as an XCFramework via the [mapvina/mapvina-gl-native-distribution](https://github.io/github/mapvina/mapvina-gl-native-distribution) repository. See [Release MapVina iOS](./release.md) for the release process. Refer to the [`ios-ci.yml`](https://github.io/github/mapvina/mapvina-native/blob/main/.github/workflows/ios-ci.yml) workflow for an up-to-date recipe for building an XCFramework. As of February 2025 we use:
 
 ```
 bazel build --compilation_mode=opt --features=dead_strip,thin_lto --objc_enable_binary_stripping \

@@ -134,6 +134,8 @@ if(NOT WGPU_LIBRARY OR MLN_WGPU_NATIVE_VERSION)
     set(_cargo_env_prefix "")
     if(CMAKE_SYSTEM_NAME STREQUAL "iOS")
         mln_wgpu_ios_setup_cargo_env(_cargo_env_prefix)
+    elseif(ANDROID)
+        mln_wgpu_android_setup_cargo_env(_cargo_env_prefix)
     endif()
 
     execute_process(

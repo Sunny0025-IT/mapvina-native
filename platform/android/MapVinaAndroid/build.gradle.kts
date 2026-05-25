@@ -8,7 +8,7 @@ plugins {
     id("mapvina.android-nitpick")
     id("mapvina.gradle-publish")
     id("mapvina.artifact-settings")
-    id("com.mapvina.ccache-plugin")
+    id("io.github.mapvina.ccache-plugin")
 }
 
 dependencies {
@@ -44,13 +44,13 @@ dokka {
             includes.from("Module.md")
 
             sourceLink {
-                remoteUrl.set(uri("https://github.com/mapvina/mapvina-native/tree/main/platform/android/"))
+                remoteUrl.set(uri("https://github.io/github/mapvina/mapvina-native/tree/main/platform/android/"))
                 localDirectory.set(rootDir)
             }
 
             // TODO add externalDocumentationLinks when these get dokka or javadocs:
-            // - https://github.com/mapvina/mapvina-java
-            // - https://github.com/mapvina/mapvina-gestures-android
+            // - https://github.io/github/mapvina/mapvina-java
+            // - https://github.io/github/mapvina/mapvina-gestures-android
         }
     }
 }
@@ -160,7 +160,7 @@ android {
         }
     }
 
-    namespace = "com.mapvina.android"
+    namespace = "io.github.mapvina.android"
 
     lint {
         checkAllWarnings = true

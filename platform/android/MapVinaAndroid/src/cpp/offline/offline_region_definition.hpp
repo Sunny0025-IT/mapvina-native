@@ -8,7 +8,7 @@ namespace android {
 
 class OfflineRegionDefinition {
 public:
-    static constexpr auto Name() { return "org/mapvina/android/offline/OfflineRegionDefinition"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/offline/OfflineRegionDefinition"; };
 
     static void registerNative(jni::JNIEnv&);
 
@@ -20,7 +20,7 @@ class OfflineTilePyramidRegionDefinition {
 public:
     using SuperTag = OfflineRegionDefinition;
     static constexpr auto Name() {
-        return "org/mapvina/android/offline/"
+        return "io/github/mapvina/android/offline/"
                "OfflineTilePyramidRegionDefinition";
     };
 
@@ -36,7 +36,7 @@ public:
 class OfflineGeometryRegionDefinition {
 public:
     using SuperTag = OfflineRegionDefinition;
-    static constexpr auto Name() { return "org/mapvina/android/offline/OfflineGeometryRegionDefinition"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/offline/OfflineGeometryRegionDefinition"; };
 
     static jni::Local<jni::Object<OfflineRegionDefinition>> New(jni::JNIEnv&,
                                                                 const mbgl::OfflineGeometryRegionDefinition&);

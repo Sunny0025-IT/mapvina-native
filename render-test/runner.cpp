@@ -828,7 +828,7 @@ void TestRunner::run(TestMetadata& metadata) {
                     });
 
 // TODO: remove usage of std::codecvt_utf8
-// https://github.com/mapvina/mapvina-native/issues/1269
+// https://github.io/github/mapvina/mapvina-native/issues/1269
 #if defined(__clang__)
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"

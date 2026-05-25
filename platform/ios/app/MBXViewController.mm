@@ -1164,7 +1164,7 @@ CLLocationCoordinate2D randomWorldCoordinate(void) {
 
 - (void)addEarthquakeHeatmap {
   NSURL *earthquakesURL =
-      [NSURL URLWithString:@"https://mapvina.com/mapvina-gl-js/docs/assets/earthquakes.geojson"];
+      [NSURL URLWithString:@"https://mapvina.io/github/mapvina-gl-js/docs/assets/earthquakes.geojson"];
   MLNShapeSource *source = [[MLNShapeSource alloc] initWithIdentifier:@"earthquakes"
                                                                   URL:earthquakesURL
                                                               options:nil];
@@ -1762,7 +1762,7 @@ CLLocationCoordinate2D randomWorldCoordinate(void) {
 - (NSURL *)radarImageURL:(int)index {
   return [NSURL
       URLWithString:
-          [NSString stringWithFormat:@"https://mapvina.com/mapvina-gl-js/docs/assets/radar%d.gif",
+          [NSString stringWithFormat:@"https://mapvina.io/github/mapvina-gl-js/docs/assets/radar%d.gif",
                                      index]];
 }
 

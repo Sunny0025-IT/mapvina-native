@@ -364,7 +364,7 @@
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"'📍' IN 'Pinole'"];
 #if TARGET_OS_IPHONE
     XCTExpectFailure(@"Awaiting unit test refactoring for "
-                     @"https://github.com/mapvina/mapvina-native/issues/331");
+                     @"https://github.io/github/mapvina/mapvina-native/issues/331");
 #endif
     XCTAssertEqualObjects(predicate.mgl_jsonExpressionObject, expected);
     XCTAssertEqualObjects([NSPredicate predicateWithMLNJSONObject:expected], predicate);
@@ -524,7 +524,7 @@
     XCTAssertEqualObjects(predicate.mgl_jsonExpressionObject, jsonExpression);
 #if TARGET_OS_IPHONE
     XCTExpectFailure(@"Awaiting unit test refactoring for "
-                     @"https://github.com/mapvina/mapvina-native/issues/331");
+                     @"https://github.io/github/mapvina/mapvina-native/issues/331");
 #endif
     [self testSymmetryWithPredicate:predicate mustRoundTrip:NO];
   }

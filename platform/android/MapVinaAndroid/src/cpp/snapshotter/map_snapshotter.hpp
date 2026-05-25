@@ -19,7 +19,7 @@ namespace android {
 
 class MapSnapshotter final : public mbgl::MapSnapshotterObserver {
 public:
-    static constexpr auto Name() { return "org/mapvina/android/snapshotter/MapSnapshotter"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/snapshotter/MapSnapshotter"; };
 
     static void registerNative(jni::JNIEnv&);
 

@@ -13,7 +13,7 @@ This example showcases the different animation types.
 The `MapVinaMap.moveCamera` method jumps to the camera position provided.
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/CameraAnimationTypeActivity.kt:moveCamera"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/CameraAnimationTypeActivity.kt:moveCamera"
 ```
 
 <figure markdown="span">
@@ -27,7 +27,7 @@ The `MapVinaMap.moveCamera` method jumps to the camera position provided.
 The `MapVinaMap.moveCamera` eases to the camera position provided (with constant ground speed).
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/CameraAnimationTypeActivity.kt:easeCamera"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/CameraAnimationTypeActivity.kt:easeCamera"
 ```
 
 <figure markdown="span">
@@ -44,7 +44,7 @@ The `MapVinaMap.animateCamera` uses a powered flight animation move to the camer
 [^1]: The implementation is based on  Van Wijk, Jarke J.; Nuij, Wim A. A. “Smooth and efficient zooming and panning.” INFOVIS ’03. pp. 15–22. [https://www.win.tue.nl/~vanwijk/zoompan.pdf#page=5](https://www.win.tue.nl/~vanwijk/zoompan.pdf#page=5)
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/CameraAnimationTypeActivity.kt:animateCamera"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/CameraAnimationTypeActivity.kt:animateCamera"
 ```
 
 <figure markdown="span">
@@ -58,5 +58,5 @@ The `MapVinaMap.animateCamera` uses a powered flight animation move to the camer
 In the previous section a `CancellableCallback` was passed to the last two animation methods. This callback shows a toast message when the animation is cancelled or when it is finished.
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/CameraAnimationTypeActivity.kt:callback"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/CameraAnimationTypeActivity.kt:callback"
 ```

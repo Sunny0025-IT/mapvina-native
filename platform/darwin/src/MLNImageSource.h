@@ -24,7 +24,7 @@ MLN_EXPORT
  appearance of content supplied by the image source.
 
  Each
- <a href="https://mapvina.com/mapvina-style-spec/#sources-image"><code>image</code></a>
+ <a href="https://mapvina.io/github/mapvina-style-spec/#sources-image"><code>image</code></a>
  source defined by the style JSON file is represented at runtime by an
  ``MLNImageSource`` object that you can use to initialize new style layers. You
  can also add and remove sources dynamically using methods such as
@@ -39,7 +39,7 @@ MLN_EXPORT
    bottomRight: CLLocationCoordinate2D(latitude: 37.936, longitude: -71.516),
    topRight: CLLocationCoordinate2D(latitude: 46.437, longitude: -71.516))
  let source = MLNImageSource(identifier: "radar", coordinateQuad: coordinates, url: URL(string:
- "https://mapvina.com/mapvina-gl-js-docs/assets/radar.gif")!) mapView.style?.addSource(source)
+ "https://mapvina.io/github/mapvina-gl-js-docs/assets/radar.gif")!) mapView.style?.addSource(source)
  ```
 
  #### Related examples

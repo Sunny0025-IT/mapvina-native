@@ -19,4 +19,4 @@ We understand that MapVina is used in large mission critical applications where 
 2. Once the branch is created, make a PR that includes the feature or bugfix and that targets this branch. Also update the relevant changelog.
 3. When the PR is approved and merged, a release is attempted. If the release workflow significantly changed and the release fails, you may need to help to backport changes to the release workflow as well.
 
-The branch names for older versions follow a pattern as follows: `platform-x.x.x` (e.g. [`android-10.x.x`](https://github.com/mapvina/mapvina-native/tree/android-10.x.x) for the MapVina Native Android 10.x.x release series). These branches have some minimal branch protection (a pull request is required to push changes to them).
+The branch names for older versions follow a pattern as follows: `platform-x.x.x` (e.g. [`android-10.x.x`](https://github.io/github/mapvina/mapvina-native/tree/android-10.x.x) for the MapVina Native Android 10.x.x release series). These branches have some minimal branch protection (a pull request is required to push changes to them).

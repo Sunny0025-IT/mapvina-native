@@ -11,7 +11,7 @@ namespace android {
 
 class RenderingStats {
 public:
-    static constexpr auto Name() { return "org/mapvina/android/maps/RenderingStats"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/maps/RenderingStats"; };
     static void registerNative(jni::JNIEnv& env);
 
     static jni::Local<jni::Object<RenderingStats>> Create(jni::JNIEnv&);

@@ -7,41 +7,41 @@
 
 ## 6.4.1
 ### 🐞 Bug fixes
-- core: fix color-relief/hillshade invisible above fill layers on Metal/Vulkan/WebGPU ([#4166](https://github.com/mapvina/mapvina-native/pull/4166)) (by [@acalcutt](https://github.com/acalcutt))
-- core: better handle tile compression in PMTiles sources ([#4159](https://github.com/mapvina/mapvina-native/pull/4159)) (by [@TimSylvester](https://github.com/TimSylvester))
+- core: fix color-relief/hillshade invisible above fill layers on Metal/Vulkan/WebGPU ([#4166](https://github.io/github/mapvina/mapvina-native/pull/4166)) (by [@acalcutt](https://github.com/acalcutt))
+- core: better handle tile compression in PMTiles sources ([#4159](https://github.io/github/mapvina/mapvina-native/pull/4159)) (by [@TimSylvester](https://github.com/TimSylvester))
 
 ## 6.4.0
 ### ✨ Features and improvements
-- core: Update Hillshade Algorithms and add Color-Relief Layer support ([#3965](https://github.com/mapvina/mapvina-native/pull/3965)) (by [acalcutt](https://github.com/acalcutt))
-- Node - Update NAN and node-pre-gyp  ([#4128](https://github.com/mapvina/mapvina-native/pull/4128)) (by [acalcutt](https://github.com/acalcutt))
-- Distance-based tile LOD ([#4057](https://github.com/mapvina/mapvina-native/pull/4057)) (by [NathanMOlson](https://github.com/NathanMOlson))
+- core: Update Hillshade Algorithms and add Color-Relief Layer support ([#3965](https://github.io/github/mapvina/mapvina-native/pull/3965)) (by [acalcutt](https://github.com/acalcutt))
+- Node - Update NAN and node-pre-gyp  ([#4128](https://github.io/github/mapvina/mapvina-native/pull/4128)) (by [acalcutt](https://github.com/acalcutt))
+- Distance-based tile LOD ([#4057](https://github.io/github/mapvina/mapvina-native/pull/4057)) (by [NathanMOlson](https://github.com/NathanMOlson))
 
 ### 🐞 Bug fixes
-- Fix incorrect shader selection for text labels with inline images ([#4082](https://github.com/mapvina/mapvina-native/pull/4082)) (by [ciscorn]
+- Fix incorrect shader selection for text labels with inline images ([#4082](https://github.io/github/mapvina/mapvina-native/pull/4082)) (by [ciscorn]
 
 ## 6.3.0
-- Updated supported node versions to v20, v22, and v24. Support for node v18 has been removed. ([#3760](https://github.com/mapvina/mapvina-native/pull/3760))
-- Updated NAN to v2.23.0 to support node v24 ([#3760](https://github.com/mapvina/mapvina-native/pull/3760))
-- Updated the linux binary to be built on Ubuntu 24.04 ([#3760](https://github.com/mapvina/mapvina-native/pull/3760))
-- Updated the macos binary to be built on macOS 15 ([#3863](https://github.com/mapvina/mapvina-native/pull/3863))
-- Moved node-pre-gyp back to @acalcutt/node-pre-gyp to support node v24. There is currently an issue with releases of @mapbox/node-pre-gyp which is preventing using it. ([#3760](https://github.com/mapvina/mapvina-native/pull/3760))
-- Add Windows arm64 binary build to ci and release workflows. ([#3760](https://github.com/mapvina/mapvina-native/pull/3760))
-- Add options parameter to addImage method in Node.js type definitions ([#3868](https://github.com/mapvina/mapvina-native/pull/3868))
-- Create bump workflow using reusable workflow ([#4016](https://github.com/mapvina/mapvina-native/pull/4016)) (by [acalcutt](https://github.com/acalcutt)
+- Updated supported node versions to v20, v22, and v24. Support for node v18 has been removed. ([#3760](https://github.io/github/mapvina/mapvina-native/pull/3760))
+- Updated NAN to v2.23.0 to support node v24 ([#3760](https://github.io/github/mapvina/mapvina-native/pull/3760))
+- Updated the linux binary to be built on Ubuntu 24.04 ([#3760](https://github.io/github/mapvina/mapvina-native/pull/3760))
+- Updated the macos binary to be built on macOS 15 ([#3863](https://github.io/github/mapvina/mapvina-native/pull/3863))
+- Moved node-pre-gyp back to @acalcutt/node-pre-gyp to support node v24. There is currently an issue with releases of @mapbox/node-pre-gyp which is preventing using it. ([#3760](https://github.io/github/mapvina/mapvina-native/pull/3760))
+- Add Windows arm64 binary build to ci and release workflows. ([#3760](https://github.io/github/mapvina/mapvina-native/pull/3760))
+- Add options parameter to addImage method in Node.js type definitions ([#3868](https://github.io/github/mapvina/mapvina-native/pull/3868))
+- Create bump workflow using reusable workflow ([#4016](https://github.io/github/mapvina/mapvina-native/pull/4016)) (by [acalcutt](https://github.com/acalcutt)
 
 ## 6.2.0
-- Fix freezing in macos/metal after ~32 renders ([Issue](https://github.com/mapvina/mapvina-native/issues/2928), [PR](https://github.com/mapvina/mapvina-native/pull/3673)).
-- Add HarfBuzz Text Shaping and Font Fallback Support ([#3611](https://github.com/mapvina/mapvina-native/pull/3611)).
-  This implements the [`font-faces` property of the MapVina Style Spec](https://mapvina.com/mapvina-style-spec/font-faces/).
+- Fix freezing in macos/metal after ~32 renders ([Issue](https://github.io/github/mapvina/mapvina-native/issues/2928), [PR](https://github.io/github/mapvina/mapvina-native/pull/3673)).
+- Add HarfBuzz Text Shaping and Font Fallback Support ([#3611](https://github.io/github/mapvina/mapvina-native/pull/3611)).
+  This implements the [`font-faces` property of the MapVina Style Spec](https://mapvina.io/github/mapvina-style-spec/font-faces/).
 
 ## 6.1.0
-- Add `textFitWidth` and `textFitHeight` properties to sprites ([#2780](https://github.com/mapvina/mapvina-native/pull/2780)).
-  More information can be found in the [MapVina Style Spec](https://mapvina.com/mapvina-style-spec/sprite/#text-fit-properties).
-- Update NAN to 2.22.0 ([#2948](https://github.com/mapvina/mapvina-native/pull/2948))
-- Add PMTiles support ([#2882](https://github.com/mapvina/mapvina-native/pull/2882)).
-- Replace deprecated Node Buffer constructor ([#3126](https://github.com/mapvina/mapvina-native/pull/3126)).
-- Moved from legacy renderer to drawable renderer in linux and windows builds. the legacy renderer has been removed. ([#3384](https://github.com/mapvina/mapvina-native/pull/3384))
-- Moved node-pre-gyp back to @mapbox/node-pre-gyp. Note that @mapbox/node-pre-gyp requires node 18+, so node 16 support has been removed. ([#3381](https://github.com/mapvina/mapvina-native/pull/3381))
+- Add `textFitWidth` and `textFitHeight` properties to sprites ([#2780](https://github.io/github/mapvina/mapvina-native/pull/2780)).
+  More information can be found in the [MapVina Style Spec](https://mapvina.io/github/mapvina-style-spec/sprite/#text-fit-properties).
+- Update NAN to 2.22.0 ([#2948](https://github.io/github/mapvina/mapvina-native/pull/2948))
+- Add PMTiles support ([#2882](https://github.io/github/mapvina/mapvina-native/pull/2882)).
+- Replace deprecated Node Buffer constructor ([#3126](https://github.io/github/mapvina/mapvina-native/pull/3126)).
+- Moved from legacy renderer to drawable renderer in linux and windows builds. the legacy renderer has been removed. ([#3384](https://github.io/github/mapvina/mapvina-native/pull/3384))
+- Moved node-pre-gyp back to @mapbox/node-pre-gyp. Note that @mapbox/node-pre-gyp requires node 18+, so node 16 support has been removed. ([#3381](https://github.io/github/mapvina/mapvina-native/pull/3381))
 
 ## 6.0.0
 - [Note] This is the first release that is back on the main branch.
@@ -51,59 +51,59 @@
 
 ## 5.4.1
 - [Note] This is a OpenGL-2 release. It does not include metal support.
-- Fix crash that happened with some PBF files ([Issue](https://github.com/mapvina/mapvina-native/issues/795), [PR](https://github.com/mapvina/mapvina-native/pull/2460)).
-- Upgrade NAN to 2.19 to support Node 22 (https://github.com/mapvina/mapvina-native/pull/2426)
-- Add Node 22 binary build and publish (https://github.com/mapvina/mapvina-native/pull/2553)
+- Fix crash that happened with some PBF files ([Issue](https://github.io/github/mapvina/mapvina-native/issues/795), [PR](https://github.io/github/mapvina/mapvina-native/pull/2460)).
+- Upgrade NAN to 2.19 to support Node 22 (https://github.io/github/mapvina/mapvina-native/pull/2426)
+- Add Node 22 binary build and publish (https://github.io/github/mapvina/mapvina-native/pull/2553)
 
 ## 5.4.0
 
 - [Note] This is a OpenGL-2 release. It does not include metal support.
-- Add support for [multi sprites](https://github.com/mapvina/mapvina-native/pull/1858). More information on this feature can be found in the [Style Spec Documentation](https://mapvina.com/mapvina-style-spec/sprite/#multiple-sprite-sources).
+- Add support for [multi sprites](https://github.io/github/mapvina/mapvina-native/pull/1858). More information on this feature can be found in the [Style Spec Documentation](https://mapvina.io/github/mapvina-style-spec/sprite/#multiple-sprite-sources).
 
 ## 5.3.1
 
 - [Note] This is a OpenGL-2 release. It does not include metal support.
-- Add WebP decoding support to Linux and Windows. @mwilsnd @acalcutt https://github.com/mapvina/mapvina-native/pull/2044
-- Add support for slice and index-of expression @SiarheiFedartsou @acalcutt https://github.com/mapvina/mapvina-native/pull/2023
+- Add WebP decoding support to Linux and Windows. @mwilsnd @acalcutt https://github.io/github/mapvina/mapvina-native/pull/2044
+- Add support for slice and index-of expression @SiarheiFedartsou @acalcutt https://github.io/github/mapvina/mapvina-native/pull/2023
 
 ## 5.3.0
 
 - [Note] This is a OpenGL-2 release. It does not include metal support.
-- [Breaking] Removes node 14 binary build and adds node 20 binary build. We are now building binaries for node 16,18,20 @acalcutt https://github.com/mapvina/mapvina-native/pull/1941
-- [Breaking] Linux binary is now built on Ubuntu 22.04 instead of Ubuntu 20.04. it could require a OS update to use this update on linux. @acalcutt https://github.com/mapvina/mapvina-native/pull/1941
-- Make Node Map object options "request" property optional by @tdcosta100 in https://github.com/mapvina/mapvina-native/pull/904
-- Compile Node targets without -std=c++11 option by @tdcosta100 in https://github.com/mapvina/mapvina-native/pull/926
+- [Breaking] Removes node 14 binary build and adds node 20 binary build. We are now building binaries for node 16,18,20 @acalcutt https://github.io/github/mapvina/mapvina-native/pull/1941
+- [Breaking] Linux binary is now built on Ubuntu 22.04 instead of Ubuntu 20.04. it could require a OS update to use this update on linux. @acalcutt https://github.io/github/mapvina/mapvina-native/pull/1941
+- Make Node Map object options "request" property optional by @tdcosta100 in https://github.io/github/mapvina/mapvina-native/pull/904
+- Compile Node targets without -std=c++11 option by @tdcosta100 in https://github.io/github/mapvina/mapvina-native/pull/926
 
 ## 5.2.0
-- Adjust Typings for Node Platform by @etnav in https://github.com/mapvina/mapvina-native/pull/871
-- Node platform improvements (added setSize and a new render call without render options object) by @tdcosta100 in https://github.com/mapvina/mapvina-native/pull/891
-- Move node ci+release to self hosted Ubuntu arm64 by @acalcutt in https://github.com/mapvina/mapvina-native/pull/873
-* Add windows support by @tdcosta100 in https://github.com/mapvina/mapvina-native/pull/707
-* Add Typings for Node Platform by @KiwiKilian in https://github.com/mapvina/mapvina-native/pull/766
-* Upgrade nan for node 19.x support by @mnutt in https://github.com/mapvina/mapvina-native/pull/853
-* Improve node docs with available platforms by @KiwiKilian in https://github.com/mapvina/mapvina-native/pull/786
-* Avoid implicit casts by @tdcosta100 in https://github.com/mapvina/mapvina-native/pull/787
-* Update node (ubuntu-20.04, arm64) docker build workflow by @acalcutt in https://github.com/mapvina/mapvina-native/pull/804
-* Move module.cmake out of mapbox/cmake-node-module by @acalcutt in https://github.com/mapvina/mapvina-native/pull/821
-* Add mbgl-compiler-options to Node targets by @tdcosta100 in https://github.com/mapvina/mapvina-native/pull/826
-* Avoid implicit casts and make code more portable by @tdcosta100 in https://github.com/mapvina/mapvina-native/pull/716
-* Use `*_t` and `*_v` trait helpers from C++17 STL by @louwers in https://github.com/mapvina/mapvina-native/pull/731
-* Avoid implicit casts and portable printf with size_t by @tdcosta100 in https://github.com/mapvina/mapvina-native/pull/722
+- Adjust Typings for Node Platform by @etnav in https://github.io/github/mapvina/mapvina-native/pull/871
+- Node platform improvements (added setSize and a new render call without render options object) by @tdcosta100 in https://github.io/github/mapvina/mapvina-native/pull/891
+- Move node ci+release to self hosted Ubuntu arm64 by @acalcutt in https://github.io/github/mapvina/mapvina-native/pull/873
+* Add windows support by @tdcosta100 in https://github.io/github/mapvina/mapvina-native/pull/707
+* Add Typings for Node Platform by @KiwiKilian in https://github.io/github/mapvina/mapvina-native/pull/766
+* Upgrade nan for node 19.x support by @mnutt in https://github.io/github/mapvina/mapvina-native/pull/853
+* Improve node docs with available platforms by @KiwiKilian in https://github.io/github/mapvina/mapvina-native/pull/786
+* Avoid implicit casts by @tdcosta100 in https://github.io/github/mapvina/mapvina-native/pull/787
+* Update node (ubuntu-20.04, arm64) docker build workflow by @acalcutt in https://github.io/github/mapvina/mapvina-native/pull/804
+* Move module.cmake out of mapbox/cmake-node-module by @acalcutt in https://github.io/github/mapvina/mapvina-native/pull/821
+* Add mbgl-compiler-options to Node targets by @tdcosta100 in https://github.io/github/mapvina/mapvina-native/pull/826
+* Avoid implicit casts and make code more portable by @tdcosta100 in https://github.io/github/mapvina/mapvina-native/pull/716
+* Use `*_t` and `*_v` trait helpers from C++17 STL by @louwers in https://github.io/github/mapvina/mapvina-native/pull/731
+* Avoid implicit casts and portable printf with size_t by @tdcosta100 in https://github.io/github/mapvina/mapvina-native/pull/722
 
 ## 5.1.1
-* Fix memory access violation exception in vector_tile_data.cpp by @tdcosta100 in https://github.com/mapvina/mapvina-native/pull/632
+* Fix memory access violation exception in vector_tile_data.cpp by @tdcosta100 in https://github.io/github/mapvina/mapvina-native/pull/632
 
 ## 5.1.0
 * First Mapvina Native Node Stable Release
-* Node workflow - build linux arm64 in a container #520 https://github.com/mapvina/mapvina-native/pull/590
+* Node workflow - build linux arm64 in a container #520 https://github.io/github/mapvina/mapvina-native/pull/590
 
 ## 5.0.1
-* Exclude Node 19 (ABI 111) because it breaks the node build by @acalcutt in https://github.com/mapvina/mapvina-native/pull/542
-* Fix mode switch not working in node version by @acalcutt in https://github.com/mapvina/mapvina-native/pull/415
-* Node release workflow by @acalcutt in https://github.com/mapvina/mapvina-native/pull/378 https://github.com/mapvina/mapvina-native/pull/459 https://github.com/mapvina/mapvina-native/pull/505 https://github.com/mapvina/mapvina-native/pull/512 https://github.com/mapvina/mapvina-native/pull/514
+* Exclude Node 19 (ABI 111) because it breaks the node build by @acalcutt in https://github.io/github/mapvina/mapvina-native/pull/542
+* Fix mode switch not working in node version by @acalcutt in https://github.io/github/mapvina/mapvina-native/pull/415
+* Node release workflow by @acalcutt in https://github.io/github/mapvina/mapvina-native/pull/378 https://github.io/github/mapvina/mapvina-native/pull/459 https://github.io/github/mapvina/mapvina-native/pull/505 https://github.io/github/mapvina/mapvina-native/pull/512 https://github.io/github/mapvina/mapvina-native/pull/514
 * Add support for [image expression](https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-types-image). ([#15877](https://github.com/mapbox/mapbox-gl-native/pull/15877))
 * [Breaking] Remove node 10 support. v5.0.1-pre.0 of the node package can be used a compatibility version.
-* Bring back node support by @jutaz in https://github.com/mapvina/mapvina-native/pull/217
+* Bring back node support by @jutaz in https://github.io/github/mapvina/mapvina-native/pull/217
 
 ## 5.0.0
 * No longer supporting source-compile fallback ([#15748](https://github.com/mapbox/mapbox-gl-native/pull/15748))

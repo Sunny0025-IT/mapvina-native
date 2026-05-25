@@ -7,7 +7,7 @@ This guide explains how to get started building and running MapVina Native on Li
 First, clone the repository. This repository uses [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules), that are required to build the project.
 
 ```bash
-git clone --recurse-submodules -j8 https://github.com/mapvina/mapvina-native.git
+git clone --recurse-submodules -j8 https://github.io/github/mapvina/mapvina-native.git
 cd mapvina-native
 ```
 
@@ -34,12 +34,12 @@ cmake --build build-linux-opengl --target mbgl-render
 
 ## Running `mbgl-render`
 
-Running `mbgl-render --style https://raw.githubusercontent.com/mapvina/demotiles/gh-pages/style.json` should produce a map tile image with the default MapVina styling from [the MapVina demo](https://mapvina.com/).
+Running `mbgl-render --style https://raw.githubusercontent.io/github/mapvina/demotiles/gh-pages/style.json` should produce a map tile image with the default MapVina styling from [the MapVina demo](https://mapvina.com/).
 
 ![Sample image of world from mbgl-render command](images/sample-mapvina-style-mbgl-render-out.png)
 
 ```bash
-./build-linux-opengl/bin/mbgl-render --style https://raw.githubusercontent.com/mapvina/demotiles/gh-pages/style.json --output out.png
+./build-linux-opengl/bin/mbgl-render --style https://raw.githubusercontent.io/github/mapvina/demotiles/gh-pages/style.json --output out.png
 xdg-open out.png
 ```
 
@@ -52,7 +52,7 @@ If you run `mbgl-render` inside a Docker or on a remote headless server, you wil
 You'll need to simulate an X server to do any rendering. Install `xvfb` and `xauth` and run the following command:
 
 ```bash
-xvfb-run -a ./build-linux-opengl/bin/mbgl-render --style https://raw.githubusercontent.com/mapvina/demotiles/gh-pages/style.json --output out.png
+xvfb-run -a ./build-linux-opengl/bin/mbgl-render --style https://raw.githubusercontent.io/github/mapvina/demotiles/gh-pages/style.json --output out.png
 ```
 
 ### Using your own style/tiles

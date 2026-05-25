@@ -14,7 +14,7 @@ namespace android {
 class LineLayer : public Layer {
 public:
     using SuperTag = Layer;
-    static constexpr auto Name() { return "org/mapvina/android/style/layers/LineLayer"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/style/layers/LineLayer"; };
 
     LineLayer(jni::JNIEnv&, jni::String&, jni::String&);
 

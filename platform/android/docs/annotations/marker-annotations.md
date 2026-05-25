@@ -3,7 +3,7 @@
 This guide will show you how to add Markers in the map.
 
 `Annotation` is an overlay on top of a Map. In package
-`com.mapvina.android.annotations`, it has the following subclasses:
+`io.github.mapvina.android.annotations`, it has the following subclasses:
 
 1. [Marker]
 2. [Polyline]
@@ -38,20 +38,20 @@ Then add markers to the map with GeoJSON:
 3. In `JsonApiActivity` we add a new variable for `MapVinaMap`.
    It is used to add annotations to the map instance.
   ```kotlin
-  --8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/annotation/JsonApiActivity.kt:top"
+  --8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/annotation/JsonApiActivity.kt:top"
   ```
 
 4. Call `mapview.getMapSync()` in order to get a `MapVinaMap` object.
    After `mapvinaMap` is assigned, call the `getEarthQuakeDataFromUSGS()` method
    to make a HTTP request and transform data into the map annotations.
   ```kotlin
-  --8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/annotation/JsonApiActivity.kt:mapAsync"
+  --8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/annotation/JsonApiActivity.kt:mapAsync"
   ```
 
 5. Define a function `getEarthQuakeDataFromUSGS()` to fetch GeoJSON data from a public API.
    If we successfully get the response, call `addMarkersToMap()` on the UI thread.
   ```kotlin
-  --8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/annotation/JsonApiActivity.kt:getEarthquakes"
+  --8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/annotation/JsonApiActivity.kt:getEarthquakes"
   ```
 
 6. Now it is time to add markers into the map.
@@ -60,24 +60,24 @@ Then add markers to the map with GeoJSON:
    - If the magnitude of an earthquake is bigger than 6.0, we use the red icon. Otherwise, we use the blue one.
    - Finally, move the camera to the bounds of the newly added markers
   ```kotlin
-  --8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/annotation/JsonApiActivity.kt:addMarkers"
+  --8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/annotation/JsonApiActivity.kt:addMarkers"
   ```
 
 7. Here is the final result. For the full contents of `JsonApiActivity`, please visit source code of our [Test App].
 
 <div style="align: center">
-  <img src="https://github.com/mapvina/mapvina-native/assets/19887090/00446249-9b19-4a48-8a46-00d4c5a2f981" alt="Screenshot with the map in demotile style">
+  <img src="https://github.io/github/mapvina/mapvina-native/assets/19887090/00446249-9b19-4a48-8a46-00d4c5a2f981" alt="Screenshot with the map in demotile style">
 </div>
 
-[Marker]: https://mapvina.com/mapvina-native/android/api/-map-libre%20-native%20-android/com.mapvina.android.annotations/-marker/index.html
-[provided image]: https://github.com/mapvina/mapvina-native/blob/main/platform/android/MapVinaAndroid/src/main/res/drawable-xxxhdpi/mapvina_marker_icon_default.png
-[Polyline]: https://mapvina.com/mapvina-native/android/api/-map-libre%20-native%20-android/com.mapvina.android.annotations/-polyline/index.html
-[Polygon]: https://mapvina.com/mapvina-native/android/api/-map-libre%20-native%20-android/com.mapvina.android.annotations/-polygon/index.html
-[marker image]: https://raw.githubusercontent.com/mapvina/mapvina-native/main/test/fixtures/sprites/default_marker.png
-[IconFactory]: https://mapvina.com/mapvina-native/android/api/-map-libre%20-native%20-android/com.mapvina.android.annotations/-icon-factory/index.html
-[Icon]: https://mapvina.com/mapvina-native/android/api/-map-libre%20-native%20-android/com.mapvina.android.annotations/-icon/index.html
+[Marker]: https://mapvina.io/github/mapvina-native/android/api/-map-libre%20-native%20-android/io.github.mapvina.android.annotations/-marker/index.html
+[provided image]: https://github.io/github/mapvina/mapvina-native/blob/main/platform/android/MapVinaAndroid/src/main/res/drawable-xxxhdpi/mapvina_marker_icon_default.png
+[Polyline]: https://mapvina.io/github/mapvina-native/android/api/-map-libre%20-native%20-android/io.github.mapvina.android.annotations/-polyline/index.html
+[Polygon]: https://mapvina.io/github/mapvina-native/android/api/-map-libre%20-native%20-android/io.github.mapvina.android.annotations/-polygon/index.html
+[marker image]: https://raw.githubusercontent.io/github/mapvina/mapvina-native/main/test/fixtures/sprites/default_marker.png
+[IconFactory]: https://mapvina.io/github/mapvina-native/android/api/-map-libre%20-native%20-android/io.github.mapvina.android.annotations/-icon-factory/index.html
+[Icon]: https://mapvina.io/github/mapvina-native/android/api/-map-libre%20-native%20-android/io.github.mapvina.android.annotations/-icon/index.html
 [Quickstart]: ../getting-started.md
 [mvn]: https://mvnrepository.com/artifact/io.github.mapvina/android-plugin-annotation-v9
 [Android Developer Documentation]: https://developer.android.com/topic/libraries/architecture/coroutines
-[MarkerOptions]: https://mapvina.com/mapvina-native/android/api/-map-libre%20-native%20-android/com.mapvina.android.annotations/-marker-options/index.html
-[Test App]: https://github.com/mapvina/mapvina-native/tree/main/platform/android/MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/annotation/JsonApiActivity.kt
+[MarkerOptions]: https://mapvina.io/github/mapvina-native/android/api/-map-libre%20-native%20-android/io.github.mapvina.android.annotations/-marker-options/index.html
+[Test App]: https://github.io/github/mapvina/mapvina-native/tree/main/platform/android/MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/annotation/JsonApiActivity.kt

@@ -17,7 +17,7 @@ pkg_search_module(ICUI18N icu-i18n)
 find_program(ARMERGE NAMES armerge)
 
 if(MLN_WITH_WAYLAND AND NOT MLN_WITH_VULKAN)
-    # See https://github.com/mapvina/mapvina-native/pull/2022
+    # See https://github.io/github/mapvina/mapvina-native/pull/2022
 
     # MLN_WITH_EGL needs to be set for Wayland, otherwise this CMakeLists will
     # call find_package(OpenGL REQUIRED GLX), which is for X11.

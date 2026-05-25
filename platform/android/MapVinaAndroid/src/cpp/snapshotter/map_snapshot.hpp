@@ -18,7 +18,7 @@ public:
     using PointForFn = mbgl::MapSnapshotter::PointForFn;
     using LatLngForFn = mbgl::MapSnapshotter::LatLngForFn;
 
-    static constexpr auto Name() { return "org/mapvina/android/snapshotter/MapSnapshot"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/snapshotter/MapSnapshot"; };
 
     static void registerNative(jni::JNIEnv&);
 

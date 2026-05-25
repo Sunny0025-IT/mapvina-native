@@ -12,7 +12,7 @@ namespace android {
 
 class Marker : private mbgl::util::noncopyable {
 public:
-    static constexpr auto Name() { return "org/mapvina/android/annotations/Marker"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/annotations/Marker"; };
 
     static mbgl::Point<double> getPosition(jni::JNIEnv&, const jni::Object<Marker>&);
 

@@ -9,7 +9,7 @@ namespace android {
 
 class Logger {
 public:
-    static constexpr auto Name() { return "org/mapvina/android/log/Logger"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/log/Logger"; };
     static void registerNative(jni::JNIEnv &);
 
     static void log(jni::JNIEnv &, EventSeverity severity, const std::string &msg);

@@ -13,7 +13,7 @@ namespace geojson {
 class Point {
 public:
     using SuperTag = Geometry;
-    static constexpr auto Name() { return "org/mapvina/geojson/Point"; };
+    static constexpr auto Name() { return "io/github/mapvina/geojson/Point"; };
     static constexpr auto Type() { return "Point"; };
 
     static jni::Local<jni::Object<Point>> New(jni::JNIEnv&, const mbgl::Point<double>&);

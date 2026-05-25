@@ -20,7 +20,7 @@ This guide provides step-by-step instructions for building MapVina Native on Win
 ## Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/mapvina/mapvina-native.git
+git clone https://github.io/github/mapvina/mapvina-native.git
 cd mapvina-native
 git submodule update --init --recursive
 ```
@@ -161,11 +161,11 @@ Test commands are the same for both OpenGL and Vulkan builds, just adjust the di
 ```powershell
 # For OpenGL:
 cd build-windows-arm64-opengl\bin\Release
-.\mbgl-render.exe --style https://raw.githubusercontent.com/mapvina/demotiles/gh-pages/style.json --output test.png
+.\mbgl-render.exe --style https://raw.githubusercontent.io/github/mapvina/demotiles/gh-pages/style.json --output test.png
 
 # For Vulkan:
 cd build-windows-arm64-vulkan\bin\Release
-.\mbgl-render.exe --style https://raw.githubusercontent.com/mapvina/demotiles/gh-pages/style.json --output test.png
+.\mbgl-render.exe --style https://raw.githubusercontent.io/github/mapvina/demotiles/gh-pages/style.json --output test.png
 ```
 
 ### Run Tests
@@ -183,11 +183,11 @@ cd build-windows-arm64-vulkan\Release
 ```powershell
 # For OpenGL:
 cd build-windows-arm64-opengl\platform\glfw\Release
-.\mbgl-glfw.exe --style https://raw.githubusercontent.com/mapvina/demotiles/gh-pages/style.json
+.\mbgl-glfw.exe --style https://raw.githubusercontent.io/github/mapvina/demotiles/gh-pages/style.json
 
 # For Vulkan:
 cd build-windows-arm64-vulkan\platform\glfw\Release
-.\mbgl-glfw.exe --style https://raw.githubusercontent.com/mapvina/demotiles/gh-pages/style.json
+.\mbgl-glfw.exe --style https://raw.githubusercontent.io/github/mapvina/demotiles/gh-pages/style.json
 ```
 
 

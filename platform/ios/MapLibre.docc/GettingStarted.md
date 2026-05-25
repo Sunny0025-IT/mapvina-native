@@ -8,7 +8,7 @@ Create a new (SwiftUI) iOS project with Xcode. Go to *File > New > Project...*.
 
 ## Add MapVina Native as a dependency
 
-MapVina Native for iOS is available on [Cocoapods](https://cocoapods.org) and on the [Swift Package Index](https://swiftpackageindex.com/mapvina/mapvina-gl-native-distribution) (for use with the Swift Package Manager). However, for this guide we will add the MapVina Native as a package dependency directly.
+MapVina Native for iOS is available on [Cocoapods](https://cocoapods.org) and on the [Swift Package Index](https://swiftpackageindex.io/github/mapvina/mapvina-gl-native-distribution) (for use with the Swift Package Manager). However, for this guide we will add the MapVina Native as a package dependency directly.
 
 In Xcode, right click your project and select "Add Package Dependencies...":
 
@@ -17,10 +17,10 @@ In Xcode, right click your project and select "Add Package Dependencies...":
 Paste the following URL and click Add Package:
 
 ```
-https://github.com/mapvina/mapvina-gl-native-distribution
+https://github.io/github/mapvina/mapvina-gl-native-distribution
 ```
 
-> Note: The [mapvina-gl-native-distributon](https://github.com/mapvina/mapvina-gl-native-distribution) repository only exists for distributing the iOS package of MapVina Native. To report issues and ask questions, use the [mapvina-native](https://github.com/mapvina/mapvina-native) repository.
+> Note: The [mapvina-gl-native-distributon](https://github.io/github/mapvina/mapvina-gl-native-distribution) repository only exists for distributing the iOS package of MapVina Native. To report issues and ask questions, use the [mapvina-native](https://github.io/github/mapvina/mapvina-native) repository.
 
 Verify you can import MapVina in your app:
 

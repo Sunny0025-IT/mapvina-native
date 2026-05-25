@@ -96,12 +96,12 @@ cmake -B build -GNinja -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DC
 # build
 cmake --build build --target mbgl-glfw -j 8
 # run
-./build/platform/glfw/mbgl-glfw --style https://raw.githubusercontent.com/mapvina/demotiles/gh-pages/style.json --benchmark
+./build/platform/glfw/mbgl-glfw --style https://raw.githubusercontent.io/github/mapvina/demotiles/gh-pages/style.json --benchmark
 ~~~
 with Bazel
 ~~~bash
 # build and run
-bazel run //platform/glfw:glfw_app -- --style https://raw.githubusercontent.com/mapvina/demotiles/gh-pages/style.json --benchmark
+bazel run //platform/glfw:glfw_app -- --style https://raw.githubusercontent.io/github/mapvina/demotiles/gh-pages/style.json --benchmark
 ~~~
 
 In the Tracy Profiler hit the connect button (or select the glfw application from the list of applications that are running Tracy Client). Profile then optimize the code.

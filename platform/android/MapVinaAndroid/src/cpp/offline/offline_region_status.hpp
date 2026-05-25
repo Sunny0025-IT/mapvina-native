@@ -8,7 +8,7 @@ namespace android {
 
 class OfflineRegionStatus {
 public:
-    static constexpr auto Name() { return "org/mapvina/android/offline/OfflineRegionStatus"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/offline/OfflineRegionStatus"; };
 
     static jni::Local<jni::Object<OfflineRegionStatus>> New(jni::JNIEnv&, mbgl::OfflineRegionStatus status);
 

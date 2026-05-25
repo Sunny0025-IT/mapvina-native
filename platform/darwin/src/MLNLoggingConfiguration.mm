@@ -96,7 +96,7 @@ public:
                                               OS_LOG_TYPE_DEBUG,
 #endif
                                               OS_LOG_TYPE_ERROR, OS_LOG_TYPE_FAULT};
-          constexpr const char *const subsystem = "com.mapvina.Native";
+          constexpr const char *const subsystem = "io.github.mapvina.Native";
           dispatch_once(&once, ^{
             info_log = os_log_create(subsystem, "INFO");
 #if MLN_LOGGING_ENABLE_DEBUG

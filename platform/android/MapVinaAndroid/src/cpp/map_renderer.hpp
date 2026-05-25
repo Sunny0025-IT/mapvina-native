@@ -42,7 +42,7 @@ public:
  */
 class MapRenderer final : public Scheduler {
 public:
-    static constexpr auto Name() { return "org/mapvina/android/maps/renderer/MapRenderer"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/maps/renderer/MapRenderer"; };
 
     static void registerNative(jni::JNIEnv&);
 

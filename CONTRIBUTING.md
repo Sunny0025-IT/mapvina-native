@@ -2,12 +2,12 @@
 
 ## Documentation
 
-The [MapVina Native Developer Docs](https://mapvina.com/mapvina-native/docs/book/) is the go-to reference for developing MapVina Native.
+The [MapVina Native Developer Docs](https://mapvina.io/github/mapvina-native/docs/book/) is the go-to reference for developing MapVina Native.
 
 ## Source code checkout
 
 ```bash
-git clone --recurse-submodules https://github.com/mapvina/mapvina-native.git
+git clone --recurse-submodules https://github.io/github/mapvina/mapvina-native.git
 ```
 
 ## Guidelines
@@ -16,13 +16,13 @@ If you want to contribute code:
 
 1. Please familiarize yourself with the installation process of your chosen platform.
 
-1. Ensure that existing [pull requests](https://github.com/mapvina/mapvina-native/pulls) and [issues](https://github.com/mapvina/mapvina-native/issues) don’t already cover your contribution or question.
+1. Ensure that existing [pull requests](https://github.io/github/mapvina/mapvina-native/pulls) and [issues](https://github.io/github/mapvina/mapvina-native/issues) don’t already cover your contribution or question.
 
 1. Pull requests are gladly accepted. If there are any changes that developers using one of the platforms should be aware of, please update the **main** section of the relevant `CHANGELOG.md`.
 
 ## Note on AI usage
 
-If you are using any kind of AI assistance for your contributions, please take a moment to review [MapVina's AI Policy](https://github.com/mapvina/mapvina/blob/main/AI_POLICY.md). tl;dr: do not let AI speak for you, verify all generated content before requesting a review and disclose AI usage in pull requests.
+If you are using any kind of AI assistance for your contributions, please take a moment to review [MapVina's AI Policy](https://github.io/github/mapvina/mapvina/blob/main/AI_POLICY.md). tl;dr: do not let AI speak for you, verify all generated content before requesting a review and disclose AI usage in pull requests.
 
 ## Design Proposals
 
@@ -39,7 +39,7 @@ The steps for a Design Proposal are the following:
 5. Call a vote on the Design Proposal once discussions have settled. People in favor of your Design Proposal shall approve the pull request. People against your Design Proposal shall comment on the pull request with something like "Rejected".
 6. Give the community at least 72 hours to vote. If a majority of the people who voted accept your Proposal, it can be merged.
 
-[Accepted design proposals](https://github.com/mapvina/mapvina-native/tree/main/design-proposals).
+[Accepted design proposals](https://github.io/github/mapvina/mapvina-native/tree/main/design-proposals).
 
 ## Pre-commit hooks
 

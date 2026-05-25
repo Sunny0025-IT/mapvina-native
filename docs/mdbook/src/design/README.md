@@ -1,5 +1,5 @@
 > [!NOTE]
-> These notes are partially outdated since the [renderer modularization](https://github.com/mapvina/mapvina-native/blob/main/design-proposals/2022-10-27-rendering-modularization.md).
+> These notes are partially outdated since the [renderer modularization](https://github.io/github/mapvina/mapvina-native/blob/main/design-proposals/2022-10-27-rendering-modularization.md).
 
 # Design
 

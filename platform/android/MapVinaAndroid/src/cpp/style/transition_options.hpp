@@ -9,7 +9,7 @@ namespace android {
 
 class TransitionOptions : private mbgl::util::noncopyable {
 public:
-    static constexpr auto Name() { return "org/mapvina/android/style/layers/TransitionOptions"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/style/layers/TransitionOptions"; };
 
     static jni::Local<jni::Object<TransitionOptions>> fromTransitionOptions(jni::JNIEnv&,
                                                                             jlong duration,

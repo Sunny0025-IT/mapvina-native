@@ -41,8 +41,8 @@
       "sdk-support": {
         "basic functionality": {
           "js": "5.0.0",
-          "android": "https://github.com/mapvina/mapvina-native/issues/2980",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/2980"
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/2980",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/2980"
         }
       }
     },
@@ -73,13 +73,13 @@
         },
         "0-85 degrees": {
           "js": "2.0.0",
-          "android": "https://github.com/mapvina/mapvina-native/issues/1909",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/1909"
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/1909",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/1909"
         },
         "0-180 degrees": {
           "js": "5.0.0",
-          "android": "https://github.com/mapvina/mapvina-native/issues/1909",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/1909"
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/1909",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/1909"
         }
       }
     },
@@ -92,8 +92,8 @@
       "sdk-support": {
         "basic functionality": {
           "js": "5.0.0",
-          "android": "https://github.com/mapvina/mapvina-native/issues/2941",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/2941"
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/2941",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/2941"
         }
       }
     },
@@ -192,9 +192,9 @@
           "ios": "0.1.0"
         },
         "omit to use local fonts": {
-          "js": "https://github.com/mapvina/mapvina-gl-js/issues/3302",
-          "android": "https://github.com/mapvina/mapvina-native/issues/165",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/165"
+          "js": "https://github.io/github/mapvina/mapvina-gl-js/issues/3302",
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/165",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/165"
         }
       }
     },
@@ -223,7 +223,7 @@
       },
       "sdk-support": {
         "basic functionality": {
-          "js": "https://github.com/mapvina/mapvina-gl-js/issues/50",
+          "js": "https://github.io/github/mapvina/mapvina-gl-js/issues/50",
           "android": "11.13.0",
           "ios": "6.18.0"
         }
@@ -351,7 +351,7 @@
           "doc": "Mapbox Vector Tiles. See http://github.com/mapbox/vector-tile-spec for more info."
         },
         "mlt": {
-          "doc": "MapVina Vector Tiles. See https://github.com/mapvina/mapvina-tile-spec for more info."
+          "doc": "MapVina Vector Tiles. See https://github.io/github/mapvina/mapvina-tile-spec for more info."
         }
       },
       "default": "mvt",
@@ -363,9 +363,9 @@
           "js": "supported"
         },
         "mlt": {
-          "android": "https://github.com/mapvina/mapvina-native/issues/3721",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/3721",
-          "js": "https://github.com/mapvina/mapvina-gl-js/issues/6258"
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/3721",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/3721",
+          "js": "https://github.io/github/mapvina/mapvina-gl-js/issues/6258"
         }
       }
     },
@@ -531,8 +531,8 @@
         },
         "custom": {
           "js": "3.4.0",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/2783",
-          "android": "https://github.com/mapvina/mapvina-native/issues/2783"
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/2783",
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/2783"
         }
       }
     },
@@ -543,8 +543,8 @@
       "sdk-support": {
         "basic functionality": {
           "js": "3.4.0",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/2783",
-          "android": "https://github.com/mapvina/mapvina-native/issues/2783"
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/2783",
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/2783"
         }
       }
     },
@@ -555,8 +555,8 @@
       "sdk-support": {
         "basic functionality": {
           "js": "3.4.0",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/2783",
-          "android": "https://github.com/mapvina/mapvina-native/issues/2783"
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/2783",
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/2783"
         }
       }
     },
@@ -567,8 +567,8 @@
       "sdk-support": {
         "basic functionality": {
           "js": "3.4.0",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/2358",
-          "android": "https://github.com/mapvina/mapvina-native/issues/2783"
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/2358",
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/2783"
         }
       }
     },
@@ -579,8 +579,8 @@
       "sdk-support": {
         "basic functionality": {
           "js": "3.4.0",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/2783",
-          "android": "https://github.com/mapvina/mapvina-native/issues/2783"
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/2783",
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/2783"
         }
       }
     },
@@ -645,7 +645,7 @@
     "cluster": {
       "type": "boolean",
       "default": false,
-      "doc": "If the data is a collection of point features, setting this to true clusters the points by radius into groups. Cluster groups become new `Point` features in the source with additional properties:\n\n * `cluster` Is `true` if the point is a cluster \n\n * `cluster_id` A unique id for the cluster to be used in conjunction with the [cluster inspection methods](https://mapvina.com/mapvina-gl-js/docs/API/classes/GeoJSONSource/#getclusterexpansionzoom)\n\n * `point_count` Number of original points grouped into this cluster\n\n * `point_count_abbreviated` An abbreviated point count"
+      "doc": "If the data is a collection of point features, setting this to true clusters the points by radius into groups. Cluster groups become new `Point` features in the source with additional properties:\n\n * `cluster` Is `true` if the point is a cluster \n\n * `cluster_id` A unique id for the cluster to be used in conjunction with the [cluster inspection methods](https://mapvina.io/github/mapvina-gl-js/docs/API/classes/GeoJSONSource/#getclusterexpansionzoom)\n\n * `point_count` Number of original points grouped into this cluster\n\n * `point_count_abbreviated` An abbreviated point count"
     },
     "clusterRadius": {
       "type": "number",
@@ -828,8 +828,8 @@
             },
             "additional methods": {
               "js": "5.5.0",
-              "android": "https://github.com/mapvina/mapvina-native/issues/3396",
-              "ios": "https://github.com/mapvina/mapvina-native/issues/3396"
+              "android": "https://github.io/github/mapvina/mapvina-native/issues/3396",
+              "ios": "https://github.io/github/mapvina/mapvina-native/issues/3396"
             }
           }
         },
@@ -838,8 +838,8 @@
           "sdk-support": {
             "basic functionality": {
               "js": "5.6.0",
-              "android": "https://github.com/mapvina/mapvina-native/issues/3408",
-              "ios": "https://github.com/mapvina/mapvina-native/issues/3408"
+              "android": "https://github.io/github/mapvina/mapvina-native/issues/3408",
+              "ios": "https://github.io/github/mapvina/mapvina-native/issues/3408"
             }
           }
         },
@@ -1413,8 +1413,8 @@
       "sdk-support": {
         "basic functionality": {
           "js": "2.1.0",
-          "android": "https://github.com/mapvina/mapvina-native/issues/251",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/251"
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/251",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/251"
         }
       },
       "expression": {
@@ -1689,8 +1689,8 @@
         },
         "data-driven styling": {
           "js": "2.2.0",
-          "android": "https://github.com/mapvina/mapvina-native/issues/2754",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/2754"
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/2754",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/2754"
         }
       },
       "expression": {
@@ -1928,8 +1928,8 @@
         },
         "`viewport-glyph` value": {
           "js": "2.1.8",
-          "android": "https://github.com/mapvina/mapvina-native/issues/250",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/250"
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/250",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/250"
         }
       },
       "expression": {
@@ -1989,9 +1989,9 @@
           "ios": "4.0.0"
         },
         "local fonts": {
-          "js": "https://github.com/mapvina/mapvina-gl-js/issues/3302",
-          "android": "https://github.com/mapvina/mapvina-native/issues/165",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/165"
+          "js": "https://github.io/github/mapvina/mapvina-gl-js/issues/3302",
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/165",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/165"
         }
       },
       "expression": {
@@ -2266,8 +2266,8 @@
         },
         "data-driven styling": {
           "js": "3.3.0",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/2358",
-          "android": "https://github.com/mapvina/mapvina-native/issues/2358"
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/2358",
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/2358"
         }
       },
       "expression": {
@@ -2609,8 +2609,8 @@
       "sdk-support": {
         "basic functionality": {
           "js": "2.1.0",
-          "android": "https://github.com/mapvina/mapvina-native/issues/251",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/251"
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/251",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/251"
         }
       },
       "expression": {
@@ -2903,7 +2903,7 @@
     "type": "enum",
     "values": {
       "let": {
-        "doc": "Binds expressions to named variables, which can then be referenced in the result expression using `[\"var\", \"variable_name\"]`.\n\n - [Visualize population density](https://mapvina.com/mapvina-gl-js/docs/examples/visualize-population-density/)",
+        "doc": "Binds expressions to named variables, which can then be referenced in the result expression using `[\"var\", \"variable_name\"]`.\n\n - [Visualize population density](https://mapvina.io/github/mapvina-gl-js/docs/examples/visualize-population-density/)",
         "syntax": {
           "overloads": [
             {
@@ -2940,7 +2940,7 @@
         }
       },
       "var": {
-        "doc": "References variable bound using `let`.\n\n - [Visualize population density](https://mapvina.com/mapvina-gl-js/docs/examples/visualize-population-density/)",
+        "doc": "References variable bound using `let`.\n\n - [Visualize population density](https://mapvina.io/github/mapvina-gl-js/docs/examples/visualize-population-density/)",
         "syntax": {
           "overloads": [
             {
@@ -2967,7 +2967,7 @@
         }
       },
       "literal": {
-        "doc": "Provides a literal array or object value.\n\n - [Display and style rich text labels](https://mapvina.com/mapvina-gl-js/docs/examples/display-and-style-rich-text-labels/)",
+        "doc": "Provides a literal array or object value.\n\n - [Display and style rich text labels](https://mapvina.io/github/mapvina-gl-js/docs/examples/display-and-style-rich-text-labels/)",
         "syntax": {
           "overloads": [
             {
@@ -3077,7 +3077,7 @@
         }
       },
       "in": {
-        "doc": "Determines whether an item exists in an array or a substring exists in a string.\n\n - [Measure distances](https://mapvina.com/mapvina-gl-js/docs/examples/measure-distances/)",
+        "doc": "Determines whether an item exists in an array or a substring exists in a string.\n\n - [Measure distances](https://mapvina.io/github/mapvina-gl-js/docs/examples/measure-distances/)",
         "syntax": {
           "overloads": [
             {
@@ -3220,7 +3220,7 @@
         }
       },
       "case": {
-        "doc": "Selects the first output whose corresponding test condition evaluates to true, or the fallback value otherwise.\n\n - [Create a hover effect](https://mapvina.com/mapvina-gl-js/docs/examples/create-a-hover-effect/)\n\n - [Display HTML clusters with custom properties](https://mapvina.com/mapvina-gl-js/docs/examples/display-html-clusters-with-custom-properties/)",
+        "doc": "Selects the first output whose corresponding test condition evaluates to true, or the fallback value otherwise.\n\n - [Create a hover effect](https://mapvina.io/github/mapvina-gl-js/docs/examples/create-a-hover-effect/)\n\n - [Display HTML clusters with custom properties](https://mapvina.io/github/mapvina-gl-js/docs/examples/display-html-clusters-with-custom-properties/)",
         "syntax": {
           "overloads": [
             {
@@ -3297,7 +3297,7 @@
         }
       },
       "coalesce": {
-        "doc": "Evaluates each expression in turn until the first non-null value is obtained, and returns that value.\n\n - [Use a fallback image](https://mapvina.com/mapvina-gl-js/docs/examples/use-a-fallback-image/)",
+        "doc": "Evaluates each expression in turn until the first non-null value is obtained, and returns that value.\n\n - [Use a fallback image](https://mapvina.io/github/mapvina-gl-js/docs/examples/use-a-fallback-image/)",
         "syntax": {
           "overloads": [
             {
@@ -3323,7 +3323,7 @@
         }
       },
       "step": {
-        "doc": "Produces discrete, stepped results by evaluating a piecewise-constant function defined by pairs of input and output values (\"stops\"). The `input` may be any numeric expression (e.g., `[\"get\", \"population\"]`). Stop inputs must be numeric literals in strictly ascending order.\n\nReturns the output value of the stop just less than the input, or the first output if the input is less than the first stop.\n\n - [Create and style clusters](https://mapvina.com/mapvina-gl-js/docs/examples/create-and-style-clusters/)",
+        "doc": "Produces discrete, stepped results by evaluating a piecewise-constant function defined by pairs of input and output values (\"stops\"). The `input` may be any numeric expression (e.g., `[\"get\", \"population\"]`). Stop inputs must be numeric literals in strictly ascending order.\n\nReturns the output value of the stop just less than the input, or the first output if the input is less than the first stop.\n\n - [Create and style clusters](https://mapvina.io/github/mapvina-gl-js/docs/examples/create-and-style-clusters/)",
         "syntax": {
           "overloads": [
             {
@@ -3365,7 +3365,7 @@
         }
       },
       "interpolate": {
-        "doc": "Produces continuous, smooth results by interpolating between pairs of input and output values (\"stops\"). The `input` may be any numeric expression (e.g., `[\"get\", \"population\"]`). Stop inputs must be numeric literals in strictly ascending order. The output type must be `number`, `array<number>`, `color`, `array<color>`, or `projection`.\n\nInterpolation types:\n\n- `[\"linear\"]`, or an expression returning one of those types: Interpolates linearly between the pair of stops just less than and just greater than the input.\n\n- `[\"exponential\", base]`: Interpolates exponentially between the stops just less than and just greater than the input. `base` controls the rate at which the output increases: higher values make the output increase more towards the high end of the range. With values close to 1 the output increases linearly.\n\n- `[\"cubic-bezier\", x1, y1, x2, y2]`: Interpolates using the cubic bezier curve defined by the given control points.\n\n - [Animate map camera around a point](https://mapvina.com/mapvina-gl-js/docs/examples/animate-camera-around-point/)\n\n - [Change building color based on zoom level](https://mapvina.com/mapvina-gl-js/docs/examples/change-building-color-based-on-zoom-level/)\n\n - [Create a heatmap layer](https://mapvina.com/mapvina-gl-js/docs/examples/heatmap-layer/)\n\n - [Visualize population density](https://mapvina.com/mapvina-gl-js/docs/examples/visualize-population-density/)",
+        "doc": "Produces continuous, smooth results by interpolating between pairs of input and output values (\"stops\"). The `input` may be any numeric expression (e.g., `[\"get\", \"population\"]`). Stop inputs must be numeric literals in strictly ascending order. The output type must be `number`, `array<number>`, `color`, `array<color>`, or `projection`.\n\nInterpolation types:\n\n- `[\"linear\"]`, or an expression returning one of those types: Interpolates linearly between the pair of stops just less than and just greater than the input.\n\n- `[\"exponential\", base]`: Interpolates exponentially between the stops just less than and just greater than the input. `base` controls the rate at which the output increases: higher values make the output increase more towards the high end of the range. With values close to 1 the output increases linearly.\n\n- `[\"cubic-bezier\", x1, y1, x2, y2]`: Interpolates using the cubic bezier curve defined by the given control points.\n\n - [Animate map camera around a point](https://mapvina.io/github/mapvina-gl-js/docs/examples/animate-camera-around-point/)\n\n - [Change building color based on zoom level](https://mapvina.io/github/mapvina-gl-js/docs/examples/change-building-color-based-on-zoom-level/)\n\n - [Create a heatmap layer](https://mapvina.io/github/mapvina-gl-js/docs/examples/heatmap-layer/)\n\n - [Visualize population density](https://mapvina.io/github/mapvina-gl-js/docs/examples/visualize-population-density/)",
         "syntax": {
           "overloads": [
             {
@@ -3439,8 +3439,8 @@
         "sdk-support": {
           "basic functionality": {
             "js": "0.49.0",
-            "ios": "https://github.com/mapvina/mapvina-native/issues/2784",
-            "android": "https://github.com/mapvina/mapvina-native/issues/2784"
+            "ios": "https://github.io/github/mapvina/mapvina-native/issues/2784",
+            "android": "https://github.io/github/mapvina/mapvina-native/issues/2784"
           }
         }
       },
@@ -3477,8 +3477,8 @@
         "sdk-support": {
           "basic functionality": {
             "js": "0.49.0",
-            "ios": "https://github.com/mapvina/mapvina-native/issues/2784",
-            "android": "https://github.com/mapvina/mapvina-native/issues/2784"
+            "ios": "https://github.io/github/mapvina/mapvina-native/issues/2784",
+            "android": "https://github.io/github/mapvina/mapvina-native/issues/2784"
           }
         }
       },
@@ -3621,7 +3621,7 @@
         }
       },
       "boolean": {
-        "doc": "Asserts that the input value is a boolean. If multiple values are provided, each one is evaluated in order until a boolean is obtained. If none of the inputs are booleans, the expression is an error.\n\n - [Create a hover effect](https://mapvina.com/mapvina-gl-js/docs/examples/create-a-hover-effect/)",
+        "doc": "Asserts that the input value is a boolean. If multiple values are provided, each one is evaluated in order until a boolean is obtained. If none of the inputs are booleans, the expression is an error.\n\n - [Create a hover effect](https://mapvina.io/github/mapvina-gl-js/docs/examples/create-a-hover-effect/)",
         "syntax": {
           "overloads": [
             {
@@ -3699,7 +3699,7 @@
         }
       },
       "format": {
-        "doc": "Returns a `formatted` string for displaying mixed-format text in the `text-field` property. The input may contain a string literal or expression, including an [`'image'`](#image) expression. Strings may be followed by a style override object that supports the following properties:\n\n- `\"text-font\"`: Overrides the font stack specified by the root layout property.\n\n- `\"text-color\"`: Overrides the color specified by the root paint property.\n\n- `\"font-scale\"`: Applies a scaling factor on `text-size` as specified by the root layout property.\n\n- `\"vertical-align\"`: Aligns vertically text section or image in relation to the row it belongs to. Possible values are: \n\t- `\"bottom\"` *default*: align the bottom of this section with the bottom of other sections.\n<img alt=\"Visual representation of bottom alignment\" src=\"https://github.com/user-attachments/assets/0474a2fd-a4b2-417c-9187-7a13a28695bc\"/>\n\t- `\"center\"`: align the center of this section with the center of other sections.\n<img alt=\"Visual representation of center alignment\" src=\"https://github.com/user-attachments/assets/92237455-be6d-4c5d-b8f6-8127effc1950\"/>\n\t- `\"top\"`: align the top of this section with the top of other sections.\n<img alt=\"Visual representation of top alignment\" src=\"https://github.com/user-attachments/assets/45dccb28-d977-4abb-a006-4ea9792b7c53\"/>\n\t- Refer to [the design proposal](https://github.com/mapvina/mapvina-style-spec/issues/832) for more details.\n\n - [Change the case of labels](https://mapvina.com/mapvina-gl-js/docs/examples/change-case-of-labels/)\n\n - [Display and style rich text labels](https://mapvina.com/mapvina-gl-js/docs/examples/display-and-style-rich-text-labels/)",
+        "doc": "Returns a `formatted` string for displaying mixed-format text in the `text-field` property. The input may contain a string literal or expression, including an [`'image'`](#image) expression. Strings may be followed by a style override object that supports the following properties:\n\n- `\"text-font\"`: Overrides the font stack specified by the root layout property.\n\n- `\"text-color\"`: Overrides the color specified by the root paint property.\n\n- `\"font-scale\"`: Applies a scaling factor on `text-size` as specified by the root layout property.\n\n- `\"vertical-align\"`: Aligns vertically text section or image in relation to the row it belongs to. Possible values are: \n\t- `\"bottom\"` *default*: align the bottom of this section with the bottom of other sections.\n<img alt=\"Visual representation of bottom alignment\" src=\"https://github.com/user-attachments/assets/0474a2fd-a4b2-417c-9187-7a13a28695bc\"/>\n\t- `\"center\"`: align the center of this section with the center of other sections.\n<img alt=\"Visual representation of center alignment\" src=\"https://github.com/user-attachments/assets/92237455-be6d-4c5d-b8f6-8127effc1950\"/>\n\t- `\"top\"`: align the top of this section with the top of other sections.\n<img alt=\"Visual representation of top alignment\" src=\"https://github.com/user-attachments/assets/45dccb28-d977-4abb-a006-4ea9792b7c53\"/>\n\t- Refer to [the design proposal](https://github.io/github/mapvina/mapvina-style-spec/issues/832) for more details.\n\n - [Change the case of labels](https://mapvina.io/github/mapvina-gl-js/docs/examples/change-case-of-labels/)\n\n - [Display and style rich text labels](https://mapvina.io/github/mapvina-gl-js/docs/examples/display-and-style-rich-text-labels/)",
         "syntax": {
           "overloads": [
             {
@@ -3743,8 +3743,8 @@
           },
           "vertical-align": {
             "js": "5.1.0",
-            "android": "https://github.com/mapvina/mapvina-native/issues/3055",
-            "ios": "https://github.com/mapvina/mapvina-native/issues/3055"
+            "android": "https://github.io/github/mapvina/mapvina-native/issues/3055",
+            "ios": "https://github.io/github/mapvina/mapvina-native/issues/3055"
           },
           "image": {
             "js": "1.6.0",
@@ -3754,7 +3754,7 @@
         }
       },
       "image": {
-        "doc": "Returns an `image` type for use in `icon-image`, `*-pattern` entries and as a section in the `format` expression. If set, the `image` argument will check that the requested image exists in the style and will return either the resolved image name or `null`, depending on whether or not the image is currently in the style. This validation process is synchronous and requires the image to have been added to the style before requesting it in the `image` argument.\n\n - [Use a fallback image](https://mapvina.com/mapvina-gl-js/docs/examples/use-a-fallback-image/)",
+        "doc": "Returns an `image` type for use in `icon-image`, `*-pattern` entries and as a section in the `format` expression. If set, the `image` argument will check that the requested image exists in the style and will return either the resolved image name or `null`, depending on whether or not the image is currently in the style. This validation process is synchronous and requires the image to have been added to the style before requesting it in the `image` argument.\n\n - [Use a fallback image](https://mapvina.io/github/mapvina-gl-js/docs/examples/use-a-fallback-image/)",
         "syntax": {
           "overloads": [
             {
@@ -3780,7 +3780,7 @@
         }
       },
       "number-format": {
-        "doc": "Converts the input number into a string representation using the providing formatting rules. If set, the `locale` argument specifies the locale to use, as a BCP 47 language tag. If set, the `currency` argument specifies an ISO 4217 code to use for currency-style formatting. If set, the `min-fraction-digits` and `max-fraction-digits` arguments specify the minimum and maximum number of fractional digits to include.\n\n - [Display HTML clusters with custom properties](https://mapvina.com/mapvina-gl-js/docs/examples/display-html-clusters-with-custom-properties/)",
+        "doc": "Converts the input number into a string representation using the providing formatting rules. If set, the `locale` argument specifies the locale to use, as a BCP 47 language tag. If set, the `currency` argument specifies an ISO 4217 code to use for currency-style formatting. If set, the `min-fraction-digits` and `max-fraction-digits` arguments specify the minimum and maximum number of fractional digits to include.\n\n - [Display HTML clusters with custom properties](https://mapvina.io/github/mapvina-gl-js/docs/examples/display-html-clusters-with-custom-properties/)",
         "syntax": {
           "overloads": [
             {
@@ -3810,7 +3810,7 @@
         }
       },
       "to-string": {
-        "doc": "Converts the input value to a string. If the input is `null`, the result is `\"\"`. If the input is a boolean, the result is `\"true\"` or `\"false\"`. If the input is a number, it is converted to a string as specified by the [\"NumberToString\" algorithm](https://tc39.github.io/ecma262/#sec-tostring-applied-to-the-number-type) of the ECMAScript Language Specification. If the input is a color, it is converted to a string of the form `\"rgba(r,g,b,a)\"`, where `r`, `g`, and `b` are numerals ranging from 0 to 255, and `a` ranges from 0 to 1. Otherwise, the input is converted to a string in the format specified by the [`JSON.stringify`](https://tc39.github.io/ecma262/#sec-json.stringify) function of the ECMAScript Language Specification.\n\n - [Create a time slider](https://mapvina.com/mapvina-gl-js/docs/examples/create-a-time-slider/)",
+        "doc": "Converts the input value to a string. If the input is `null`, the result is `\"\"`. If the input is a boolean, the result is `\"true\"` or `\"false\"`. If the input is a number, it is converted to a string as specified by the [\"NumberToString\" algorithm](https://tc39.github.io/ecma262/#sec-tostring-applied-to-the-number-type) of the ECMAScript Language Specification. If the input is a color, it is converted to a string of the form `\"rgba(r,g,b,a)\"`, where `r`, `g`, and `b` are numerals ranging from 0 to 255, and `a` ranges from 0 to 1. Otherwise, the input is converted to a string in the format specified by the [`JSON.stringify`](https://tc39.github.io/ecma262/#sec-json.stringify) function of the ECMAScript Language Specification.\n\n - [Create a time slider](https://mapvina.io/github/mapvina-gl-js/docs/examples/create-a-time-slider/)",
         "syntax": {
           "overloads": [
             {
@@ -3914,7 +3914,7 @@
         }
       },
       "to-color": {
-        "doc": "Converts the input value to a color. If multiple values are provided, each one is evaluated in order until the first successful conversion is obtained. If none of the inputs can be converted, the expression is an error.\n\n - [Visualize population density](https://mapvina.com/mapvina-gl-js/docs/examples/visualize-population-density/)",
+        "doc": "Converts the input value to a color. If multiple values are provided, each one is evaluated in order until the first successful conversion is obtained. If none of the inputs can be converted, the expression is an error.\n\n - [Visualize population density](https://mapvina.io/github/mapvina-gl-js/docs/examples/visualize-population-density/)",
         "syntax": {
           "overloads": [
             {
@@ -4012,7 +4012,7 @@
         }
       },
       "get": {
-        "doc": "Retrieves a property value from the current feature's properties, or from another object if a second argument is provided. Returns null if the requested property is missing.\n\n - [Change the case of labels](https://mapvina.com/mapvina-gl-js/docs/examples/change-case-of-labels/)\n\n - [Display HTML clusters with custom properties](https://mapvina.com/mapvina-gl-js/docs/examples/display-html-clusters-with-custom-properties/)\n\n - [Extrude polygons for 3D indoor mapping](https://mapvina.com/mapvina-gl-js/docs/examples/extrude-polygons-for-3d-indoor-mapping/)",
+        "doc": "Retrieves a property value from the current feature's properties, or from another object if a second argument is provided. Returns null if the requested property is missing.\n\n - [Change the case of labels](https://mapvina.io/github/mapvina-gl-js/docs/examples/change-case-of-labels/)\n\n - [Display HTML clusters with custom properties](https://mapvina.io/github/mapvina-gl-js/docs/examples/display-html-clusters-with-custom-properties/)\n\n - [Extrude polygons for 3D indoor mapping](https://mapvina.io/github/mapvina-gl-js/docs/examples/extrude-polygons-for-3d-indoor-mapping/)",
         "syntax": {
           "overloads": [
             {
@@ -4044,7 +4044,7 @@
         }
       },
       "has": {
-        "doc": "Tests for the presence of a property value in the current feature's properties, or from another object if a second argument is provided.\n\n - [Create and style clusters](https://mapvina.com/mapvina-gl-js/docs/examples/create-and-style-clusters/)",
+        "doc": "Tests for the presence of a property value in the current feature's properties, or from another object if a second argument is provided.\n\n - [Create and style clusters](https://mapvina.io/github/mapvina-gl-js/docs/examples/create-and-style-clusters/)",
         "syntax": {
           "overloads": [
             {
@@ -4122,7 +4122,7 @@
         }
       },
       "feature-state": {
-        "doc": "Retrieves a property value from the current feature's state. Returns null if the requested property is not present on the feature's state. A feature's state is not part of the GeoJSON or vector tile data, and must be set programmatically on each feature. When `source.promoteId` is not provided, features are identified by their `id` attribute, which must be an integer or a string that can be cast to an integer. When `source.promoteId` is provided, features are identified by their `promoteId` property, which may be a number, string, or any primitive data type. Note that [\"feature-state\"] can only be used with paint properties that support data-driven styling.\n\n - [Create a hover effect](https://mapvina.com/mapvina-gl-js/docs/examples/create-a-hover-effect/)",
+        "doc": "Retrieves a property value from the current feature's state. Returns null if the requested property is not present on the feature's state. A feature's state is not part of the GeoJSON or vector tile data, and must be set programmatically on each feature. When `source.promoteId` is not provided, features are identified by their `id` attribute, which must be an integer or a string that can be cast to an integer. When `source.promoteId` is provided, features are identified by their `promoteId` property, which may be a number, string, or any primitive data type. Note that [\"feature-state\"] can only be used with paint properties that support data-driven styling.\n\n - [Create a hover effect](https://mapvina.io/github/mapvina-gl-js/docs/examples/create-a-hover-effect/)",
         "syntax": {
           "overloads": [
             {
@@ -4142,8 +4142,8 @@
         "sdk-support": {
           "basic functionality": {
             "js": "0.46.0",
-            "ios": "https://github.com/mapvina/mapvina-native/issues/1698",
-            "android": "https://github.com/mapvina/mapvina-native/issues/1698"
+            "ios": "https://github.io/github/mapvina/mapvina-native/issues/1698",
+            "android": "https://github.io/github/mapvina/mapvina-native/issues/1698"
           }
         }
       },
@@ -4242,8 +4242,8 @@
         "sdk-support": {
           "basic functionality": {
             "js": "5.6.0",
-            "android": "https://github.com/mapvina/mapvina-native/issues/3408",
-            "ios": "https://github.com/mapvina/mapvina-native/issues/3408"
+            "android": "https://github.io/github/mapvina/mapvina-native/issues/3408",
+            "ios": "https://github.io/github/mapvina/mapvina-native/issues/3408"
           }
         }
       },
@@ -4381,7 +4381,7 @@
         }
       },
       "/": {
-        "doc": "Returns the result of floating point division of the first input by the second.\n\n - [Visualize population density](https://mapvina.com/mapvina-gl-js/docs/examples/visualize-population-density/)",
+        "doc": "Returns the result of floating point division of the first input by the second.\n\n - [Visualize population density](https://mapvina.io/github/mapvina-gl-js/docs/examples/visualize-population-density/)",
         "syntax": {
           "overloads": [
             {
@@ -4920,7 +4920,7 @@
         }
       },
       "==": {
-        "doc": "Returns `true` if the input values are equal, `false` otherwise. The comparison is strictly typed: values of different runtime types are always considered unequal. Cases where the types are known to be different at parse time are considered invalid and will produce a parse error. Accepts an optional `collator` argument to control locale-dependent string comparisons.\n\n - [Add multiple geometries from one GeoJSON source](https://mapvina.com/mapvina-gl-js/docs/examples/multiple-geometries/)\n\n - [Create a time slider](https://mapvina.com/mapvina-gl-js/docs/examples/timeline-animation/)\n\n - [Display buildings in 3D](https://mapvina.com/mapvina-gl-js/docs/examples/display-buildings-in-3d/)\n\n - [Filter symbols by toggling a list](https://mapvina.com/mapvina-gl-js/docs/examples/filter-symbols-by-toggling-a-list/)",
+        "doc": "Returns `true` if the input values are equal, `false` otherwise. The comparison is strictly typed: values of different runtime types are always considered unequal. Cases where the types are known to be different at parse time are considered invalid and will produce a parse error. Accepts an optional `collator` argument to control locale-dependent string comparisons.\n\n - [Add multiple geometries from one GeoJSON source](https://mapvina.io/github/mapvina-gl-js/docs/examples/multiple-geometries/)\n\n - [Create a time slider](https://mapvina.io/github/mapvina-gl-js/docs/examples/timeline-animation/)\n\n - [Display buildings in 3D](https://mapvina.io/github/mapvina-gl-js/docs/examples/display-buildings-in-3d/)\n\n - [Filter symbols by toggling a list](https://mapvina.io/github/mapvina-gl-js/docs/examples/filter-symbols-by-toggling-a-list/)",
         "syntax": {
           "overloads": [
             {
@@ -4960,7 +4960,7 @@
         }
       },
       "!=": {
-        "doc": "Returns `true` if the input values are not equal, `false` otherwise. The comparison is strictly typed: values of different runtime types are always considered unequal. Cases where the types are known to be different at parse time are considered invalid and will produce a parse error. Accepts an optional `collator` argument to control locale-dependent string comparisons.\n\n - [Display HTML clusters with custom properties](https://mapvina.com/mapvina-gl-js/docs/examples/display-html-clusters-with-custom-properties/)",
+        "doc": "Returns `true` if the input values are not equal, `false` otherwise. The comparison is strictly typed: values of different runtime types are always considered unequal. Cases where the types are known to be different at parse time are considered invalid and will produce a parse error. Accepts an optional `collator` argument to control locale-dependent string comparisons.\n\n - [Display HTML clusters with custom properties](https://mapvina.io/github/mapvina-gl-js/docs/examples/display-html-clusters-with-custom-properties/)",
         "syntax": {
           "overloads": [
             {
@@ -5044,7 +5044,7 @@
         }
       },
       "<": {
-        "doc": "Returns `true` if the first input is strictly less than the second, `false` otherwise. The arguments are required to be either both strings or both numbers; if during evaluation they are not, expression evaluation produces an error. Cases where this constraint is known not to hold at parse time are considered in valid and will produce a parse error. Accepts an optional `collator` argument to control locale-dependent string comparisons.\n\n - [Display HTML clusters with custom properties](https://mapvina.com/mapvina-gl-js/docs/examples/display-html-clusters-with-custom-properties/)",
+        "doc": "Returns `true` if the first input is strictly less than the second, `false` otherwise. The arguments are required to be either both strings or both numbers; if during evaluation they are not, expression evaluation produces an error. Cases where this constraint is known not to hold at parse time are considered in valid and will produce a parse error. Accepts an optional `collator` argument to control locale-dependent string comparisons.\n\n - [Display HTML clusters with custom properties](https://mapvina.io/github/mapvina-gl-js/docs/examples/display-html-clusters-with-custom-properties/)",
         "syntax": {
           "overloads": [
             {
@@ -5088,7 +5088,7 @@
         }
       },
       ">=": {
-        "doc": "Returns `true` if the first input is greater than or equal to the second, `false` otherwise. The arguments are required to be either both strings or both numbers; if during evaluation they are not, expression evaluation produces an error. Cases where this constraint is known not to hold at parse time are considered in valid and will produce a parse error. Accepts an optional `collator` argument to control locale-dependent string comparisons.\n\n - [Display HTML clusters with custom properties](https://mapvina.com/mapvina-gl-js/docs/examples/display-html-clusters-with-custom-properties/)",
+        "doc": "Returns `true` if the first input is greater than or equal to the second, `false` otherwise. The arguments are required to be either both strings or both numbers; if during evaluation they are not, expression evaluation produces an error. Cases where this constraint is known not to hold at parse time are considered in valid and will produce a parse error. Accepts an optional `collator` argument to control locale-dependent string comparisons.\n\n - [Display HTML clusters with custom properties](https://mapvina.io/github/mapvina-gl-js/docs/examples/display-html-clusters-with-custom-properties/)",
         "syntax": {
           "overloads": [
             {
@@ -5176,7 +5176,7 @@
         }
       },
       "all": {
-        "doc": "Returns `true` if all the inputs are `true`, `false` otherwise. The inputs are evaluated in order, and evaluation is short-circuiting: once an input expression evaluates to `false`, the result is `false` and no further input expressions are evaluated.\n\n - [Display HTML clusters with custom properties](https://mapvina.com/mapvina-gl-js/docs/examples/display-html-clusters-with-custom-properties/)",
+        "doc": "Returns `true` if all the inputs are `true`, `false` otherwise. The inputs are evaluated in order, and evaluation is short-circuiting: once an input expression evaluates to `false`, the result is `false` and no further input expressions are evaluated.\n\n - [Display HTML clusters with custom properties](https://mapvina.io/github/mapvina-gl-js/docs/examples/display-html-clusters-with-custom-properties/)",
         "syntax": {
           "overloads": [
             {
@@ -5228,7 +5228,7 @@
         }
       },
       "!": {
-        "doc": "Logical negation. Returns `true` if the input is `false`, and `false` if the input is `true`.\n\n - [Create and style clusters](https://mapvina.com/mapvina-gl-js/docs/examples/create-and-style-clusters/)",
+        "doc": "Logical negation. Returns `true` if the input is `false`, and `false` if the input is `true`.\n\n - [Create and style clusters](https://mapvina.io/github/mapvina-gl-js/docs/examples/create-and-style-clusters/)",
         "syntax": {
           "overloads": [
             {
@@ -5306,7 +5306,7 @@
         }
       },
       "upcase": {
-        "doc": "Returns the input string converted to uppercase. Follows the Unicode Default Case Conversion algorithm and the locale-insensitive case mappings in the Unicode Character Database.\n\n - [Change the case of labels](https://mapvina.com/mapvina-gl-js/docs/examples/change-case-of-labels/)",
+        "doc": "Returns the input string converted to uppercase. Follows the Unicode Default Case Conversion algorithm and the locale-insensitive case mappings in the Unicode Character Database.\n\n - [Change the case of labels](https://mapvina.io/github/mapvina-gl-js/docs/examples/change-case-of-labels/)",
         "syntax": {
           "overloads": [
             {
@@ -5332,7 +5332,7 @@
         }
       },
       "downcase": {
-        "doc": "Returns the input string converted to lowercase. Follows the Unicode Default Case Conversion algorithm and the locale-insensitive case mappings in the Unicode Character Database.\n\n - [Change the case of labels](https://mapvina.com/mapvina-gl-js/docs/examples/change-case-of-labels/)",
+        "doc": "Returns the input string converted to lowercase. Follows the Unicode Default Case Conversion algorithm and the locale-insensitive case mappings in the Unicode Character Database.\n\n - [Change the case of labels](https://mapvina.io/github/mapvina-gl-js/docs/examples/change-case-of-labels/)",
         "syntax": {
           "overloads": [
             {
@@ -5358,7 +5358,7 @@
         }
       },
       "concat": {
-        "doc": "Returns a `string` consisting of the concatenation of the inputs. Each input is converted to a string as if by `to-string`.\n\n - [Add a generated icon to the map](https://mapvina.com/mapvina-gl-js/docs/examples/add-a-generated-icon-to-the-map/)\n\n - [Create a time slider](https://mapvina.com/mapvina-gl-js/docs/examples/create-a-time-slider/)\n\n - [Use a fallback image](https://mapvina.com/mapvina-gl-js/docs/examples/fallback-image/)\n\n - [Variable label placement](https://mapvina.com/mapvina-gl-js/docs/examples/variable-label-placement/)",
+        "doc": "Returns a `string` consisting of the concatenation of the inputs. Each input is converted to a string as if by `to-string`.\n\n - [Add a generated icon to the map](https://mapvina.io/github/mapvina-gl-js/docs/examples/add-a-generated-icon-to-the-map/)\n\n - [Create a time slider](https://mapvina.io/github/mapvina-gl-js/docs/examples/create-a-time-slider/)\n\n - [Use a fallback image](https://mapvina.io/github/mapvina-gl-js/docs/examples/fallback-image/)\n\n - [Variable label placement](https://mapvina.io/github/mapvina-gl-js/docs/examples/variable-label-placement/)",
         "syntax": {
           "overloads": [
             {
@@ -5627,8 +5627,8 @@
       "sdk-support": {
         "basic functionality": {
           "js": "2.2.0",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/252",
-          "android": "https://github.com/mapvina/mapvina-native/issues/252"
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/252",
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/252"
         }
       }
     },
@@ -5640,8 +5640,8 @@
       "sdk-support": {
         "basic functionality": {
           "js": "2.2.0",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/252",
-          "android": "https://github.com/mapvina/mapvina-native/issues/252"
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/252",
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/252"
         }
       }
     }
@@ -7495,8 +7495,8 @@
         },
         "multidirectional": {
           "js": "5.5.0",
-          "android": "https://github.com/mapvina/mapvina-native/issues/3396",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/3396"
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/3396",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/3396"
         }
       },
       "expression": {
@@ -7517,13 +7517,13 @@
       "sdk-support": {
         "basic functionality": {
           "js": "5.5.0",
-          "android": "https://github.com/mapvina/mapvina-native/issues/3396",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/3396"
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/3396",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/3396"
         },
         "multidirectional": {
           "js": "5.5.0",
-          "android": "https://github.com/mapvina/mapvina-native/issues/3396",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/3396"
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/3396",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/3396"
         }
       },
       "expression": {
@@ -7596,8 +7596,8 @@
         },
         "multidirectional": {
           "js": "5.5.0",
-          "android": "https://github.com/mapvina/mapvina-native/issues/3396",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/3396"
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/3396",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/3396"
         }
       },
       "expression": {
@@ -7621,8 +7621,8 @@
         },
         "multidirectional": {
           "js": "5.5.0",
-          "android": "https://github.com/mapvina/mapvina-native/issues/3396",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/3396"
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/3396",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/3396"
         }
       },
       "expression": {
@@ -7677,8 +7677,8 @@
       "sdk-support": {
         "basic functionality": {
           "js": "5.5.0",
-          "android": "https://github.com/mapvina/mapvina-native/issues/3396",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/3396"
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/3396",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/3396"
         }
       },
       "expression": {
@@ -7701,8 +7701,8 @@
       "sdk-support": {
         "basic functionality": {
           "js": "5.6.0",
-          "android": "https://github.com/mapvina/mapvina-native/issues/3408",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/3408"
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/3408",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/3408"
         }
       },
       "expression": {
@@ -7727,8 +7727,8 @@
       "sdk-support": {
         "basic functionality": {
           "js": "5.6.0",
-          "android": "https://github.com/mapvina/mapvina-native/issues/3408",
-          "ios": "https://github.com/mapvina/mapvina-native/issues/3408"
+          "android": "https://github.io/github/mapvina/mapvina-native/issues/3408",
+          "ios": "https://github.io/github/mapvina/mapvina-native/issues/3408"
         },
         "data-driven styling": {}
       },

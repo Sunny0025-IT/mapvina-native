@@ -5,7 +5,7 @@
   "QtUsage": "Used in the MapVina Native backend of Qt Location.",
 
   "Description": "MapVina Native is a community led fork derived from mapbox-gl-native.",
-  "Homepage": "https://github.com/mapvina/mapvina-native",
+  "Homepage": "https://github.io/github/mapvina/mapvina-native",
   "LicenseId": "BSD-2-Clause",
   "License": "BSD 2-Clause License",
   "LicenseFile": "LICENSE.md",

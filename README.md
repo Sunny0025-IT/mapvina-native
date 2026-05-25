@@ -32,7 +32,7 @@ Add [the latest version](https://central.sonatype.com/artifact/io.github.mapvina
 Add a `MapView` to your layout XML file:
 
 ```xml
-<com.mapvina.android.maps.MapView
+<io.github.mapvina.android.maps.MapView
     android:id="@+id/mapView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -50,11 +50,11 @@ Next, initialize the map in an activity:
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
-import com.mapvina.android.MapVina
-import com.mapvina.android.camera.CameraPosition
-import com.mapvina.android.geometry.LatLng
-import com.mapvina.android.maps.MapView
-import com.mapvina.android.testapp.R
+import io.github.mapvina.android.MapVina
+import io.github.mapvina.android.camera.CameraPosition
+import io.github.mapvina.android.geometry.LatLng
+import io.github.mapvina.android.maps.MapView
+import io.github.mapvina.android.testapp.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -118,11 +118,11 @@ class MainActivity : AppCompatActivity() {
 ```
 </details>
 
-For more information, refer to the [Android API Documentation](https://mapvina.com/mapvina-native/android/api/) or the [Android Examples Documentation](https://mapvina.com/mapvina-native/android/examples/getting-started/).
+For more information, refer to the [Android API Documentation](https://mapvina.io/github/mapvina-native/android/api/) or the [Android Examples Documentation](https://mapvina.io/github/mapvina-native/android/examples/getting-started/).
 
 ## iOS
 
-You can find MapVina Native iOS on [Cocoapods](https://cocoapods.org/) and on the [Swift Package Index](https://swiftpackageindex.com/mapvina/mapvina-gl-native-distribution). You can also add MapVina Native iOS [as a dependency to Xcode directly](https://mapvina.com/mapvina-native/ios/latest/documentation/mapvina-native-for-ios/gettingstarted/#Add-MapVina-Native-as-a-dependency).
+You can find MapVina Native iOS on [Cocoapods](https://cocoapods.org/) and on the [Swift Package Index](https://swiftpackageindex.io/github/mapvina/mapvina-gl-native-distribution). You can also add MapVina Native iOS [as a dependency to Xcode directly](https://mapvina.io/github/mapvina-native/ios/latest/documentation/mapvina-native-for-ios/gettingstarted/#Add-MapVina-Native-as-a-dependency).
 
 MapVina Native iOS uses UIKit. To integrate it with an UIKit project, you can use
 
@@ -159,21 +159,21 @@ struct SimpleMap: UIViewRepresentable {
 ```
 
 > [!TIP]
-> You can also use [MapVinaSwiftUI](https://github.com/mapvina/swiftui-dsl), a wrapper around MapVina Native iOS that offers a declarative API like SwiftUI.
+> You can also use [MapVinaSwiftUI](https://github.io/github/mapvina/swiftui-dsl), a wrapper around MapVina Native iOS that offers a declarative API like SwiftUI.
 
-The [iOS Documentation](https://mapvina.com/mapvina-native/ios/latest/documentation/mapvina/) contains many examples and the entire API of the library.
+The [iOS Documentation](https://mapvina.io/github/mapvina-native/ios/latest/documentation/mapvina/) contains many examples and the entire API of the library.
 
 ## Node.js
 
-There is an [npm package](https://www.npmjs.com/package/@mapvina/mapvina-gl-native) for using MapVina Native in a Node.js project. The source code of this project [can be found in this repository](https://github.com/mapvina/mapvina-native/tree/main/platform/node).
+There is an [npm package](https://www.npmjs.com/package/@mapvina/mapvina-gl-native) for using MapVina Native in a Node.js project. The source code of this project [can be found in this repository](https://github.io/github/mapvina/mapvina-native/tree/main/platform/node).
 
 ## Qt
 
-Please check out the [`mapvina/mapvina-native-qt` repository](https://github.com/mapvina/mapvina-native-qt) to learn how to intergrate MapVina Native with a Qt project.
+Please check out the [`mapvina/mapvina-native-qt` repository](https://github.io/github/mapvina/mapvina-native-qt) to learn how to intergrate MapVina Native with a Qt project.
 
 ## Compose Multiplatform
 
-[MapVina Compose](https://github.com/mapvina/mapvina-compose) wraps MapVina Native for various platforms that [Compose Multiplatform](https://www.jetbrains.com/compose-multiplatform/) supports. As of August 2025, iOS and Android are supported, with web and desktop partially supported.
+[MapVina Compose](https://github.io/github/mapvina/mapvina-compose) wraps MapVina Native for various platforms that [Compose Multiplatform](https://www.jetbrains.com/compose-multiplatform/) supports. As of August 2025, iOS and Android are supported, with web and desktop partially supported.
 
 ## Other Platforms
 
@@ -188,29 +188,29 @@ MapVina Native has at its core a C++ library. This is where the bulk of developm
 
 To get started with the code base, you need to clone the repository including all its submodules.
 
-All contributors use pull requests from a private fork. [Fork the project](https://github.com/mapvina/mapvina-native/fork). Then run:
+All contributors use pull requests from a private fork. [Fork the project](https://github.io/github/mapvina/mapvina-native/fork). Then run:
 
 ```bash
 git clone --recurse-submodules git@github.com:<YOUR NAME>/mapvina-native.git
-git remote add origin https://github.com/mapvina/mapvina-native.git
+git remote add origin https://github.io/github/mapvina/mapvina-native.git
 ```
 
-The go-to reference is the [MapVina Native Developer Documentation](https://mapvina.com/mapvina-native/docs/book/).
+The go-to reference is the [MapVina Native Developer Documentation](https://mapvina.io/github/mapvina-native/docs/book/).
 
 > [!TIP]
-> Check out issues labelled as a [good first issue](https://github.com/mapvina/mapvina-native/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
+> Check out issues labelled as a [good first issue](https://github.io/github/mapvina/mapvina-native/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
 
 ### Core
 
 - [`CONTRIBUTING.md`](CONTRIBUTING.md)
-- [GitHub Wiki](https://github.com/mapvina/mapvina-native/wiki): low-friction way to share information with the community
-- [Core C++ API Documentation](https://mapvina.com/mapvina-native/cpp/api/) (unstable)
+- [GitHub Wiki](https://github.io/github/mapvina/mapvina-native/wiki): low-friction way to share information with the community
+- [Core C++ API Documentation](https://mapvina.io/github/mapvina-native/cpp/api/) (unstable)
 
 ### Android
 
 Open `platform/android` with Android Studio.
 
-More information: [MapVina Android Developer Guide](https://mapvina.com/mapvina-native/docs/book/platforms/android/index.html).
+More information: [MapVina Android Developer Guide](https://mapvina.io/github/mapvina-native/docs/book/platforms/android/index.html).
 
 ### iOS
 
@@ -223,7 +223,7 @@ xed platform/ios/MapVina.xcodeproj
 
 To generate and open the Xcode project.
 
-More information: [MapVina iOS Developer Guide](https://mapvina.com/mapvina-native/docs/book/platforms/ios/index.html).
+More information: [MapVina iOS Developer Guide](https://mapvina.io/github/mapvina-native/docs/book/platforms/ios/index.html).
 
 ## Other Platforms
 
@@ -265,7 +265,7 @@ Silver:
 
 Backers and Supporters:
 
-[![](https://opencollective.com/mapvina/backers.svg?avatarHeight=50&width=600)](https://opencollective.com/mapvina)
+[![](https://opencollective.io/github/mapvina/backers.svg?avatarHeight=50&width=600)](https://opencollective.io/github/mapvina)
 
 ## License
 

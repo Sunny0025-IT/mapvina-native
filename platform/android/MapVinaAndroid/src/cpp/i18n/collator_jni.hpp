@@ -47,7 +47,7 @@ public:
 
 class StringUtils {
 public:
-    static constexpr auto Name() { return "org/mapvina/android/utils/StringUtils"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/utils/StringUtils"; };
 
     static jni::Local<jni::String> unaccent(jni::JNIEnv&, const jni::String&);
 

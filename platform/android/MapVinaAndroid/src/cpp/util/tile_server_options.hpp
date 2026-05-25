@@ -13,7 +13,7 @@ namespace android {
 
 class TileServerOptions : private mbgl::util::noncopyable {
 public:
-    static constexpr auto Name() { return "org/mapvina/android/util/TileServerOptions"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/util/TileServerOptions"; };
 
     static jni::Local<jni::Object<TileServerOptions>> New(jni::JNIEnv&, const mbgl::TileServerOptions&);
 

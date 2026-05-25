@@ -9,9 +9,9 @@
 -keep class com.google.gson.JsonObject { *; }
 -keep class com.google.gson.JsonPrimitive { *; }
 -dontnote com.google.gson.**
--keep enum com.mapvina.android.tile.TileOperation
--keep class com.mapvina.android.maps.RenderingStats { *; }
--keep class com.mapvina.android.maps.NativeMapOptions { *; }
+-keep enum io.github.mapvina.android.tile.TileOperation
+-keep class io.github.mapvina.android.maps.RenderingStats { *; }
+-keep class io.github.mapvina.android.maps.NativeMapOptions { *; }
 -keepclassmembers class * extends java.lang.Enum {
     <fields>;
     public static **[] values();
@@ -19,14 +19,14 @@
 }
 
 # dontnote for keeps the entry point x but not the descriptor class y
--dontnote com.mapvina.android.maps.MapVinaMap$OnFpsChangedListener
--dontnote com.mapvina.android.style.layers.PropertyValue
--dontnote com.mapvina.android.maps.MapVinaMap
--dontnote com.mapvina.android.maps.MapVinaMapOptions
--dontnote com.mapvina.android.log.LoggerDefinition
+-dontnote io.github.mapvina.android.maps.MapVinaMap$OnFpsChangedListener
+-dontnote io.github.mapvina.android.style.layers.PropertyValue
+-dontnote io.github.mapvina.android.maps.MapVinaMap
+-dontnote io.github.mapvina.android.maps.MapVinaMapOptions
+-dontnote io.github.mapvina.android.log.LoggerDefinition
 
 # config for mapbox-sdk-geojson:3.0.1
--keep class com.mapvina.geojson.** { *; }
+-keep class io.github.mapvina.geojson.** { *; }
 -dontwarn com.google.auto.value.**
 
 # config for additional notes

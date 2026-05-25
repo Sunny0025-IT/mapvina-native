@@ -4,7 +4,7 @@ Learn about the ``MLNMapViewDelegate`` methods for observing map events.
 
 > Warning: These methods are not thread-safe.
 
-You can observe certain low-level events as they happen. Use these methods to collect metrics or investigate issues during map rendering. This feature is intended primarily for power users. We are always interested in improving observability, so if you have a special use case, feel free to [open an issue or pull request](https://github.com/mapvina/mapvina-native) to extend the types of observability methods.
+You can observe certain low-level events as they happen. Use these methods to collect metrics or investigate issues during map rendering. This feature is intended primarily for power users. We are always interested in improving observability, so if you have a special use case, feel free to [open an issue or pull request](https://github.io/github/mapvina/mapvina-native) to extend the types of observability methods.
 
 ## Frame Events
 

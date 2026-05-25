@@ -715,7 +715,7 @@ TEST(MainResourceLoader, TEST_REQUIRES_SERVER(RespondToStaleMustRevalidate)) {
 }
 
 // Test that requests for expired resources have lower priority than requests for new resources
-// Flaky https://github.com/mapvina/mapvina-native/issues/1071
+// Flaky https://github.io/github/mapvina/mapvina-native/issues/1071
 TEST(MainResourceLoader, TEST_REQUIRES_SERVER(CachedResourceLowPriority)) {
     util::RunLoop loop;
     MainResourceLoader fs(ResourceOptions{}, ClientOptions{});

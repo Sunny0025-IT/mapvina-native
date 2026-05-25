@@ -3,7 +3,7 @@
 MapVina Native can be built for macOS. This is mostly used for development.
 
 > [!NOTE]
-> There are some [AppKit](https://developer.apple.com/documentation/appkit) APIs for macOS the source tree. However those are not actively maintained. There is an [discussion](https://github.com/mapvina/mapvina-native/discussions/3414) on whether we should remove this code.
+> There are some [AppKit](https://developer.apple.com/documentation/appkit) APIs for macOS the source tree. However those are not actively maintained. There is an [discussion](https://github.io/github/mapvina/mapvina-native/discussions/3414) on whether we should remove this code.
 
 ## File Structure
 

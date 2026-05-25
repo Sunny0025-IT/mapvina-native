@@ -13,7 +13,7 @@ syntax supported by this SDK. For a more general introduction to predicates and
 expressions, consult the
 _[Predicate Programming Guide](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html)_
 in Apple developer documentation. For additional detail on how this SDK has
-extended the `NSExpression` class, see the [`NSExpression+MLNAdditions.h`](https://github.com/mapvina/mapvina-native/blob/main/platform/darwin/src/NSExpression%2BMLNAdditions.h) header.
+extended the `NSExpression` class, see the [`NSExpression+MLNAdditions.h`](https://github.io/github/mapvina/mapvina-native/blob/main/platform/darwin/src/NSExpression%2BMLNAdditions.h) header.
 
 ## Using predicates to filter vector data
 
@@ -266,7 +266,7 @@ NSExpression(format: "MLN_LET(floorCount, 2, $floorCount + 1)")
 
 ## MapVina-specific functions
 
-> Warning: Due to a change in iOS 15.5, some of these stopped working. See [#331](https://github.com/mapvina/mapvina-native/issues/331) for more information and workarounds.
+> Warning: Due to a change in iOS 15.5, some of these stopped working. See [#331](https://github.io/github/mapvina/mapvina-native/issues/331) for more information and workarounds.
 
 For compatibility with the MapVina Style Spec, the following functions
 are defined by this SDK. When setting a style layer property, you can call these
@@ -334,7 +334,7 @@ expression containing the strings to concatenate.
 Returns the arccosine of the number.
 
 This function corresponds to the
-[`acos`](https://mapvina.com/mapvina-style-spec/expressions/#acos)
+[`acos`](https://mapvina.io/github/mapvina-style-spec/expressions/#acos)
 operator in the MapVina Style Spec.
 
 ### mgl_asin:
@@ -346,7 +346,7 @@ operator in the MapVina Style Spec.
 Returns the arcsine of the number.
 
 This function corresponds to the
-[`asin`](https://mapvina.com/mapvina-style-spec/expressions/#asin)
+[`asin`](https://mapvina.io/github/mapvina-style-spec/expressions/#asin)
 operator in the MapVina Style Spec.
 
 ### mgl_atan:
@@ -358,7 +358,7 @@ operator in the MapVina Style Spec.
 Returns the arctangent of the number.
 
 This function corresponds to the
-[`atan`](https://mapvina.com/mapvina-style-spec/expressions/#atan)
+[`atan`](https://mapvina.io/github/mapvina-style-spec/expressions/#atan)
 operator in the MapVina Style Spec.
 
 ### mgl_cos:
@@ -370,7 +370,7 @@ operator in the MapVina Style Spec.
 Returns the cosine of the number.
 
 This function corresponds to the
-[`cos`](https://mapvina.com/mapvina-style-spec/expressions/#cos)
+[`cos`](https://mapvina.io/github/mapvina-style-spec/expressions/#cos)
 operator in the MapVina Style Spec.
 
 ### mgl_log2:
@@ -382,7 +382,7 @@ operator in the MapVina Style Spec.
 Returns the base-2 logarithm of the number.
 
 This function corresponds to the
-[`log2`](https://mapvina.com/mapvina-style-spec/expressions/#log2)
+[`log2`](https://mapvina.io/github/mapvina-style-spec/expressions/#log2)
 operator in the MapVina Style Spec.
 
 ### mgl_round:
@@ -395,7 +395,7 @@ Returns the number rounded to the nearest integer. If the number is halfway
 between two integers, this function rounds it away from zero.
 
 This function corresponds to the
-[`round`](https://mapvina.com/mapvina-style-spec/expressions/#round)
+[`round`](https://mapvina.io/github/mapvina-style-spec/expressions/#round)
 operator in the MapVina Style Spec.
 
 ### mgl_sin:
@@ -407,7 +407,7 @@ operator in the MapVina Style Spec.
 Returns the sine of the number.
 
 This function corresponds to the
-[`sin`](https://mapvina.com/mapvina-style-spec/expressions/#sin)
+[`sin`](https://mapvina.io/github/mapvina-style-spec/expressions/#sin)
 operator in the MapVina Style Spec.
 
 ### mgl_tan:
@@ -419,7 +419,7 @@ operator in the MapVina Style Spec.
 Returns the tangent of the number.
 
 This function corresponds to the
-[`tan`](https://mapvina.com/mapvina-style-spec/expressions/#tan)
+[`tan`](https://mapvina.io/github/mapvina-style-spec/expressions/#tan)
 operator in the MapVina Style Spec.
 
 ### mgl_distanceFrom:
@@ -431,7 +431,7 @@ operator in the MapVina Style Spec.
 Returns the straight-line distance from the evaluated object to the given shape.
 
 This function corresponds to the
-[`distance`](https://mapvina.com/mapvina-style-spec/expressions/#distance)
+[`distance`](https://mapvina.io/github/mapvina-style-spec/expressions/#distance)
 operator in the MapVina Style Spec.
 
 ### mgl_coalesce:
@@ -443,7 +443,7 @@ operator in the MapVina Style Spec.
 Returns the first non-`nil` value from an array of expressions.
 
 This function corresponds to the
-[`coalesce`](https://mapvina.com/mapvina-style-spec/expressions/#coalesce)
+[`coalesce`](https://mapvina.io/github/mapvina-style-spec/expressions/#coalesce)
 operator in the MapVina Style Spec.
 
 ### mgl_attributed:
@@ -464,7 +464,7 @@ with the `MLNSymbolStyleLayer.text` property.
  `MLNFontColorAttribute` | An `NSExpression` evaluating to an `UIColor` (iOS) or `NSColor` (macOS).
 
 This function corresponds to the
-[`format`](https://mapvina.com/mapvina-style-spec/expressions/#types-format)
+[`format`](https://mapvina.io/github/mapvina-style-spec/expressions/#types-format)
 operator in the MapVina Style Spec.
 
 ### MLN_LET
@@ -503,7 +503,7 @@ values.
 This function corresponds to the
 `+[NSExpression(MLNAdditions) mgl_expressionForMatchingExpression:inDictionary:defaultExpression:]`
 method and the
-[`match`](https://mapvina.com/mapvina-style-spec/expressions/#match)
+[`match`](https://mapvina.io/github/mapvina-style-spec/expressions/#match)
 operator in the MapVina Style Spec.
 
 ### MLN_IF
@@ -525,7 +525,7 @@ passed into this function must be wrapped in a constant expression.
 This function corresponds to the
 `+[NSExpression(MLNAdditions) mgl_expressionForConditional:trueExpression:falseExpresssion:]`
 method and the
-[`case`](https://mapvina.com/mapvina-style-spec/expressions/#case)
+[`case`](https://mapvina.io/github/mapvina-style-spec/expressions/#case)
 operator in the MapVina Style Spec.
 
 ### MLN_FUNCTION
@@ -537,7 +537,7 @@ operator in the MapVina Style Spec.
 **Arguments:** Any arguments required by the expression operator.
 
 An expression exactly as defined by the
-[MapVina Style Spec](https://mapvina.com/mapvina-style-spec/expressions/).
+[MapVina Style Spec](https://mapvina.io/github/mapvina-style-spec/expressions/).
 
 ## Custom functions
 
@@ -585,7 +585,7 @@ look up in the evaluated object (see `MLNFeature.attributes`).
 object has a value for the feature attribute.
 
 This function corresponds to the
-[`has`](https://mapvina.com/mapvina-style-spec/expressions/#has)
+[`has`](https://mapvina.io/github/mapvina-style-spec/expressions/#has)
 operator in the MapVina Style Spec. See also the
 [`mgl_does:have:`](#code-mgl_does-have-code) function, which is used on its own
 without the `FUNCTION()` operator. You can also check whether an object has an
@@ -610,7 +610,7 @@ The target expression with variable subexpressions replaced with the values
 defined in the context dictionary.
 
 This function corresponds to the
-[`let`](https://mapvina.com/mapvina-style-spec/expressions/#let)
+[`let`](https://mapvina.io/github/mapvina-style-spec/expressions/#let)
 operator in the MapVina Style Spec. See also the
 [`MLN_LET`](#code-mgl_let-code) function, which is used on its own without the
 `FUNCTION()` operator.
@@ -655,7 +655,7 @@ yellow, orange, and red as the values.
 This function corresponds to the
 `+[NSExpression(MLNAdditions) mgl_expressionForInterpolatingExpression:withCurveType:parameters:stops:]`
 method and the
-[`interpolate`](https://mapvina.com/mapvina-style-spec/expressions/#interpolate)
+[`interpolate`](https://mapvina.io/github/mapvina-style-spec/expressions/#interpolate)
 operator in the MapVina Style Spec. See also the
 [`mgl_interpolate:withCurveType:parameters:stops:`](#code-mgl_interpolate-withcurvetype-parameters-stops-code)
 function, which is used on its own without the `FUNCTION()` operator.
@@ -709,7 +709,7 @@ A numeric representation of the target:
     first successful conversion is obtained.
 
 This function corresponds to the
-[`to-number`](https://mapvina.com/mapvina-style-spec/expressions/#types-to-number)
+[`to-number`](https://mapvina.io/github/mapvina-style-spec/expressions/#types-to-number)
 operator in the MapVina Style Spec. You can also cast a value to a
 number by passing the value and the string `NSNumber` into the `CAST()`
 operator.
@@ -748,7 +748,7 @@ yellow, orange, and red as the values.
 This function corresponds to the
 `+[NSExpression(MLNAdditions) mgl_expressionForSteppingExpression:fromExpression:stops:]`
 method and the
-[`step`](https://mapvina.com/mapvina-style-spec/expressions/#step)
+[`step`](https://mapvina.io/github/mapvina-style-spec/expressions/#step)
 operator in the MapVina Style Spec.
 
 ### stringByAppendingString:
@@ -770,7 +770,7 @@ The target string with each of the argument strings appended in order.
 This function corresponds to the
 `-[NSExpression(MLNAdditions) mgl_expressionByAppendingExpression:]`
 method and is similar to the
-[`concat`](https://mapvina.com/mapvina-style-spec/expressions/#concat)
+[`concat`](https://mapvina.io/github/mapvina-style-spec/expressions/#concat)
 operator in the MapVina Style Spec. See also the
 [`mgl_join:`](#code-mgl_join-code) function, which concatenates multiple
 expressions and is used on its own without the `FUNCTION()` operator.
@@ -805,7 +805,7 @@ A string representation of the target:
   function of the ECMAScript Language Specification.
 
 This function corresponds to the
-[`to-string`](https://mapvina.com/mapvina-style-spec/expressions/#types-to-string)
+[`to-string`](https://mapvina.io/github/mapvina-style-spec/expressions/#types-to-string)
 operator in the MapVina Style Spec. You can also cast a value to a
 string by passing the value and the string `NSString` into the `CAST()`
 operator.

@@ -13,7 +13,7 @@
 -dontwarn com.google.android.gms.**
 -keep class com.google.android.gms.** { *; }
 
--keep class com.mapvina.android.testapp.model.customlayer.ExampleCustomLayer { *; }
+-keep class io.github.mapvina.android.testapp.model.customlayer.ExampleCustomLayer { *; }
 
 
  # okhttp

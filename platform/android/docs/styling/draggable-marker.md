@@ -11,7 +11,7 @@
 ## Adding a marker on tap
 
 ```kotlin title="Adding a tap listener to the map to add a marker on tap"
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/style/DraggableMarkerActivity.kt:addOnMapClickListener"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/style/DraggableMarkerActivity.kt:addOnMapClickListener"
 ```
 
 ## Allowing markers to be dragged
@@ -21,7 +21,7 @@ This is slightly more involved, as we implement it by implementing a `DraggableS
 This class is initialized and we pass a few callbacks when when markers are start or end being dragged.
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/style/DraggableMarkerActivity.kt:draggableSymbolsManager"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/style/DraggableMarkerActivity.kt:draggableSymbolsManager"
 ```
 
 The implementation of `DraggableSymbolsManager` follows. In its initializer we define a handler for when a user long taps on a marker. This then starts dragging that marker. It does this by temporarily suspending all other gestures.
@@ -29,8 +29,8 @@ The implementation of `DraggableSymbolsManager` follows. In its initializer we d
 We create a custom implementation of `MoveGestureDetector.OnMoveGestureListener` and pass this to an instance of `AndroidGesturesManager` linked to the map view.
 
 !!! tip
-      See [mapvina-gestures-android](https://github.com/mapvina/mapvina-gestures-android) for the implementation details of the gestures library used by MapVina Android.
+      See [mapvina-gestures-android](https://github.io/github/mapvina/mapvina-gestures-android) for the implementation details of the gestures library used by MapVina Android.
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/style/DraggableMarkerActivity.kt:DraggableSymbolsManager"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/style/DraggableMarkerActivity.kt:DraggableSymbolsManager"
 ```

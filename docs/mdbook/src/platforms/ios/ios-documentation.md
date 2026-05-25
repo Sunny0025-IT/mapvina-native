@@ -1,6 +1,6 @@
 # iOS Documentation
 
-We use [DocC](https://www.swift.org/documentation/docc) for the MapVina iOS documentation. The live documentation site can be found [here](https://mapvina.com/mapvina-native/ios/latest/documentation/mapvina/).
+We use [DocC](https://www.swift.org/documentation/docc) for the MapVina iOS documentation. The live documentation site can be found [here](https://mapvina.io/github/mapvina-native/ios/latest/documentation/mapvina/).
 
 ## Resources
 
@@ -16,7 +16,7 @@ Then, to build the documentation locally, run the following command:
 platform/ios/scripts/docc.sh preview
 ```
 
-Resources like images should not be checked in but should be uploaded to the [S3 Bucket](https://s3.eu-central-1.amazonaws.com/mapvina-native/index.html#ios-documentation-resources/). You can share a `.zip` with all files that should be added in the PR.
+Resources like images should not be checked in but should be uploaded to the [S3 Bucket](https://s3.eu-central-1.amazonaws.io/github/mapvina-native/index.html#ios-documentation-resources/). You can share a `.zip` with all files that should be added in the PR.
 
 If you want to get direct access you need an AWS account to get permissions to upload files. Create an account and authenticate with aws-cli. Share the account ARN that you can get with
 

@@ -9,7 +9,7 @@ namespace android {
 
 class NativeMapOptions {
 public:
-    static constexpr auto Name() { return "org/mapvina/android/maps/NativeMapOptions"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/maps/NativeMapOptions"; };
 
     static void registerNative(jni::JNIEnv&);
 

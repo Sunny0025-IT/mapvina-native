@@ -10,7 +10,7 @@ export testFile="MapVinaAndroidTestApp/build/outputs/apk/androidTest/legacy/rele
 export testType="INSTRUMENTATION"
 export testPackageType="INSTRUMENTATION_TEST_PACKAGE"
 export testSpecArn="arn:aws:devicefarm:us-west-2:373521797162:upload:20687d72-0e46-403e-8f03-0941850665bc/14862afb-cf88-44aa-9f1e-5131cbb22f01"
-export testFilter="com.mapvina.android.benchmark.Benchmark"
+export testFilter="io.github.mapvina.android.benchmark.Benchmark"
 export name="Android Benchmark"
 
 ../../scripts/aws-device-farm/aws-device-farm-run.sh

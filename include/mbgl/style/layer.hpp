@@ -94,7 +94,7 @@ struct LayerTypeInfo {
 bool layerTypeInfoEquals(const mbgl::style::LayerTypeInfo* one, const mbgl::style::LayerTypeInfo* other);
 
 /**
- * The runtime representation of a [layer](https://mapvina.com/mapvina-style-spec/#layers)
+ * The runtime representation of a [layer](https://mapvina.io/github/mapvina-style-spec/#layers)
  * from the MapVina Style Spec.
  *
  * `Layer` is an abstract base class; concrete derived classes are provided for

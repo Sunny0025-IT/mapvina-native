@@ -4,16 +4,16 @@
 
 In this example we will look at various types of data-driven styling.
 
-The examples with 'Source' in the title apply data-driven styling the [parks of Amsterdam](https://github.com/mapvina/mapvina-native/blob/main/platform/android/MapVinaAndroidTestApp/src/main/res/raw/amsterdam.geojson). Those examples often are based on the somewhat arbitrary `stroke-width` property part of the GeoJSON features. These examples are therefore most interesting to learn about the Kotlin API that can be used for data-driven styling.
+The examples with 'Source' in the title apply data-driven styling the [parks of Amsterdam](https://github.io/github/mapvina/mapvina-native/blob/main/platform/android/MapVinaAndroidTestApp/src/main/res/raw/amsterdam.geojson). Those examples often are based on the somewhat arbitrary `stroke-width` property part of the GeoJSON features. These examples are therefore most interesting to learn about the Kotlin API that can be used for data-driven styling.
 
 !!! tip
-    Refer to the [MapVina Style Spec](https://mapvina.com/mapvina-style-spec/) for more information about [expressions](https://mapvina.com/mapvina-style-spec/expressions/) such as [`interpolate`](https://mapvina.com/mapvina-style-spec/expressions/#interpolate) and [`step`](https://mapvina.com/mapvina-style-spec/expressions/#step).
+    Refer to the [MapVina Style Spec](https://mapvina.io/github/mapvina-style-spec/) for more information about [expressions](https://mapvina.io/github/mapvina-style-spec/expressions/) such as [`interpolate`](https://mapvina.io/github/mapvina-style-spec/expressions/#interpolate) and [`step`](https://mapvina.io/github/mapvina-style-spec/expressions/#step).
 
 
 ## Exponential Zoom Function
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addExponentialZoomFunction"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addExponentialZoomFunction"
 ```
 
 <figure markdown="span">
@@ -26,7 +26,7 @@ The examples with 'Source' in the title apply data-driven styling the [parks of 
 ## Interval Zoom Function
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addIntervalZoomFunction"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addIntervalZoomFunction"
 ```
 
 <figure markdown="span">
@@ -42,47 +42,47 @@ The examples with 'Source' in the title apply data-driven styling the [parks of 
 ## Exponential Source Function
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addExponentialSourceFunction"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addExponentialSourceFunction"
 ```
 
 ## Categorical Source Function
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addCategoricalSourceFunction"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addCategoricalSourceFunction"
 ```
 
 ## Identity Source Function
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addIdentitySourceFunction"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addIdentitySourceFunction"
 ```
 
 ## Interval Source Function
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addIntervalSourceFunction"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addIntervalSourceFunction"
 ```
 
 ## Composite Exponential Function
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addCompositeExponentialFunction"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addCompositeExponentialFunction"
 ```
 
 ## Identity Source Function
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addIdentitySourceFunction"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addIdentitySourceFunction"
 ```
 
 ## Composite Interval Function
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addCompositeIntervalFunction"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addCompositeIntervalFunction"
 ```
 
 ## Composite Categorical Function
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addCompositeCategoricalFunction"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/style/DataDrivenStyleActivity.kt:addCompositeCategoricalFunction"
 ```

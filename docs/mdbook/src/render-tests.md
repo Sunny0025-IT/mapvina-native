@@ -36,7 +36,7 @@ property: `background-color`, `line-width`, etc., with a second level of directo
 The JSON files in this directory are the manifests (to be passed to render test CLI tool). This directory also contains many directories that store metrics used by the tests. Other files/directories include:
 
 - `cache-style.db`, `cache-metrics.db`: pre-populated cache (SQLite database file) so the tests can run offline. You may need to update this database when you need a new resource available during test executation.
-- `binary-size`: binary-size checks. Not used right now, see [#3379](https://github.com/mapvina/mapvina-native/issues/3379).
+- `binary-size`: binary-size checks. Not used right now, see [#3379](https://github.io/github/mapvina/mapvina-native/issues/3379).
 - `expectations`: expectations for various platforms. E.g. `expectations/platform-android` is referenced by the `android-render-test-runner-metrics.json` manifest under its `expectation_paths` key.
 - `ignores`: contains JSON files with as key a test path and as value a reason why a test is ignored. For example:
    ```
@@ -60,9 +60,9 @@ The JSON files in this directory are the manifests (to be passed to render test 
 #### `metrics/intergration`
 
 - `data`, `geojson`, `glyphs`, `image`, `sprites`, `styles`, `tiles`, `tilesets`, `video`: various data used by the render tests.
-- `expression-tests`: tests that verify the behavior of [expressions](https://mapvina.com/mapvina-style-spec/expressions/) of the MapVina Style Spec.
+- `expression-tests`: tests that verify the behavior of [expressions](https://mapvina.io/github/mapvina-style-spec/expressions/) of the MapVina Style Spec.
 - `query-tests`: these tests test the behavior of the `queryRenderedFeatures` API which, as the name suggests, allow you to query the rendered features.
-- `render-tests`: location of render tests. Each render test contains a `style.json` and an `expected.png` image. This directory tree is generally organized by [style specification](https://mapvina.com/mapvina-style-spec/) properties.
+- `render-tests`: location of render tests. Each render test contains a `style.json` and an `expected.png` image. This directory tree is generally organized by [style specification](https://mapvina.io/github/mapvina-style-spec/) properties.
 
 ## Running tests
 

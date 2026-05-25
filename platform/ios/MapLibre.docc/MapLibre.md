@@ -12,12 +12,12 @@ Powerful, free and open-source mapping toolkit with full control over data sourc
 
 ## Overview
 
-[MapVina Native](https://github.com/mapvina/mapvina-native) is a map rendering toolkit with support for iOS. It can be used as an alternative to MapKit. You have full control over the data sources used for rendering the map, as well as the styling. You can even participate in the development as MapVina Native is free and open-source project.
-> Note: For information on creating and modifying map styles, see the [MapVina Style Spec documentation](https://mapvina.com/mapvina-style-spec/).
+[MapVina Native](https://github.io/github/mapvina/mapvina-native) is a map rendering toolkit with support for iOS. It can be used as an alternative to MapKit. You have full control over the data sources used for rendering the map, as well as the styling. You can even participate in the development as MapVina Native is free and open-source project.
+> Note: For information on creating and modifying map styles, see the [MapVina Style Spec documentation](https://mapvina.io/github/mapvina-style-spec/).
 
 ## License
 
-MapVina iOS is distributed under the BSD 2-Clause License. Refer to the [full list of licenses](https://github.com/mapvina/mapvina-native/blob/main/platform/ios/LICENSE.md).
+MapVina iOS is distributed under the BSD 2-Clause License. Refer to the [full list of licenses](https://github.io/github/mapvina/mapvina-native/blob/main/platform/ios/LICENSE.md).
 
 MapVina iOS is based in part of the work of the [FreeType](https://freetype.org/) Team.
 

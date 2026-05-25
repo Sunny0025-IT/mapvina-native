@@ -1234,7 +1234,7 @@ set_target_properties(
     mbgl-core
     PROPERTIES
         INTERFACE_MAPVINA_NAME "MapVina Native"
-        INTERFACE_MAPVINA_URL "https://github.com/mapvina/mapvina-native"
+        INTERFACE_MAPVINA_URL "https://github.io/github/mapvina/mapvina-native"
         INTERFACE_MAPVINA_AUTHOR "MapVina"
         INTERFACE_MAPVINA_LICENSE ${PROJECT_SOURCE_DIR}/LICENSE.md
 )
@@ -1249,7 +1249,7 @@ if(MLN_WITH_METAL AND MLN_CREATE_AUTORELEASEPOOL)
     # this variable to ensure an AutoReleasePool is created in the render loop.
     # See also:
     # https://developer.apple.com/documentation/foundation/nsautoreleasepool
-    # https://github.com/mapvina/mapvina-native/issues/2928
+    # https://github.io/github/mapvina/mapvina-native/issues/2928
     # vendor/metal-cpp/README.md 'AutoreleasePools and Objects'
     target_compile_definitions(
         mbgl-core

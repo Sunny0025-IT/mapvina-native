@@ -10,7 +10,7 @@ namespace geojson {
 
 class Feature {
 public:
-    static constexpr auto Name() { return "org/mapvina/geojson/Feature"; };
+    static constexpr auto Name() { return "io/github/mapvina/geojson/Feature"; };
 
     static mbgl::GeoJSONFeature convert(jni::JNIEnv&, const jni::Object<Feature>&);
     static jni::Local<jni::Array<jni::Object<Feature>>> convert(jni::JNIEnv&, const std::vector<mbgl::Feature>&);

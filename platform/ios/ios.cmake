@@ -85,7 +85,7 @@ set_target_properties(ios-sdk-static PROPERTIES
     XCODE_ATTRIBUTE_MACH_O_TYPE "staticlib"
 
     # Provide a unique bundle identifier
-    MACOSX_FRAMEWORK_IDENTIFIER "com.mapvina.ios"
+    MACOSX_FRAMEWORK_IDENTIFIER "io.github.mapvina.ios"
 
     # FIXME: versioning
     MACOSX_FRAMEWORK_BUNDLE_VERSION "1.0"

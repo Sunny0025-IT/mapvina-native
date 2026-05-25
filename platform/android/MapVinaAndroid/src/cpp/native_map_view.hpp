@@ -43,7 +43,7 @@ class RenderingStats;
 
 class NativeMapView : public MapObserver {
 public:
-    static constexpr auto Name() { return "org/mapvina/android/maps/NativeMapView"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/maps/NativeMapView"; };
 
     static void registerNative(jni::JNIEnv&);
 

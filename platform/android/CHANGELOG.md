@@ -6,37 +6,37 @@ Note: this release has some changes to how icon offsets behave on pitched maps. 
 
 ### ✨ Features and improvements
 
-- Update Boost to 1.90 ([#4210](https://github.com/mapvina/mapvina-native/pull/4210)).
-- android: update AGP and Gradle dependencies ([#4245](https://github.com/mapvina/mapvina-native/pull/4245)).
-- Handle allocation failure [Core feature] ([#4178](https://github.com/mapvina/mapvina-native/pull/4178)).
--  (android): apply size optimization flags to RelWithDebInfo build config ([#4247](https://github.com/mapvina/mapvina-native/pull/4247)).
-- Disable icon scaling with offsets ([#3928](https://github.com/mapvina/mapvina-native/pull/3928)).
-- Add attribute buffer index to support multiple attributes interleaved in single buffer bind [Core optimization] ([#4241](https://github.com/mapvina/mapvina-native/pull/4241)).
+- Update Boost to 1.90 ([#4210](https://github.io/github/mapvina/mapvina-native/pull/4210)).
+- android: update AGP and Gradle dependencies ([#4245](https://github.io/github/mapvina/mapvina-native/pull/4245)).
+- Handle allocation failure [Core feature] ([#4178](https://github.io/github/mapvina/mapvina-native/pull/4178)).
+-  (android): apply size optimization flags to RelWithDebInfo build config ([#4247](https://github.io/github/mapvina/mapvina-native/pull/4247)).
+- Disable icon scaling with offsets ([#3928](https://github.io/github/mapvina/mapvina-native/pull/3928)).
+- Add attribute buffer index to support multiple attributes interleaved in single buffer bind [Core optimization] ([#4241](https://github.io/github/mapvina/mapvina-native/pull/4241)).
 
 ### 🐞 Bug fixes
 
-- Fix infinite recursion causing Stack Overflow in TileSet.kt setBounds() ([#4252](https://github.com/mapvina/mapvina-native/pull/4252)).
-- core: Fix crash in RenderLayer::updateTile when layerGroup is not a TileLayerGroup ([#4217](https://github.com/mapvina/mapvina-native/pull/4217)).
+- Fix infinite recursion causing Stack Overflow in TileSet.kt setBounds() ([#4252](https://github.io/github/mapvina/mapvina-native/pull/4252)).
+- core: Fix crash in RenderLayer::updateTile when layerGroup is not a TileLayerGroup ([#4217](https://github.io/github/mapvina/mapvina-native/pull/4217)).
 
 ## 13.0.2
 
 ### ✨ Features and improvements
 
-- core: Skip empty dynamic texture submissions ([#4177](https://github.com/mapvina/mapvina-native/pull/4177)).
-- core: better handle tile compression in PMTiles sources ([#4159](https://github.com/mapvina/mapvina-native/pull/4159)).
-- core: Use interleaved buffer for paint property binders ([#4124](https://github.com/mapvina/mapvina-native/pull/4124)).
+- core: Skip empty dynamic texture submissions ([#4177](https://github.io/github/mapvina/mapvina-native/pull/4177)).
+- core: better handle tile compression in PMTiles sources ([#4159](https://github.io/github/mapvina/mapvina-native/pull/4159)).
+- core: Use interleaved buffer for paint property binders ([#4124](https://github.io/github/mapvina/mapvina-native/pull/4124)).
 
 ### 🐞 Bug fixes
 
-- core: Fix vulkan surface rotation ([#4182](https://github.com/mapvina/mapvina-native/pull/4182)).
-- core: Fix crash during exception stack unwind ([#4188](https://github.com/mapvina/mapvina-native/pull/4188)).
+- core: Fix vulkan surface rotation ([#4182](https://github.io/github/mapvina/mapvina-native/pull/4182)).
+- core: Fix crash during exception stack unwind ([#4188](https://github.io/github/mapvina/mapvina-native/pull/4188)).
 
 ## 13.0.1
 
 ### 🐞 Bug fixes
 
-- core: Fix scissor rectangle size ([#4147](https://github.com/mapvina/mapvina-native/pull/4147)).
-- core: fix color-relief/hillshade invisible above fill layers on Metal/Vulkan/WebGPU ([#4166](https://github.com/mapvina/mapvina-native/pull/4166))
+- core: Fix scissor rectangle size ([#4147](https://github.io/github/mapvina/mapvina-native/pull/4147)).
+- core: fix color-relief/hillshade invisible above fill layers on Metal/Vulkan/WebGPU ([#4166](https://github.io/github/mapvina/mapvina-native/pull/4166))
 
 ## 13.0.0
 
@@ -44,237 +44,237 @@ Note: this release has some changes to how icon offsets behave on pitched maps. 
 
 - 💥 **Breaking:** Use Vulkan as rendering backend for the `io.github.mapvina:android-sdk` package. You can still use OpenGL ES with the `io.github.mapvina:android-sdk-opengl` package.
 
-- core, android: add support for camera roll ([#3011](https://github.com/mapvina/mapvina-native/pull/3011)).
-- Add multithreaded upload to dynamic texture on Vulkan [Core feature] ([#4028](https://github.com/mapvina/mapvina-native/pull/4028)).
-- core: Avoid unnecessary raster buffer updates ([#4085](https://github.com/mapvina/mapvina-native/pull/4085)).
-- core: Update Hillshade Algorithms and add Color-Relief Layer support ([#3965](https://github.com/mapvina/mapvina-native/pull/3965))
+- core, android: add support for camera roll ([#3011](https://github.io/github/mapvina/mapvina-native/pull/3011)).
+- Add multithreaded upload to dynamic texture on Vulkan [Core feature] ([#4028](https://github.io/github/mapvina/mapvina-native/pull/4028)).
+- core: Avoid unnecessary raster buffer updates ([#4085](https://github.io/github/mapvina/mapvina-native/pull/4085)).
+- core: Update Hillshade Algorithms and add Color-Relief Layer support ([#3965](https://github.io/github/mapvina/mapvina-native/pull/3965))
 
 ### 🐞 Bug fixes
 
-- Fix laggy map when using synchronous GeoJSON source [#4092](https://github.com/mapvina/mapvina-native/pull/4092).
-  This replaces the synchronous methods on `GeoJsonSource` introduced in [#3560](https://github.com/mapvina/mapvina-native/pull/3560). To migrate, pass `GeoJsonOptions` with `options.withSynchronousUpdate(true)` when constructing a `GeoJsonSource`.
-- Do not capture this in Android GeoJSONSource ([#3976](https://github.com/mapvina/mapvina-native/pull/3976)).
-- Fix Vulkan headless backend resize ([#4030](https://github.com/mapvina/mapvina-native/pull/4030)).
-- Disable scissor test when clearing on OpenGL ([#4029](https://github.com/mapvina/mapvina-native/pull/4029)).
+- Fix laggy map when using synchronous GeoJSON source [#4092](https://github.io/github/mapvina/mapvina-native/pull/4092).
+  This replaces the synchronous methods on `GeoJsonSource` introduced in [#3560](https://github.io/github/mapvina/mapvina-native/pull/3560). To migrate, pass `GeoJsonOptions` with `options.withSynchronousUpdate(true)` when constructing a `GeoJsonSource`.
+- Do not capture this in Android GeoJSONSource ([#3976](https://github.io/github/mapvina/mapvina-native/pull/3976)).
+- Fix Vulkan headless backend resize ([#4030](https://github.io/github/mapvina/mapvina-native/pull/4030)).
+- Disable scissor test when clearing on OpenGL ([#4029](https://github.io/github/mapvina/mapvina-native/pull/4029)).
 
 ## 12.3.1
 
-- Fix issue caused by frustum offset when map is resized [#4015](https://github.com/mapvina/mapvina-native/pull/4015).
+- Fix issue caused by frustum offset when map is resized [#4015](https://github.io/github/mapvina/mapvina-native/pull/4015).
 
 ## 12.3.0
 
 ### ✨ Features and improvements
 
-- Implemented synchronous update for GeoJSON source ([#3968](https://github.com/mapvina/mapvina-native/pull/3968)).
+- Implemented synchronous update for GeoJSON source ([#3968](https://github.io/github/mapvina/mapvina-native/pull/3968)).
 
 ### 🐞 Bug fixes
 
-- Cancel pending style request when loading style JSON ([#3989](https://github.com/mapvina/mapvina-native/pull/3989)).
+- Cancel pending style request when loading style JSON ([#3989](https://github.io/github/mapvina/mapvina-native/pull/3989)).
 
 ## 12.2.2
 
 ### 🐞 Bug fixes
 
-- Fix crash due to pure virtual function call v2 ([#3996](https://github.com/mapvina/mapvina-native/pull/3996)).
+- Fix crash due to pure virtual function call v2 ([#3996](https://github.io/github/mapvina/mapvina-native/pull/3996)).
 
 ## 12.2.1
 
 ### 🐞 Bug fixes
 
-- Fix crash due to pure virtual function call ([#3979](https://github.com/mapvina/mapvina-native/pull/3979)).
+- Fix crash due to pure virtual function call ([#3979](https://github.io/github/mapvina/mapvina-native/pull/3979)).
 
 ## 12.2.0
 
 ### ✨ Features and improvements
 
-- Allow setting frustum offset to not render edges of the screen ([#3676](https://github.com/mapvina/mapvina-native/pull/3676)).
+- Allow setting frustum offset to not render edges of the screen ([#3676](https://github.io/github/mapvina/mapvina-native/pull/3676)).
 
 ### 🐞 Bug fixes
 
-- Fix LineBucket::addGeometry() empty coordinates. ([#2959](https://github.com/mapvina/mapvina-native/pull/2959)).
-- Use deprecated readParcelable on Tiramisu to avoid crash ([#3950](https://github.com/mapvina/mapvina-native/pull/3950)).
-- Handle `BufferResource::version` overflow ([#3962](https://github.com/mapvina/mapvina-native/pull/3962)).
+- Fix LineBucket::addGeometry() empty coordinates. ([#2959](https://github.io/github/mapvina/mapvina-native/pull/2959)).
+- Use deprecated readParcelable on Tiramisu to avoid crash ([#3950](https://github.io/github/mapvina/mapvina-native/pull/3950)).
+- Handle `BufferResource::version` overflow ([#3962](https://github.io/github/mapvina/mapvina-native/pull/3962)).
 
 ## 12.1.3
 
-- Disable `UnsatisfiedLinkError` during local tests ([#3942](https://github.com/mapvina/mapvina-native/pull/3942)
+- Disable `UnsatisfiedLinkError` during local tests ([#3942](https://github.io/github/mapvina/mapvina-native/pull/3942)
 
 ## 12.1.2
 
-- Update to latest MLT submodule ([#3945](https://github.com/mapvina/mapvina-native/pull/3945)).
+- Update to latest MLT submodule ([#3945](https://github.io/github/mapvina/mapvina-native/pull/3945)).
 
 ## 12.1.0
 
 ### ✨ Features and improvements
 
-- Add support for parsing MLT-format vector tile sources ([#3246](https://github.com/mapvina/mapvina-native/pull/3246)).
-- Throw exception on `System.loadLibrary` fail ([#3916](https://github.com/mapvina/mapvina-native/pull/3916)).
-- Release allocated compass Bitmap as soon as possible ([#3889](https://github.com/mapvina/mapvina-native/pull/3889)).
-- Apply symbol shader changes from JS  for Metal, Vulkan, and OpenGL ([#3873](https://github.com/mapvina/mapvina-native/pull/3873)).
-- Improve CMake build setup Harfbuzz and Freetype deps ([#3879](https://github.com/mapvina/mapvina-native/pull/3879)).
+- Add support for parsing MLT-format vector tile sources ([#3246](https://github.io/github/mapvina/mapvina-native/pull/3246)).
+- Throw exception on `System.loadLibrary` fail ([#3916](https://github.io/github/mapvina/mapvina-native/pull/3916)).
+- Release allocated compass Bitmap as soon as possible ([#3889](https://github.io/github/mapvina/mapvina-native/pull/3889)).
+- Apply symbol shader changes from JS  for Metal, Vulkan, and OpenGL ([#3873](https://github.io/github/mapvina/mapvina-native/pull/3873)).
+- Improve CMake build setup Harfbuzz and Freetype deps ([#3879](https://github.io/github/mapvina/mapvina-native/pull/3879)).
 
 ### 🐞 Bug fixes
 
-- [vulkan] Prevent member variable shadowing in `mbgl::vulkan::ShaderProgram` ([#3886](https://github.com/mapvina/mapvina-native/pull/3886)).
-- Add padding support to MapSnapshotter Android ([#3882](https://github.com/mapvina/mapvina-native/pull/3882)).
-- Fix `requestRenderAndNotify` continuous callback ([#3913](https://github.com/mapvina/mapvina-native/pull/3913)).
-- Add null check to Projection.getContentPadding() ([#3937](https://github.com/mapvina/mapvina-native/pull/3937)).
-- Assume CustomGeometrySource is cancelled when peer is null ([#3933](https://github.com/mapvina/mapvina-native/pull/3933)).
-- Use weak pointer for core layer ([#3931](https://github.com/mapvina/mapvina-native/pull/3931)).
+- [vulkan] Prevent member variable shadowing in `mbgl::vulkan::ShaderProgram` ([#3886](https://github.io/github/mapvina/mapvina-native/pull/3886)).
+- Add padding support to MapSnapshotter Android ([#3882](https://github.io/github/mapvina/mapvina-native/pull/3882)).
+- Fix `requestRenderAndNotify` continuous callback ([#3913](https://github.io/github/mapvina/mapvina-native/pull/3913)).
+- Add null check to Projection.getContentPadding() ([#3937](https://github.io/github/mapvina/mapvina-native/pull/3937)).
+- Assume CustomGeometrySource is cancelled when peer is null ([#3933](https://github.io/github/mapvina/mapvina-native/pull/3933)).
+- Use weak pointer for core layer ([#3931](https://github.io/github/mapvina/mapvina-native/pull/3931)).
 
 ## 12.0.1
 
 ### ✨ Features and improvements
 
-- Make Android snapshotter support hiding the attribution ([#3878](https://github.com/mapvina/mapvina-native/pull/3878)).
+- Make Android snapshotter support hiding the attribution ([#3878](https://github.io/github/mapvina/mapvina-native/pull/3878)).
 
 ### 🐞 Bug fixes
 
-- Handle style builder exceptions ([#3855](https://github.com/mapvina/mapvina-native/pull/3855)).
-- Add query annotation timeout ([#3874](https://github.com/mapvina/mapvina-native/pull/3874)).
+- Handle style builder exceptions ([#3855](https://github.io/github/mapvina/mapvina-native/pull/3855)).
+- Add query annotation timeout ([#3874](https://github.io/github/mapvina/mapvina-native/pull/3874)).
 
 ## 12.0.0
 
 ### ✨ Features and improvements
 
-- 💥 Breaking: Bump minimum Android SDK version from 21 to 23 ([#3849](https://github.com/mapvina/mapvina-native/pull/3849)).
+- 💥 Breaking: Bump minimum Android SDK version from 21 to 23 ([#3849](https://github.io/github/mapvina/mapvina-native/pull/3849)).
 
 ### 🐞 Bug fixes
 
-- Manually free bound resources ([#3831](https://github.com/mapvina/mapvina-native/pull/3831)).
-- Fix misplaced LineOffset and LineGapWidth ([#3840](https://github.com/mapvina/mapvina-native/pull/3840)).
-- Fix crash in camera position ([#3847](https://github.com/mapvina/mapvina-native/pull/3847)).
+- Manually free bound resources ([#3831](https://github.io/github/mapvina/mapvina-native/pull/3831)).
+- Fix misplaced LineOffset and LineGapWidth ([#3840](https://github.io/github/mapvina/mapvina-native/pull/3840)).
+- Fix crash in camera position ([#3847](https://github.io/github/mapvina/mapvina-native/pull/3847)).
 
 ## 11.13.5
 
 ### ✨ Features and improvements
 
-- Apply just the changes from the MLT branch which aren't really part of that work ([#3793](https://github.com/mapvina/mapvina-native/pull/3793)).
+- Apply just the changes from the MLT branch which aren't really part of that work ([#3793](https://github.io/github/mapvina/mapvina-native/pull/3793)).
 
 ### 🐞 Bug fixes
 
-- Add weak pointer handling ([#3763](https://github.com/mapvina/mapvina-native/pull/3763)).
+- Add weak pointer handling ([#3763](https://github.io/github/mapvina/mapvina-native/pull/3763)).
 
-- Fix onSprite call on bad references ([#3805](https://github.com/mapvina/mapvina-native/pull/3805)).
+- Fix onSprite call on bad references ([#3805](https://github.io/github/mapvina/mapvina-native/pull/3805)).
 
 ## 11.13.1
 
 ### ✨ Features and improvements
 
-- Fix for raster dem encoding override in style.json ([#3570](https://github.com/mapvina/mapvina-native/pull/3570)).
+- Fix for raster dem encoding override in style.json ([#3570](https://github.io/github/mapvina/mapvina-native/pull/3570)).
 
 ### 🐞 Bug fixes
 
-- Fix Android backend cleanup ([#3681](https://github.com/mapvina/mapvina-native/pull/3681)).
-- Add weak pointer management to RasterSource and derived classes ([#3726](https://github.com/mapvina/mapvina-native/pull/3726)).
+- Fix Android backend cleanup ([#3681](https://github.io/github/mapvina/mapvina-native/pull/3681)).
+- Add weak pointer management to RasterSource and derived classes ([#3726](https://github.io/github/mapvina/mapvina-native/pull/3726)).
 
 ## 11.13.0
 
 ### ✨ Features and improvements
 
-- Add HarfBuzz Text Shaping and Font Fallback Support ([#3611](https://github.com/mapvina/mapvina-native/pull/3611)).
-  This implements the [`font-faces` property of the MapVina Style Spec](https://mapvina.com/mapvina-style-spec/font-faces/).
+- Add HarfBuzz Text Shaping and Font Fallback Support ([#3611](https://github.io/github/mapvina/mapvina-native/pull/3611)).
+  This implements the [`font-faces` property of the MapVina Style Spec](https://mapvina.io/github/mapvina-style-spec/font-faces/).
 
 ## 11.12.1
 
 ### ✨ Features and improvements
 
-- texture2d - getVulkanImage and support for Texture2DUsage::Attachment ([#3632](https://github.com/mapvina/mapvina-native/pull/3632)).
+- texture2d - getVulkanImage and support for Texture2DUsage::Attachment ([#3632](https://github.io/github/mapvina/mapvina-native/pull/3632)).
 
 ### 🐞 Bug fixes
 
-- Fix dashed line issue when style change ([#3675](https://github.com/mapvina/mapvina-native/pull/3675)).
+- Fix dashed line issue when style change ([#3675](https://github.io/github/mapvina/mapvina-native/pull/3675)).
 
 ## 11.12.1
 
 ### 🐞 Bug fixes
 
-- Revert "Fix the symbol blink issue by only placing the symbol in current level", as this was causing regressions ([#3610](https://github.com/mapvina/mapvina-native/pull/3610)).
+- Revert "Fix the symbol blink issue by only placing the symbol in current level", as this was causing regressions ([#3610](https://github.io/github/mapvina/mapvina-native/pull/3610)).
 
 ## 11.12.0
 
 ### ✨ Features and improvements
 
-- feat: add clusterMinPoints option Android and iOS ([#3601](https://github.com/mapvina/mapvina-native/pull/3601)).
+- feat: add clusterMinPoints option Android and iOS ([#3601](https://github.io/github/mapvina/mapvina-native/pull/3601)).
 
 ## 11.11.0
 
 ### ✨ Features and improvements
 
-- Improve the logic to let source peers be consistent with C++ peers ([#3561](https://github.com/mapvina/mapvina-native/pull/3561)).
-- set default move gesture threshold to a small non-zero value ([#3573](https://github.com/mapvina/mapvina-native/pull/3573)).
-- Bump version of MapVina Gestures Android to 0.0.4 ([#3583](https://github.com/mapvina/mapvina-native/pull/3583)).
-- Expose sync methods in GeoJsonSource  ([#3560](https://github.com/mapvina/mapvina-native/pull/3560)).
+- Improve the logic to let source peers be consistent with C++ peers ([#3561](https://github.io/github/mapvina/mapvina-native/pull/3561)).
+- set default move gesture threshold to a small non-zero value ([#3573](https://github.io/github/mapvina/mapvina-native/pull/3573)).
+- Bump version of MapVina Gestures Android to 0.0.4 ([#3583](https://github.io/github/mapvina/mapvina-native/pull/3583)).
+- Expose sync methods in GeoJsonSource  ([#3560](https://github.io/github/mapvina/mapvina-native/pull/3560)).
 
 ### 🐞 Bug fixes
 
-- Prevent `Style.validateState()` exception on location state updates ([#3574](https://github.com/mapvina/mapvina-native/pull/3574)).
-- Fix the symbol blink issue by only placing the symbol in current level ([#3534](https://github.com/mapvina/mapvina-native/pull/3534)).
+- Prevent `Style.validateState()` exception on location state updates ([#3574](https://github.io/github/mapvina/mapvina-native/pull/3574)).
+- Fix the symbol blink issue by only placing the symbol in current level ([#3534](https://github.io/github/mapvina/mapvina-native/pull/3534)).
 
 ## 11.10.3
 
 ### 🐞 Bug fixes
 
-- Revert fix [#3536](https://github.com/mapvina/mapvina-native/pull/3536) due to `getSource` crashes.
+- Revert fix [#3536](https://github.io/github/mapvina/mapvina-native/pull/3536) due to `getSource` crashes.
 
 ## 11.10.2
 
 ### 🐞 Bug fixes
 
-- Fix segfault this-capture GeoJsonSource which may be deleted ([#3536](https://github.com/mapvina/mapvina-native/pull/3536)).
-- Add `MapRenderer` dangling reference check ([#3541](https://github.com/mapvina/mapvina-native/pull/3541)).
-- Fix incomplete feature state updates in GeometryTile and SourceFeatureState [Vector Tile Layer]. ([#3406](https://github.com/mapvina/mapvina-native/pull/3406)).
+- Fix segfault this-capture GeoJsonSource which may be deleted ([#3536](https://github.io/github/mapvina/mapvina-native/pull/3536)).
+- Add `MapRenderer` dangling reference check ([#3541](https://github.io/github/mapvina/mapvina-native/pull/3541)).
+- Fix incomplete feature state updates in GeometryTile and SourceFeatureState [Vector Tile Layer]. ([#3406](https://github.io/github/mapvina/mapvina-native/pull/3406)).
 
 ### ✨ Features and improvements
 
-- Fix recycler view test ([#3537](https://github.com/mapvina/mapvina-native/pull/3537)).
+- Fix recycler view test ([#3537](https://github.io/github/mapvina/mapvina-native/pull/3537)).
 
 ## 11.10.1
 
 ### 🐞 Bug fixes
 
-- Add missing proguard rules ([#3529](https://github.com/mapvina/mapvina-native/pull/3529)).
+- Add missing proguard rules ([#3529](https://github.io/github/mapvina/mapvina-native/pull/3529)).
 
 ## 11.10.0
 
 ### ✨ Features and improvements
 
-- Add action journal ([#3409](https://github.com/mapvina/mapvina-native/pull/3409)). Documentation: https://mapvina.com/mapvina-native/android/examples/observability/action-journal/
-- Pattern layout performance improvement ([#3495](https://github.com/mapvina/mapvina-native/pull/3495)).
-- Add Tile LOD controls ([#2958](https://github.com/mapvina/mapvina-native/pull/2958)).
+- Add action journal ([#3409](https://github.io/github/mapvina/mapvina-native/pull/3409)). Documentation: https://mapvina.io/github/mapvina-native/android/examples/observability/action-journal/
+- Pattern layout performance improvement ([#3495](https://github.io/github/mapvina/mapvina-native/pull/3495)).
+- Add Tile LOD controls ([#2958](https://github.io/github/mapvina/mapvina-native/pull/2958)).
 
 ### 🐞 Bug fixes
 
-- Improve weak pointer use ([#3510](https://github.com/mapvina/mapvina-native/pull/3510)).
-- Make sure AndroidRendererFrontend exists when accessing it ([#3522](https://github.com/mapvina/mapvina-native/pull/3522))
+- Improve weak pointer use ([#3510](https://github.io/github/mapvina/mapvina-native/pull/3510)).
+- Make sure AndroidRendererFrontend exists when accessing it ([#3522](https://github.io/github/mapvina/mapvina-native/pull/3522))
 ## 11.9.0
 
 ### ✨ Features and improvements
 
-- Add dynamic texture atlas ([#3198](https://github.com/mapvina/mapvina-native/pull/3198)).
-- Remove some of unused legacy uniforms ([#3481](https://github.com/mapvina/mapvina-native/pull/3481)).
+- Add dynamic texture atlas ([#3198](https://github.io/github/mapvina/mapvina-native/pull/3198)).
+- Remove some of unused legacy uniforms ([#3481](https://github.io/github/mapvina/mapvina-native/pull/3481)).
 
 ### 🐞 Bug fixes
 
-- Fix vulkan scaling issue ([#3489](https://github.com/mapvina/mapvina-native/pull/3489)).
-- Fix swapchain out of bounds ([#3486](https://github.com/mapvina/mapvina-native/pull/3486)).
-- Fix validation error reported by VulkanSDK 1.4.313.0 ([#3471](https://github.com/mapvina/mapvina-native/pull/3471)).P
+- Fix vulkan scaling issue ([#3489](https://github.io/github/mapvina/mapvina-native/pull/3489)).
+- Fix swapchain out of bounds ([#3486](https://github.io/github/mapvina/mapvina-native/pull/3486)).
+- Fix validation error reported by VulkanSDK 1.4.313.0 ([#3471](https://github.io/github/mapvina/mapvina-native/pull/3471)).P
 
 ## 11.9.0-pre0
 
-Pre-release to test out the new [dynamic texture atlas](https://github.com/mapvina/mapvina-native/pull/3198). This should result in a memory reduction. Please [open an issue](https://github.com/mapvina/mapvina-native/issues) if you encounter any problems.
+Pre-release to test out the new [dynamic texture atlas](https://github.io/github/mapvina/mapvina-native/pull/3198). This should result in a memory reduction. Please [open an issue](https://github.io/github/mapvina/mapvina-native/issues) if you encounter any problems.
 
 ## 11.8.8
 
 ### ✨ Features and improvements
 
-- Update NDK to 28.1.13356709 ([#3450](https://github.com/mapvina/mapvina-native/pull/3450)).
-- Add support to range requests in AssetFileSource ([#3461](https://github.com/mapvina/mapvina-native/pull/3404)).
-- Force PMTiles metadata to always have XYZ tile scheme ([#3403](https://github.com/mapvina/mapvina-native/pull/3403)).
+- Update NDK to 28.1.13356709 ([#3450](https://github.io/github/mapvina/mapvina-native/pull/3450)).
+- Add support to range requests in AssetFileSource ([#3461](https://github.io/github/mapvina/mapvina-native/pull/3404)).
+- Force PMTiles metadata to always have XYZ tile scheme ([#3403](https://github.io/github/mapvina/mapvina-native/pull/3403)).
 
 ### 🐞 Bug fixes
 
-- Make sure renderThread is alive before calling requestExitAndWait() ([#3461](https://github.com/mapvina/mapvina-native/pull/3461)).
+- Make sure renderThread is alive before calling requestExitAndWait() ([#3461](https://github.io/github/mapvina/mapvina-native/pull/3461)).
 
 ## 11.8.7
 
@@ -286,89 +286,89 @@ They are available with a `-debug` postfix on Maven Central, for example `io.git
 
 ### ✨ Features and improvements
 
-- Change Java Transfrom class from final to normal ([#3332](https://github.com/mapvina/mapvina-native/pull/3332)).
+- Change Java Transfrom class from final to normal ([#3332](https://github.io/github/mapvina/mapvina-native/pull/3332)).
 
 ### 🐞 Bug fixes
 
-- Fix rare crash LatLngAnimator ([#3352](https://github.com/mapvina/mapvina-native/pull/3352)).
-- Sync surface destruction with main thread ([#3368](https://github.com/mapvina/mapvina-native/pull/3368)).
-- Prevent exception SymbolLocationLayerRenderer with new style ([#3369](https://github.com/mapvina/mapvina-native/pull/3369)).
+- Fix rare crash LatLngAnimator ([#3352](https://github.io/github/mapvina/mapvina-native/pull/3352)).
+- Sync surface destruction with main thread ([#3368](https://github.io/github/mapvina/mapvina-native/pull/3368)).
+- Prevent exception SymbolLocationLayerRenderer with new style ([#3369](https://github.io/github/mapvina/mapvina-native/pull/3369)).
 
 ## 11.8.5
 
 ### 🐞 Bug fixes
 
-- Add regression test for [#3323](https://github.com/mapvina/mapvina-native/pull/3323), bug in layer dependency tracking ([#3326](https://github.com/mapvina/mapvina-native/pull/3326))
-- Fix `ErrorSurfaceLostKHR` exception ([#3337](https://github.com/mapvina/mapvina-native/pull/3337)).
+- Add regression test for [#3323](https://github.io/github/mapvina/mapvina-native/pull/3323), bug in layer dependency tracking ([#3326](https://github.io/github/mapvina/mapvina-native/pull/3326))
+- Fix `ErrorSurfaceLostKHR` exception ([#3337](https://github.io/github/mapvina/mapvina-native/pull/3337)).
 
 ## 11.8.4
 
 ### 🐞 Bug fixes
 
--  Add workaround for android emulator as crash on Android emulation is still presented ([#3310](https://github.com/mapvina/mapvina-native/pull/3310))
+-  Add workaround for android emulator as crash on Android emulation is still presented ([#3310](https://github.io/github/mapvina/mapvina-native/pull/3310))
 
 ## 11.8.3
 
 ### 🐞 Bug fixes
 
-- Revert "Eliminate copies in deferred cleanup" ([#3035](https://github.com/mapvina/mapvina-native/pull/3035)) which was causing a memory growth issue.
+- Revert "Eliminate copies in deferred cleanup" ([#3035](https://github.io/github/mapvina/mapvina-native/pull/3035)) which was causing a memory growth issue.
 
 ## 11.8.2
 
 ### ✨ Features and improvements
 
-- Eliminate copies in deferred cleanup ([#3035](https://github.com/mapvina/mapvina-native/pull/3035)).
-- (Custom Layer Support) Reset depth stencil state for render pass ([#3230](https://github.com/mapvina/mapvina-native/pull/3230)).
+- Eliminate copies in deferred cleanup ([#3035](https://github.io/github/mapvina/mapvina-native/pull/3035)).
+- (Custom Layer Support) Reset depth stencil state for render pass ([#3230](https://github.io/github/mapvina/mapvina-native/pull/3230)).
 
 ### 🐞 Bug fixes
 
-- Fix texture view cleanup ([#3254](https://github.com/mapvina/mapvina-native/pull/3254)). Possible fix for [issue](https://github.com/mapvina/mapvina-native/issues/3241) reported by Lyft.
+- Fix texture view cleanup ([#3254](https://github.io/github/mapvina/mapvina-native/pull/3254)). Possible fix for [issue](https://github.io/github/mapvina/mapvina-native/issues/3241) reported by Lyft.
 
 ## 11.8.1
 
 > [!NOTE]
-> We are now releasing OpenGL ES and Vulkan variants of MapVina Android. See the [11.7.0 release notes](https://github.com/mapvina/mapvina-native/releases/tag/android-v11.7.0) for details.
+> We are now releasing OpenGL ES and Vulkan variants of MapVina Android. See the [11.7.0 release notes](https://github.io/github/mapvina/mapvina-native/releases/tag/android-v11.7.0) for details.
 
 ### ✨ Features and improvements
 
-- Bind global uniform buffers at the end of the custom layer tweaker ([#3186](https://github.com/mapvina/mapvina-native/pull/3186)).
+- Bind global uniform buffers at the end of the custom layer tweaker ([#3186](https://github.io/github/mapvina/mapvina-native/pull/3186)).
 
 ### 🐞 Bug fixes
 
-- (Vulkan) Fix TextureMode crash ([#3144](https://github.com/mapvina/mapvina-native/pull/3144)).
-- (Vulkan) Use timestamps for image descriptor updates ([#3152](https://github.com/mapvina/mapvina-native/pull/3152)).
-- Change runtime error to the nullptr returning ([#3184](https://github.com/mapvina/mapvina-native/pull/3184)).
+- (Vulkan) Fix TextureMode crash ([#3144](https://github.io/github/mapvina/mapvina-native/pull/3144)).
+- (Vulkan) Use timestamps for image descriptor updates ([#3152](https://github.io/github/mapvina/mapvina-native/pull/3152)).
+- Change runtime error to the nullptr returning ([#3184](https://github.io/github/mapvina/mapvina-native/pull/3184)).
 
 ## 11.8.0
 
 > [!NOTE]
-> We are now releasing OpenGL ES and Vulkan variants of MapVina Android. See the [11.7.0 release notes](https://github.com/mapvina/mapvina-native/releases/tag/android-v11.7.0) for details.
+> We are now releasing OpenGL ES and Vulkan variants of MapVina Android. See the [11.7.0 release notes](https://github.io/github/mapvina/mapvina-native/releases/tag/android-v11.7.0) for details.
 
 ### ✨ Features and improvements
 
-- Add PMTiles support ([#2882](https://github.com/mapvina/mapvina-native/pull/2882)).
-- Consolidate UBOs ([#3089](https://github.com/mapvina/mapvina-native/pull/3089)).
+- Add PMTiles support ([#2882](https://github.io/github/mapvina/mapvina-native/pull/2882)).
+- Consolidate UBOs ([#3089](https://github.io/github/mapvina/mapvina-native/pull/3089)).
 
 ### 🐞 Bug fixes
 
-- (Vulkan) Fix in-flight frame update Vulkan ([#3122](https://github.com/mapvina/mapvina-native/pull/3122)). Fixes jittery labels and some similar issues.
+- (Vulkan) Fix in-flight frame update Vulkan ([#3122](https://github.io/github/mapvina/mapvina-native/pull/3122)). Fixes jittery labels and some similar issues.
 
-We have a new feature in the C++ Core to constrain the screen (instead of the center of the camera) to some bounds ([#2475](https://github.com/mapvina/mapvina-native/pull/2475)). This functionality still has to be exposed to Android. If you are interested in implementing this, see [this issue](https://github.com/mapvina/mapvina-native/issues/3128).
+We have a new feature in the C++ Core to constrain the screen (instead of the center of the camera) to some bounds ([#2475](https://github.io/github/mapvina/mapvina-native/pull/2475)). This functionality still has to be exposed to Android. If you are interested in implementing this, see [this issue](https://github.io/github/mapvina/mapvina-native/issues/3128).
 
 ## 11.7.1
 
 > [!NOTE]
-> We are now releasing OpenGL ES and Vulkan variants of MapVina Android. See the [11.7.0 release notes](https://github.com/mapvina/mapvina-native/releases/tag/android-v11.7.0) for details.
+> We are now releasing OpenGL ES and Vulkan variants of MapVina Android. See the [11.7.0 release notes](https://github.io/github/mapvina/mapvina-native/releases/tag/android-v11.7.0) for details.
 
 ### ✨ Features and improvements
 
-- Batch up scheduling of deferred deletions ([#3030](https://github.com/mapvina/mapvina-native/pull/3030)).
-- Specify Vulkan version needed in AndroidManifest.xml ([#3095](https://github.com/mapvina/mapvina-native/pull/3095)).
+- Batch up scheduling of deferred deletions ([#3030](https://github.io/github/mapvina/mapvina-native/pull/3030)).
+- Specify Vulkan version needed in AndroidManifest.xml ([#3095](https://github.io/github/mapvina/mapvina-native/pull/3095)).
 
 ### 🐞 Bug fixes
 
-- Remove `Pass3D` ([#3077](https://github.com/mapvina/mapvina-native/pull/3077)).
-      Fixes issue where filters applied to fill extrusion layers are not rendered unless a manual zoom is applied to the map ([#3039](https://github.com/mapvina/mapvina-native/issues/3039)).
+- Remove `Pass3D` ([#3077](https://github.io/github/mapvina/mapvina-native/pull/3077)).
+      Fixes issue where filters applied to fill extrusion layers are not rendered unless a manual zoom is applied to the map ([#3039](https://github.io/github/mapvina/mapvina-native/issues/3039)).
 
 ## 11.7.0
 
@@ -378,189 +378,189 @@ This release marks the official release of MapVina Android with Vulkan support. 
 - `io.github.mapvina:android-sdk-opengl` (OpenGL ES).
 - `io.github.mapvina:android-sdk-vulkan` (Vulkan).
 
-Stability has proven to be excellent, but there are a few [known issues with Vulkan](https://github.com/mapvina/mapvina-native/issues?q=is%3Aissue%20state%3Aopen%20label%3AVulkan%20type%3ABug) that will be addressed in a future update.
+Stability has proven to be excellent, but there are a few [known issues with Vulkan](https://github.io/github/mapvina/mapvina-native/issues?q=is%3Aissue%20state%3Aopen%20label%3AVulkan%20type%3ABug) that will be addressed in a future update.
 
-Currently it is not possible to choose a backend at runtime. If you care about supporting devices that only support OpenGL ES and you want to use Vulkan, you will need to produce and ship [multiple APKs](https://developer.android.com/google/play/publishing/multiple-apks). Please see [this issue](https://github.com/mapvina/mapvina-native/issues/3079) if you are interested in choosing a rendering backend during initialization.
+Currently it is not possible to choose a backend at runtime. If you care about supporting devices that only support OpenGL ES and you want to use Vulkan, you will need to produce and ship [multiple APKs](https://developer.android.com/google/play/publishing/multiple-apks). Please see [this issue](https://github.io/github/mapvina/mapvina-native/issues/3079) if you are interested in choosing a rendering backend during initialization.
 
 Thanks to everyone who helped test the pre-releases!
 
 ### ✨ Features and improvements
 
-- Fix the issue that the empty polyline cannot be updated ([#3046](https://github.com/mapvina/mapvina-native/pull/3046)).
-- feat: add `getZoom` and `setZoom` function support for Android Auto ([#3037](https://github.com/mapvina/mapvina-native/pull/3037)).
-- Use MapVina Android as attribution string across languages ([#3080](https://github.com/mapvina/mapvina-native/pull/3080)).
-- Use CMake 3.24.0+ for Android ([#3065](https://github.com/mapvina/mapvina-native/pull/3065)).
+- Fix the issue that the empty polyline cannot be updated ([#3046](https://github.io/github/mapvina/mapvina-native/pull/3046)).
+- feat: add `getZoom` and `setZoom` function support for Android Auto ([#3037](https://github.io/github/mapvina/mapvina-native/pull/3037)).
+- Use MapVina Android as attribution string across languages ([#3080](https://github.io/github/mapvina/mapvina-native/pull/3080)).
+- Use CMake 3.24.0+ for Android ([#3065](https://github.io/github/mapvina/mapvina-native/pull/3065)).
 
 ### 🐞 Bug fixes
 
-- Fix crash on unsupported attribute type conversion ([#3066](https://github.com/mapvina/mapvina-native/pull/3066)).
+- Fix crash on unsupported attribute type conversion ([#3066](https://github.io/github/mapvina/mapvina-native/pull/3066)).
 
 ## 11.6.1
 
 ### 🐞 Bug fixes
 
-- Fix 16K alignment Android builds ([#2995](https://github.com/mapvina/mapvina-native/issues/2995)).
+- Fix 16K alignment Android builds ([#2995](https://github.io/github/mapvina/mapvina-native/issues/2995)).
 
 ### ✨ Features and improvements
 
-- Allow configuring a `Call.Factory` instead of a `OkHttpClient` ([https://github.com/mapvina/mapvina-native/pull/2987](#2987)). Since an `OkHttpClient` can be assigned to a `Call.Factory` this should not cause any issues.
+- Allow configuring a `Call.Factory` instead of a `OkHttpClient` ([https://github.io/github/mapvina/mapvina-native/pull/2987](#2987)). Since an `OkHttpClient` can be assigned to a `Call.Factory` this should not cause any issues.
 
 ### 🐞 Bug fixes
 
-- Fix puck rendering behavior Android ([#2957](https://github.com/mapvina/mapvina-native/pull/2957)).
+- Fix puck rendering behavior Android ([#2957](https://github.io/github/mapvina/mapvina-native/pull/2957)).
 
 ## 11.6.0
 
 ### ✨ Features and improvements
 
-- Add support for `text-variable-anchor-offset` property ([#2921](https://github.com/mapvina/mapvina-native/pull/2921)).
-- Change `parameters.currentLayer` to `index` instead of `layerIndex` ([#2956](https://github.com/mapvina/mapvina-native/pull/2956)).
+- Add support for `text-variable-anchor-offset` property ([#2921](https://github.io/github/mapvina/mapvina-native/pull/2921)).
+- Change `parameters.currentLayer` to `index` instead of `layerIndex` ([#2956](https://github.io/github/mapvina/mapvina-native/pull/2956)).
 
 ### 🐞 Bug fixes
 
-- Fix MapSnapshotter icon loading ([#2967](https://github.com/mapvina/mapvina-native/pull/2967)).
+- Fix MapSnapshotter icon loading ([#2967](https://github.io/github/mapvina/mapvina-native/pull/2967)).
 
 ## 11.5.2
 
 ### ✨ Features and improvements
 
-- Use Kotlin instead of Groovy for Android build configuration ([#2902](https://github.com/mapvina/mapvina-native/pull/2902)).
-- Performance improvements ([#2892](https://github.com/mapvina/mapvina-native/pull/2892)).
-- Remove workaround for emulator crashes, and apply proper fix: revert index buffers to dirty flag instead of timestamps ([#2927](https://github.com/mapvina/mapvina-native/pull/2927)).
+- Use Kotlin instead of Groovy for Android build configuration ([#2902](https://github.io/github/mapvina/mapvina-native/pull/2902)).
+- Performance improvements ([#2892](https://github.io/github/mapvina/mapvina-native/pull/2892)).
+- Remove workaround for emulator crashes, and apply proper fix: revert index buffers to dirty flag instead of timestamps ([#2927](https://github.io/github/mapvina/mapvina-native/pull/2927)).
 
 ### 🐞 Bug fixes
 
-- Fix line atlas, which was causing an issue with `line-pattern`s ([#2908](https://github.com/mapvina/mapvina-native/pull/2908)).
+- Fix line atlas, which was causing an issue with `line-pattern`s ([#2908](https://github.io/github/mapvina/mapvina-native/pull/2908)).
 
 ## 11.5.1
 
 ### ✨ Features and improvements
 
-- Add `PropertyFactory.iconPadding(Float)` overload for better backcompat ([#2880](https://github.com/mapvina/mapvina-native/pull/2880)).
+- Add `PropertyFactory.iconPadding(Float)` overload for better backcompat ([#2880](https://github.io/github/mapvina/mapvina-native/pull/2880)).
 
 ### 🐞 Bug fixes
 
-- Android renderThreadManager changed to non static ([#2872](https://github.com/mapvina/mapvina-native/pull/2872)).
-- Make sure `Scheduler::GetCurrent()` cannot return a nullptr ([#2887](https://github.com/mapvina/mapvina-native/pull/2887)). This should fix a crash on startup when the library is not initialized on the main thread.
+- Android renderThreadManager changed to non static ([#2872](https://github.io/github/mapvina/mapvina-native/pull/2872)).
+- Make sure `Scheduler::GetCurrent()` cannot return a nullptr ([#2887](https://github.io/github/mapvina/mapvina-native/pull/2887)). This should fix a crash on startup when the library is not initialized on the main thread.
 
 ## 11.5.0
 
 ### ✨ Features and improvements
 
-- Expose `RENDERMODE_CONTINUOUSLY` and `RENDERMODE_WHEN_DIRTY` ([#2801](https://github.com/mapvina/mapvina-native/pull/2801)). Toggling this can be helpful for development (e.g. when testing and optimizing performance).
-- Compile for Android with support for 16 KB page sizes ([#2852](https://github.com/mapvina/mapvina-native/pull/2852)).
-- Enable crash mitigation when running OpenGL in the Android emulator ([#2858](https://github.com/mapvina/mapvina-native/pull/2858)). Technically the crashes were caused by an issue with the Android Emulator, but we were able to find a workaround.
-- Add array support for `icon-padding` ([#2845](https://github.com/mapvina/mapvina-native/pull/2845)).
-  More information can be found in the [MapVina Style Spec Documentation](https://mapvina.com/mapvina-style-spec/types/#padding). This is the first (code) contribution from [@random3940](https://github.com/random3940)! 🎉
-- Use `thread_local` for thread local scheduler ([#2863](https://github.com/mapvina/mapvina-native/pull/2863)).
+- Expose `RENDERMODE_CONTINUOUSLY` and `RENDERMODE_WHEN_DIRTY` ([#2801](https://github.io/github/mapvina/mapvina-native/pull/2801)). Toggling this can be helpful for development (e.g. when testing and optimizing performance).
+- Compile for Android with support for 16 KB page sizes ([#2852](https://github.io/github/mapvina/mapvina-native/pull/2852)).
+- Enable crash mitigation when running OpenGL in the Android emulator ([#2858](https://github.io/github/mapvina/mapvina-native/pull/2858)). Technically the crashes were caused by an issue with the Android Emulator, but we were able to find a workaround.
+- Add array support for `icon-padding` ([#2845](https://github.io/github/mapvina/mapvina-native/pull/2845)).
+  More information can be found in the [MapVina Style Spec Documentation](https://mapvina.io/github/mapvina-style-spec/types/#padding). This is the first (code) contribution from [@random3940](https://github.com/random3940)! 🎉
+- Use `thread_local` for thread local scheduler ([#2863](https://github.io/github/mapvina/mapvina-native/pull/2863)).
 
 ### 🐞 Bug fixes
 
-- Move WeakPtrFactory in `map_renderer.hpp` ([#2861](https://github.com/mapvina/mapvina-native/pull/2861)).
-- Fix updates hillshade geometry ([#2842](https://github.com/mapvina/mapvina-native/pull/2842)).
+- Move WeakPtrFactory in `map_renderer.hpp` ([#2861](https://github.io/github/mapvina/mapvina-native/pull/2861)).
+- Fix updates hillshade geometry ([#2842](https://github.io/github/mapvina/mapvina-native/pull/2842)).
 
 ## 11.4.0
 
 ### ✨ Features and improvements
 
-- Add `textFitWidth` and `textFitHeight` properties to sprites ([#2780](https://github.com/mapvina/mapvina-native/pull/2780)).
-  More information can be found in the [MapVina Style Spec](https://mapvina.com/mapvina-style-spec/sprite/#text-fit-properties).
-- Move UBO updates from render layers to tweakers ([#2703](https://github.com/mapvina/mapvina-native/pull/2703)).
-- Improve tile lifecycle determinism  ([#2819](https://github.com/mapvina/mapvina-native/pull/2819)).
-- Make sure swapBehavior is NoFlush ([#2827](https://github.com/mapvina/mapvina-native/pull/2827)).
+- Add `textFitWidth` and `textFitHeight` properties to sprites ([#2780](https://github.io/github/mapvina/mapvina-native/pull/2780)).
+  More information can be found in the [MapVina Style Spec](https://mapvina.io/github/mapvina-style-spec/sprite/#text-fit-properties).
+- Move UBO updates from render layers to tweakers ([#2703](https://github.io/github/mapvina/mapvina-native/pull/2703)).
+- Improve tile lifecycle determinism  ([#2819](https://github.io/github/mapvina/mapvina-native/pull/2819)).
+- Make sure swapBehavior is NoFlush ([#2827](https://github.io/github/mapvina/mapvina-native/pull/2827)).
 
 ### 🐞 Bug fixes
 
-- Ensure that all depth values are rendered before any color values ([#2811](https://github.com/mapvina/mapvina-native/pull/2811)).
+- Ensure that all depth values are rendered before any color values ([#2811](https://github.io/github/mapvina/mapvina-native/pull/2811)).
 
 ## 11.3.0
 
 ### ✨ Features and improvements
 
-- Added new map observer events: `onPreCompileShader`, `onPostCompileShader`, `onShaderCompileFailed`, `onGlyphsLoaded`, `onGlyphsError`, `onGlyphsRequested`, `onTileAction`, `onSpriteLoaded`, `onSpriteError`, `onSpriteRequested` ([#2694](https://github.com/mapvina/mapvina-native/pull/2694)).
-- Correct and revise OpenGL texture pooling ([#2709](https://github.com/mapvina/mapvina-native/pull/2709)).
-- Update Android dependencies ([#2794](https://github.com/mapvina/mapvina-native/pull/2794)).
-- Make project compatible again with Java 11, based on feedback from @alasram ([#2799](https://github.com/mapvina/mapvina-native/pull/2799)).
+- Added new map observer events: `onPreCompileShader`, `onPostCompileShader`, `onShaderCompileFailed`, `onGlyphsLoaded`, `onGlyphsError`, `onGlyphsRequested`, `onTileAction`, `onSpriteLoaded`, `onSpriteError`, `onSpriteRequested` ([#2694](https://github.io/github/mapvina/mapvina-native/pull/2694)).
+- Correct and revise OpenGL texture pooling ([#2709](https://github.io/github/mapvina/mapvina-native/pull/2709)).
+- Update Android dependencies ([#2794](https://github.io/github/mapvina/mapvina-native/pull/2794)).
+- Make project compatible again with Java 11, based on feedback from @alasram ([#2799](https://github.io/github/mapvina/mapvina-native/pull/2799)).
 
 ### 🐞 Bug fixes
 
-- Fix raster masking bug ([#2798](https://github.com/mapvina/mapvina-native/pull/2798)).
+- Fix raster masking bug ([#2798](https://github.io/github/mapvina/mapvina-native/pull/2798)).
 
 ## 11.2.0
 
 ### ✨ Features and improvements
 
-- Toggle tile cache final API ([#2723](https://github.com/mapvina/mapvina-native/pull/2723)).
+- Toggle tile cache final API ([#2723](https://github.io/github/mapvina/mapvina-native/pull/2723)).
     This is a new API on `MapVinaMap`: `setTileCacheEnabled()` and `getTileCacheEnabled()`. This tile cache is used to cache tiles on different zoom levels, disabling it will reduce memory usage.
-- Add `getOfflineRegion` Kotlin API ([#2516](https://github.com/mapvina/mapvina-native/pull/2516)). This is the first (code) contribution from [@JRWilding](https://github.com/JRWilding)! 🎉
-- Bump NDK version to 27.0.12077973, replace `ALooper_pollAll` with `ALooper_pollOnce` ([#2663](https://github.com/mapvina/mapvina-native/pull/2663)).
-- Remove OkHttp3 ProGuard rules ([#2665](https://github.com/mapvina/mapvina-native/pull/2665)).
-- Use C++20 ([#2659](https://github.com/mapvina/mapvina-native/pull/2659)).
-- Reuse prefetched tiles to avoid empty screen ([#2668](https://github.com/mapvina/mapvina-native/pull/2668)).
-- Update Android Dependencies, use [mapvina-gestures-android](https://github.com/mapvina/mapvina-gestures-android) ([#2714](https://github.com/mapvina/mapvina-native/pull/2714)).
-- Update dependency gradle to v8.10 ([#2721](https://github.com/mapvina/mapvina-native/pull/2721)).
-- Cleanup `mbgl/actor/mailbox*` implementation for repetition in ensuring valid weakScheduler exists before usage ([#2733](https://github.com/mapvina/mapvina-native/pull/2733)).
-- Use latest MapVina Style Spec ([#2756](https://github.com/mapvina/mapvina-native/pull/2756)).
+- Add `getOfflineRegion` Kotlin API ([#2516](https://github.io/github/mapvina/mapvina-native/pull/2516)). This is the first (code) contribution from [@JRWilding](https://github.com/JRWilding)! 🎉
+- Bump NDK version to 27.0.12077973, replace `ALooper_pollAll` with `ALooper_pollOnce` ([#2663](https://github.io/github/mapvina/mapvina-native/pull/2663)).
+- Remove OkHttp3 ProGuard rules ([#2665](https://github.io/github/mapvina/mapvina-native/pull/2665)).
+- Use C++20 ([#2659](https://github.io/github/mapvina/mapvina-native/pull/2659)).
+- Reuse prefetched tiles to avoid empty screen ([#2668](https://github.io/github/mapvina/mapvina-native/pull/2668)).
+- Update Android Dependencies, use [mapvina-gestures-android](https://github.io/github/mapvina/mapvina-gestures-android) ([#2714](https://github.io/github/mapvina/mapvina-native/pull/2714)).
+- Update dependency gradle to v8.10 ([#2721](https://github.io/github/mapvina/mapvina-native/pull/2721)).
+- Cleanup `mbgl/actor/mailbox*` implementation for repetition in ensuring valid weakScheduler exists before usage ([#2733](https://github.io/github/mapvina/mapvina-native/pull/2733)).
+- Use latest MapVina Style Spec ([#2756](https://github.io/github/mapvina/mapvina-native/pull/2756)).
   This PR adds two new APIs to `TransitionOptions` of `LocationIndicatorLayer`: `getBearingTransition()` and `setBearingTransition()`.
-- Use timestamps for attribute updates ([#2629](https://github.com/mapvina/mapvina-native/pull/2629)).
+- Use timestamps for attribute updates ([#2629](https://github.io/github/mapvina/mapvina-native/pull/2629)).
 
 ### 🐞 Bug fixes
 
-- Fix crash when feature contains invalid UTF-8 data ([#2693](https://github.com/mapvina/mapvina-native/pull/2693)).
-- Fix accidental regression conditional layer evaluation ([#2705](https://github.com/mapvina/mapvina-native/pull/2705)).
-- Ensure `ReentrantLock` is unlocked after being locked, and on same thread ([#2759](https://github.com/mapvina/mapvina-native/pull/2759)). This is the first (code) contributon from [@westnordost](https://github.com/westnordost)! 🎉
-- Add guard blocks and checks to `SymbolInstance` ([#2744](https://github.com/mapvina/mapvina-native/pull/2744)).
-  This fixes an exceedingly rare crash that a user is seeing in the field. The fix is not pretty, but we hope to better understand the problem in the future (see [this open issue](https://github.com/mapvina/mapvina-native/issues/2350)).
+- Fix crash when feature contains invalid UTF-8 data ([#2693](https://github.io/github/mapvina/mapvina-native/pull/2693)).
+- Fix accidental regression conditional layer evaluation ([#2705](https://github.io/github/mapvina/mapvina-native/pull/2705)).
+- Ensure `ReentrantLock` is unlocked after being locked, and on same thread ([#2759](https://github.io/github/mapvina/mapvina-native/pull/2759)). This is the first (code) contributon from [@westnordost](https://github.com/westnordost)! 🎉
+- Add guard blocks and checks to `SymbolInstance` ([#2744](https://github.io/github/mapvina/mapvina-native/pull/2744)).
+  This fixes an exceedingly rare crash that a user is seeing in the field. The fix is not pretty, but we hope to better understand the problem in the future (see [this open issue](https://github.io/github/mapvina/mapvina-native/issues/2350)).
 
 ## 11.1.0
 
 ### ✨ Features and improvements
 
-- Avoid logging error for onMove(0,0) on Android ([#2580](https://github.com/mapvina/mapvina-native/pull/2580)).
-- Experimental API to toggle tile cache in map view ([#2590](https://github.com/mapvina/mapvina-native/pull/2590)). This can reduce memory usage at the cost of having to parse tile data again when the zoom level changes.
-- Add TaggedScheduler, couple lifetime of tasks and orchestrator ([#2398](https://github.com/mapvina/mapvina-native/pull/2398)).
+- Avoid logging error for onMove(0,0) on Android ([#2580](https://github.io/github/mapvina/mapvina-native/pull/2580)).
+- Experimental API to toggle tile cache in map view ([#2590](https://github.io/github/mapvina/mapvina-native/pull/2590)). This can reduce memory usage at the cost of having to parse tile data again when the zoom level changes.
+- Add TaggedScheduler, couple lifetime of tasks and orchestrator ([#2398](https://github.io/github/mapvina/mapvina-native/pull/2398)).
 
 ### 🐞 Bug fixes
 
-- Fix null pointer dereference MapRenderer Android ([#2631](https://github.com/mapvina/mapvina-native/pull/2631)).
-- Take locks before signaling thread condition variables ([#2636](https://github.com/mapvina/mapvina-native/pull/2636)).
+- Fix null pointer dereference MapRenderer Android ([#2631](https://github.io/github/mapvina/mapvina-native/pull/2631)).
+- Take locks before signaling thread condition variables ([#2636](https://github.io/github/mapvina/mapvina-native/pull/2636)).
 
 ## 11.0.2-pre0
 
 ### ✨ Features and improvements
 
-- Add TaggedScheduler, couple lifetime of tasks and orchestrator ([#2398](https://github.com/mapvina/mapvina-native/pull/2398)).
+- Add TaggedScheduler, couple lifetime of tasks and orchestrator ([#2398](https://github.io/github/mapvina/mapvina-native/pull/2398)).
 
 ## 11.0.1
 
 ### ✨ Features and improvements
 
-- Updated included licenses third-party projects ([#2491](https://github.com/mapvina/mapvina-native/pull/2491)).
-- Move all `WeakPtrFactory` members to the end of the containing class ([#2472](https://github.com/mapvina/mapvina-native/pull/2472)).
+- Updated included licenses third-party projects ([#2491](https://github.io/github/mapvina/mapvina-native/pull/2491)).
+- Move all `WeakPtrFactory` members to the end of the containing class ([#2472](https://github.io/github/mapvina/mapvina-native/pull/2472)).
 
 ### 🐞 Bug fixes
 
-- Fixes crash that happened when parsing some PBF files ([Issue](https://github.com/mapvina/mapvina-native/issues/795), [PR](https://github.com/mapvina/mapvina-native/pull/2460)).
-- Shut down the mailbox on raster tiles as with GeometryTile to avoid processing messages after it's queued for destruction ([#2443](https://github.com/mapvina/mapvina-native/pull/2443)).
-- Increase the deferred cleanup timeout ([#2455](https://github.com/mapvina/mapvina-native/pull/2455)).
-- Fix crash caused `DefaultRefDeleter`, reported by Komoot ([#2487](https://github.com/mapvina/mapvina-native/pull/2487)).
+- Fixes crash that happened when parsing some PBF files ([Issue](https://github.io/github/mapvina/mapvina-native/issues/795), [PR](https://github.io/github/mapvina/mapvina-native/pull/2460)).
+- Shut down the mailbox on raster tiles as with GeometryTile to avoid processing messages after it's queued for destruction ([#2443](https://github.io/github/mapvina/mapvina-native/pull/2443)).
+- Increase the deferred cleanup timeout ([#2455](https://github.io/github/mapvina/mapvina-native/pull/2455)).
+- Fix crash caused `DefaultRefDeleter`, reported by Komoot ([#2487](https://github.io/github/mapvina/mapvina-native/pull/2487)).
 
 ## 11.0.0
 
-The rendering internals of MapVina Native have undergone major changes. We've had an extensive period of [pre-releases](https://github.com/mapvina/mapvina-native/issues/1608) leading up to this official release. While we've worked hard to minimize potential issues, it's possible that there may still be regressions. Therefore, it's important to conduct your own testing and report any encountered issues on GitHub.
+The rendering internals of MapVina Native have undergone major changes. We've had an extensive period of [pre-releases](https://github.io/github/mapvina/mapvina-native/issues/1608) leading up to this official release. While we've worked hard to minimize potential issues, it's possible that there may still be regressions. Therefore, it's important to conduct your own testing and report any encountered issues on GitHub.
 
 This release utilizes **OpenGL ES 3.0**. As a result, some older devices are no longer supported. If you require compatibility with devices that do not support OpenGL ES 3.0, it's recommended to continue using the 10.x.x release series.
 
 ### ✨ Features and improvements
 
-- Add support for custom `ModuleProvider` implementations (#[2231](https://github.com/mapvina/mapvina-native/pull/2231))
-- Allow setting padding when camera is tracking (#[2165](https://github.com/mapvina/mapvina-native/pull/2165)).
+- Add support for custom `ModuleProvider` implementations (#[2231](https://github.io/github/mapvina/mapvina-native/pull/2231))
+- Allow setting padding when camera is tracking (#[2165](https://github.io/github/mapvina/mapvina-native/pull/2165)).
 - Update user agent from Mapbox to MapVinaNative.
 
-- 💥 Breaking: Change package of all classes from `com.mapbox.mapboxsdk` to `com.mapvina.android` ([#1201](https://github.com/mapvina/mapvina-native/pull/1201)). This means you will need to fix your imports.
+- 💥 Breaking: Change package of all classes from `com.mapbox.mapboxsdk` to `io.github.mapvina.android` ([#1201](https://github.io/github/mapvina/mapvina-native/pull/1201)). This means you will need to fix your imports.
 
   > To migrate:
-  > In your imports in each of your project files, replace `com.mapbox.mapboxsdk.` with `com.mapvina.android.*`.
+  > In your imports in each of your project files, replace `com.mapbox.mapboxsdk.` with `io.github.mapvina.android.*`.
 
 - 💥 Breaking: Rename several classes to no longer contain the word "Mapbox". You will need to migrate by renaming references.
 
@@ -577,25 +577,25 @@ This release utilizes **OpenGL ES 3.0**. As a result, some older devices are no 
 
 ### 🐞 Bug fixes
 
-- Fix "... has unresolved theme attributes" error in BitMapUtils ([#1274](https://github.com/mapvina/mapvina-native/issues/1274)).
+- Fix "... has unresolved theme attributes" error in BitMapUtils ([#1274](https://github.io/github/mapvina/mapvina-native/issues/1274)).
 
 ## 10.3.1
 
-This release includes [debug symbols](https://github.com/mapvina/mapvina-native/releases?q=android&expanded=true) on GitHub.
+This release includes [debug symbols](https://github.io/github/mapvina/mapvina-native/releases?q=android&expanded=true) on GitHub.
 
 ## 10.3.0
 
 ### ✨ Features and improvements
 
-* Add support for the [`slice` expression](https://mapvina.com/mapvina-style-spec/expressions/#slice) ([#1133](https://github.com/mapvina/mapvina-native/pull/1133))
-* Add support for [index-of expression](https://mapvina.com/mapvina-style-spec/expressions/#index-of) ([#1113](https://github.com/mapvina/mapvina-native/pull/1113))
-* Change to a more natural fling animation and allow setting `flingThreshold` and `flingAnimationBaseTime` in `UiSettings` ([#963](https://github.com/mapvina/mapvina-native/pull/963))
-* Add setting padding when camera is tracking ([#2165](https://github.com/mapvina/mapvina-native/pull/2165)).
+* Add support for the [`slice` expression](https://mapvina.io/github/mapvina-style-spec/expressions/#slice) ([#1133](https://github.io/github/mapvina/mapvina-native/pull/1133))
+* Add support for [index-of expression](https://mapvina.io/github/mapvina-style-spec/expressions/#index-of) ([#1113](https://github.io/github/mapvina/mapvina-native/pull/1113))
+* Change to a more natural fling animation and allow setting `flingThreshold` and `flingAnimationBaseTime` in `UiSettings` ([#963](https://github.io/github/mapvina/mapvina-native/pull/963))
+* Add setting padding when camera is tracking ([#2165](https://github.io/github/mapvina/mapvina-native/pull/2165)).
 
 ### 🐞 Bug fixes
 
-* Fix regression in CameraUpdateFactory#zoomOut ([#1035](https://github.com/mapvina/mapvina-native/pull/1035))
-* `AndroidLocationEngineImpl` made public to create custom `LocationEngineProvider`([#850](https://github.com/mapvina/mapvina-native/pull/850))
+* Fix regression in CameraUpdateFactory#zoomOut ([#1035](https://github.io/github/mapvina/mapvina-native/pull/1035))
+* `AndroidLocationEngineImpl` made public to create custom `LocationEngineProvider`([#850](https://github.io/github/mapvina/mapvina-native/pull/850))
 
 ## 10.2.0
 
@@ -607,32 +607,32 @@ This version is identical to 10.0.2.
 
 ### ✨ Features and improvements
 
-- Change to a more natural fling animation and allow setting `flingThreshold` and `flingAnimationBaseTime` in `UiSettings` ([#963](https://github.com/mapvina/mapvina-native/pull/963))
-- Add support for the [`index-of` expression](https://mapvina.com/mapvina-style-spec/expressions/#index-of) ([#1113](https://github.com/mapvina/mapvina-native/pull/1113))
+- Change to a more natural fling animation and allow setting `flingThreshold` and `flingAnimationBaseTime` in `UiSettings` ([#963](https://github.io/github/mapvina/mapvina-native/pull/963))
+- Add support for the [`index-of` expression](https://mapvina.io/github/mapvina-style-spec/expressions/#index-of) ([#1113](https://github.io/github/mapvina/mapvina-native/pull/1113))
 
 ### 🐞 Bug fixes
 
-- Fix regression in CameraUpdateFactory#zoomOut ([#1035](https://github.com/mapvina/mapvina-native/pull/1035))
-- `AndroidLocationEngineImpl` made public to create custom `LocationEngineProvider`([#850](https://github.com/mapvina/mapvina-native/pull/850))
+- Fix regression in CameraUpdateFactory#zoomOut ([#1035](https://github.io/github/mapvina/mapvina-native/pull/1035))
+- `AndroidLocationEngineImpl` made public to create custom `LocationEngineProvider`([#850](https://github.io/github/mapvina/mapvina-native/pull/850))
 
 ## 10.0.2 - February 23, 2023
 
 ### 🐞 Bug fixes
 
-- `MapboxFusedLocationEngineImpl` constructor made public to create custom `LocationEngineProvider`([#850](https://github.com/mapvina/mapvina-native/pull/850))
+- `MapboxFusedLocationEngineImpl` constructor made public to create custom `LocationEngineProvider`([#850](https://github.io/github/mapvina/mapvina-native/pull/850))
 
 ## 10.0.1 - February 22, 2023
 
 ### 🐞 Bug fixes
 
-- Fixed regression with `RasterSource` native code throwing an exception expecting bound after switching to `FloatArray` ([#830](https://github.com/mapvina/mapvina-native/pull/830)).
-- `LocationEngineProxy` was made public so that the migration path suggested in the 10.0.0 changelog for those wanting to use GMS Location Services can actually be implemented ([#832](https://github.com/mapvina/mapvina-native/pull/830)).
+- Fixed regression with `RasterSource` native code throwing an exception expecting bound after switching to `FloatArray` ([#830](https://github.io/github/mapvina/mapvina-native/pull/830)).
+- `LocationEngineProxy` was made public so that the migration path suggested in the 10.0.0 changelog for those wanting to use GMS Location Services can actually be implemented ([#832](https://github.io/github/mapvina/mapvina-native/pull/830)).
 
 ## 10.0.0 - February 15, 2023
 
 ### ✨ Features and improvements
 
-- 💥 Breaking: Changed resourcePrefix to `mapvina_` from `mapbox_` ([#647](https://github.com/mapvina/mapvina-native/pull/647)) and renamed resources accordingly. Note that this is a breaking change since the names of public resources were renamed as well. Replaced Mapbox logo with MapVina logo.
+- 💥 Breaking: Changed resourcePrefix to `mapvina_` from `mapbox_` ([#647](https://github.io/github/mapvina/mapvina-native/pull/647)) and renamed resources accordingly. Note that this is a breaking change since the names of public resources were renamed as well. Replaced Mapbox logo with MapVina logo.
 
   > To migrate:
   > If you use any of the public Android resources, you will get an error that they can not be found. Replace the prefix of each, e.g. `R.style.mapbox_LocationComponent` -> `R.style.mapvina_LocationComponent`.
@@ -652,12 +652,12 @@ This version is identical to 10.0.2.
   > locationComponent.activateLocationComponent(options)
   > ```
 
-- 💥 Breaking: the `LocationEngine` implemented with Google Location Services has been removed to make MapVina Native for Android fully FLOSS ([#379](https://github.com/mapvina/mapvina-native/issues/379)).
+- 💥 Breaking: the `LocationEngine` implemented with Google Location Services has been removed to make MapVina Native for Android fully FLOSS ([#379](https://github.io/github/mapvina/mapvina-native/issues/379)).
 
   > To migrate:
-  > Include the source code of the removed [`GoogleLocationEngineImpl`](https://github.com/mapvina/mapvina-native/blob/4a34caab7593f4f1b6d8c09c06a5e25d7c6cfc43/platform/android/MapVinaAndroid/src/main/java/com/mapbox/mapboxsdk/location/engine/GoogleLocationEngineImpl.java) in your source tree.
+  > Include the source code of the removed [`GoogleLocationEngineImpl`](https://github.io/github/mapvina/mapvina-native/blob/4a34caab7593f4f1b6d8c09c06a5e25d7c6cfc43/platform/android/MapVinaAndroid/src/main/java/com/mapbox/mapboxsdk/location/engine/GoogleLocationEngineImpl.java) in your source tree.
   >
-  > Pass an instance of `LocationEngine` based on `GoogleLocationEngineImpl` to `LocationComponentActivationOptions.Builder.locationEngine` (this was done in a now removed [`LocationEngineProvider`](https://github.com/mapvina/mapvina-native/blob/68d58d6f6f453d5c6cc0fa92fcc6c6cfe0cf967f/platform/android/MapVinaAndroid/src/main/java/com/mapbox/mapboxsdk/location/engine/LocationEngineProvider.java#L59) class):
+  > Pass an instance of `LocationEngine` based on `GoogleLocationEngineImpl` to `LocationComponentActivationOptions.Builder.locationEngine` (this was done in a now removed [`LocationEngineProvider`](https://github.io/github/mapvina/mapvina-native/blob/68d58d6f6f453d5c6cc0fa92fcc6c6cfe0cf967f/platform/android/MapVinaAndroid/src/main/java/com/mapbox/mapboxsdk/location/engine/LocationEngineProvider.java#L59) class):
   >
   > ```kotlin
   > val locationEngine = LocationEngineProxy<Any>(GoogleLocationEngineImpl(context))
@@ -667,116 +667,116 @@ This version is identical to 10.0.2.
 
 - 💥 Breaking: The static `LocationEngineResult.extractResult` can no longer extract a `LocationEngineResult` from a Google Play intent.
 
-  > To migrate, include and use the [previous implementation](https://github.com/mapvina/mapvina-native/blob/ea234edf67bb3aec75f077e15c1c30c99756b926/platform/android/MapVinaAndroid/src/main/java/com/mapbox/mapboxsdk/location/engine/LocationEngineResult.java#L97) in your source tree.
+  > To migrate, include and use the [previous implementation](https://github.io/github/mapvina/mapvina-native/blob/ea234edf67bb3aec75f077e15c1c30c99756b926/platform/android/MapVinaAndroid/src/main/java/com/mapbox/mapboxsdk/location/engine/LocationEngineResult.java#L97) in your source tree.
 
-- Improve Kotlinification of LatLng ([#742](https://github.com/mapvina/mapvina-native/issues))
-- Increment minSdkVersion from 14 to 21, as it covers 99.2%% of the newer devices since 2014 and lessens the backward compatibility burden ([#630](https://github.com/mapvina/mapvina-native/pull/630))
+- Improve Kotlinification of LatLng ([#742](https://github.io/github/mapvina/mapvina-native/issues))
+- Increment minSdkVersion from 14 to 21, as it covers 99.2%% of the newer devices since 2014 and lessens the backward compatibility burden ([#630](https://github.io/github/mapvina/mapvina-native/pull/630))
 
 ### 🐞 Bug fixes
 
-- Catches NaN for onMove event ([621](https://github.com/mapvina/mapvina-native/pull/621))
-- `BitmapUtils.mergeBitmap` was deprecated, `BitmapUtils.mergeBitmaps` is a new method that does not offset views rendered on top of snapshots ([#733](https://github.com/mapvina/mapvina-native/issues/733))
-- Fixed a crash when native code was accessing the LatLngBounds class [#655](https://github.com/mapvina/mapvina-native/pull/)
+- Catches NaN for onMove event ([621](https://github.io/github/mapvina/mapvina-native/pull/621))
+- `BitmapUtils.mergeBitmap` was deprecated, `BitmapUtils.mergeBitmaps` is a new method that does not offset views rendered on top of snapshots ([#733](https://github.io/github/mapvina/mapvina-native/issues/733))
+- Fixed a crash when native code was accessing the LatLngBounds class [#655](https://github.io/github/mapvina/mapvina-native/pull/)
 
 ### ⛵ Dependencies
 
-- Revert "Revert "Gradle update"" - Update Gradle from v3 to v7 ([#619](https://github.com/mapvina/mapvina-native/pull/619))
+- Revert "Revert "Gradle update"" - Update Gradle from v3 to v7 ([#619](https://github.io/github/mapvina/mapvina-native/pull/619))
 
 ## 9.6.0 - December 18, 2022
 
 ### ✨ Features and improvements
 
-- Add missing header guards ([#543](https://github.com/mapvina/mapvina-native/pull/543))
-- Removing unused versions sdk ([#515](https://github.com/mapvina/mapvina-native/pull/515))
-- (tag: node-v5.0.1-pre.0) Upgrade libs and remove Jetifier ([#218](https://github.com/mapvina/mapvina-native/pull/218))
-- Migrate examples in android TestApp to Kotlin ([#416](https://github.com/mapvina/mapvina-native/pull/416))
-- Add ClientOptions to be able to pass around client name and version ([#365](https://github.com/mapvina/mapvina-native/pull/365))
-- Use mapvina docs for more links ([#354](https://github.com/mapvina/mapvina-native/pull/354))
-- Use the MapVina style spec docs website ([#353](https://github.com/mapvina/mapvina-native/pull/353))
-- Refresh iOS & Android build docs ([5f679b55b](https://github.com/mapvina/mapvina-native/commit/5f679b55b))
-- Qt build improvements and documentation ([#277](https://github.com/mapvina/mapvina-native/pull/277))
-- Replace Mapbox with MapVina in README titles ([#297](https://github.com/mapvina/mapvina-native/pull/297))
-- Rename MaptilerFileSource to MBTilesFileSource ([#198](https://github.com/mapvina/mapvina-native/pull/198))
-- Changed missed MapBox reference to MapVina ([#253](https://github.com/mapvina/mapvina-native/pull/253))
-- Implement map projection functionality ([#254](https://github.com/mapvina/mapvina-native/pull/254))
-- chore: rename master -> main in CI and scripts ([#246](https://github.com/mapvina/mapvina-native/pull/246))
-- Feature - Bring back node support ([#217](https://github.com/mapvina/mapvina-native/pull/217))
-- Remove obsolete CI configurations ([#219](https://github.com/mapvina/mapvina-native/pull/219))
+- Add missing header guards ([#543](https://github.io/github/mapvina/mapvina-native/pull/543))
+- Removing unused versions sdk ([#515](https://github.io/github/mapvina/mapvina-native/pull/515))
+- (tag: node-v5.0.1-pre.0) Upgrade libs and remove Jetifier ([#218](https://github.io/github/mapvina/mapvina-native/pull/218))
+- Migrate examples in android TestApp to Kotlin ([#416](https://github.io/github/mapvina/mapvina-native/pull/416))
+- Add ClientOptions to be able to pass around client name and version ([#365](https://github.io/github/mapvina/mapvina-native/pull/365))
+- Use mapvina docs for more links ([#354](https://github.io/github/mapvina/mapvina-native/pull/354))
+- Use the MapVina style spec docs website ([#353](https://github.io/github/mapvina/mapvina-native/pull/353))
+- Refresh iOS & Android build docs ([5f679b55b](https://github.io/github/mapvina/mapvina-native/commit/5f679b55b))
+- Qt build improvements and documentation ([#277](https://github.io/github/mapvina/mapvina-native/pull/277))
+- Replace Mapbox with MapVina in README titles ([#297](https://github.io/github/mapvina/mapvina-native/pull/297))
+- Rename MaptilerFileSource to MBTilesFileSource ([#198](https://github.io/github/mapvina/mapvina-native/pull/198))
+- Changed missed MapBox reference to MapVina ([#253](https://github.io/github/mapvina/mapvina-native/pull/253))
+- Implement map projection functionality ([#254](https://github.io/github/mapvina/mapvina-native/pull/254))
+- chore: rename master -> main in CI and scripts ([#246](https://github.io/github/mapvina/mapvina-native/pull/246))
+- Feature - Bring back node support ([#217](https://github.io/github/mapvina/mapvina-native/pull/217))
+- Remove obsolete CI configurations ([#219](https://github.io/github/mapvina/mapvina-native/pull/219))
 
 ### 🐞 Bug fixes
 
-- Fixes potential NaN when calling `NativeMapView::nativeMoveBy` ([#501](https://github.com/mapvina/mapvina-native/pull/501))
-- Fix android ci workflows ([#476](https://github.com/mapvina/mapvina-native/pull/476))
-- Fix typo in geo.cpp ([#412](https://github.com/mapvina/mapvina-native/pull/412))
-- Fix render tests ([#351](https://github.com/mapvina/mapvina-native/pull/351))
-- fix shiftY calculation typo ([#285](https://github.com/mapvina/mapvina-native/pull/285))
-- [msvc] Fix warnings, mainly casting to smaller types ([#270](https://github.com/mapvina/mapvina-native/pull/270))
-- Fix street label appearance while animating near zoom level threshhold ([#267](https://github.com/mapvina/mapvina-native/pull/267))
+- Fixes potential NaN when calling `NativeMapView::nativeMoveBy` ([#501](https://github.io/github/mapvina/mapvina-native/pull/501))
+- Fix android ci workflows ([#476](https://github.io/github/mapvina/mapvina-native/pull/476))
+- Fix typo in geo.cpp ([#412](https://github.io/github/mapvina/mapvina-native/pull/412))
+- Fix render tests ([#351](https://github.io/github/mapvina/mapvina-native/pull/351))
+- fix shiftY calculation typo ([#285](https://github.io/github/mapvina/mapvina-native/pull/285))
+- [msvc] Fix warnings, mainly casting to smaller types ([#270](https://github.io/github/mapvina/mapvina-native/pull/270))
+- Fix street label appearance while animating near zoom level threshhold ([#267](https://github.io/github/mapvina/mapvina-native/pull/267))
 
 ### ⛵ Dependencies
 
-- Bump semver from 7.3.7 to 7.3.8 in /platform/android ([#530](https://github.com/mapvina/mapvina-native/pull/530))
-- Bump to JDK 11 in android CI and generate Gradle Wrapper ([#474](https://github.com/mapvina/mapvina-native/pull/474))
-- Bump ejs from 3.1.7 to 3.1.8 in /platform/android ([#470](https://github.com/mapvina/mapvina-native/pull/470))
-- Upgrade Gradle from 3.6.3 to 3.6.4 ([#456](https://github.com/mapvina/mapvina-native/pull/456))
-- Bump semver from 5.7.1 to 7.3.7 in /platform/android ([#461](https://github.com/mapvina/mapvina-native/pull/461))
-- Bump pixelmatch from 4.0.2 to 5.3.0 in /platform/android ([#460](https://github.com/mapvina/mapvina-native/pull/460))
-- Bump esm from 3.1.0 to 3.2.25 in /platform/android ([#463](https://github.com/mapvina/mapvina-native/pull/463))
-- Bump ejs from 2.7.4 to 3.1.7 in /platform/android ([#299](https://github.com/mapvina/mapvina-native/pull/299))
-- Bump lodash from 4.17.19 to 4.17.21 in /platform/android ([#195](https://github.com/mapvina/mapvina-native/pull/195))
+- Bump semver from 7.3.7 to 7.3.8 in /platform/android ([#530](https://github.io/github/mapvina/mapvina-native/pull/530))
+- Bump to JDK 11 in android CI and generate Gradle Wrapper ([#474](https://github.io/github/mapvina/mapvina-native/pull/474))
+- Bump ejs from 3.1.7 to 3.1.8 in /platform/android ([#470](https://github.io/github/mapvina/mapvina-native/pull/470))
+- Upgrade Gradle from 3.6.3 to 3.6.4 ([#456](https://github.io/github/mapvina/mapvina-native/pull/456))
+- Bump semver from 5.7.1 to 7.3.7 in /platform/android ([#461](https://github.io/github/mapvina/mapvina-native/pull/461))
+- Bump pixelmatch from 4.0.2 to 5.3.0 in /platform/android ([#460](https://github.io/github/mapvina/mapvina-native/pull/460))
+- Bump esm from 3.1.0 to 3.2.25 in /platform/android ([#463](https://github.io/github/mapvina/mapvina-native/pull/463))
+- Bump ejs from 2.7.4 to 3.1.7 in /platform/android ([#299](https://github.io/github/mapvina/mapvina-native/pull/299))
+- Bump lodash from 4.17.19 to 4.17.21 in /platform/android ([#195](https://github.io/github/mapvina/mapvina-native/pull/195))
 
 ## 9.5.2 - December 02, 2021
 
 ### Bug Fixes
 
-- raster layers stopped working in Android [#161](https://github.com/mapvina/mapvina-native/pull/161)
-- remove Mapbox's in favor of MapVina in attribution dialog [#160](https://github.com/mapvina/mapvina-native/pull/160)
-- queryRenderedFeatures returns wrong results - issue #184, [#147](https://github.com/mapvina/mapvina-native/pull/174)
+- raster layers stopped working in Android [#161](https://github.io/github/mapvina/mapvina-native/pull/161)
+- remove Mapbox's in favor of MapVina in attribution dialog [#160](https://github.io/github/mapvina/mapvina-native/pull/160)
+- queryRenderedFeatures returns wrong results - issue #184, [#147](https://github.io/github/mapvina/mapvina-native/pull/174)
 
 ## 9.5.1 - September 06, 2021
 
 ### Bug Fixes
 
-- Invalid tile url template for MapVina style [#107](https://github.com/mapvina/mapvina-native/pull/107)
-- Crash when inflating view on Android [#130](https://github.com/mapvina/mapvina-native/pull/130)
+- Invalid tile url template for MapVina style [#107](https://github.io/github/mapvina/mapvina-native/pull/107)
+- Crash when inflating view on Android [#130](https://github.io/github/mapvina/mapvina-native/pull/130)
 
 ### Other
 
-- Fix perf regression in cached tiles of tile pyramid [#129](https://github.com/mapvina/mapvina-native/pull/129)
-- Upgrade to newest protozero [#148](https://github.com/mapvina/mapvina-native/pull/148)
-- Change NativeMapView.resizeView to use 0 instead of throwing IllegalArgumentException [#151](https://github.com/mapvina/mapvina-native/pull/151)
+- Fix perf regression in cached tiles of tile pyramid [#129](https://github.io/github/mapvina/mapvina-native/pull/129)
+- Upgrade to newest protozero [#148](https://github.io/github/mapvina/mapvina-native/pull/148)
+- Change NativeMapView.resizeView to use 0 instead of throwing IllegalArgumentException [#151](https://github.io/github/mapvina/mapvina-native/pull/151)
 
 ## 9.5.0 - June 29, 2021
 
 ### Features
 
-- Replacing hardcoded configuration with configurable API and removing Mapbox assets and dependencies [#90](https://github.com/mapvina/mapvina-native/pull/90)
+- Replacing hardcoded configuration with configurable API and removing Mapbox assets and dependencies [#90](https://github.io/github/mapvina/mapvina-native/pull/90)
 
 ### Other
 
-- Migration from bintray [#77](https://github.com/mapvina/mapvina-native/pull/77)
+- Migration from bintray [#77](https://github.io/github/mapvina/mapvina-native/pull/77)
 
 ## 9.4.2 - May 6, 2021
 
 ### Other
 
-Switching from mapbox-java libraries to [mapvina fork](https://github.com/mapvina/mapvina-java)
+Switching from mapbox-java libraries to [mapvina fork](https://github.io/github/mapvina/mapvina-java)
 
 ## 9.4.0 - March 12, 2021
 
 ### Bug Fixes
 
-- Fixed an issue where symbols flickered when zooming out. [#16](https://github.com/mapvina/mapvina-native/issues/16)
+- Fixed an issue where symbols flickered when zooming out. [#16](https://github.io/github/mapvina/mapvina-native/issues/16)
 - Fixes crash caused by NullPointerException MapKeyListener [#464](https://github.com/mapbox/mapbox-gl-native-android/issues/464), cherry picked from [#466](https://github.com/mapbox/mapbox-gl-native-android/pull/466)
 - Fixed an issue where GPS puck keeps previous value when enabled. [#462]https://github.com/mapbox/mapbox-gl-native-android/issues/462, cherry picked from [#470](https://github.com/mapbox/mapbox-gl-native-android/pull/470)
-- Not changing location camera mode while disabled. [#24](https://github.com/mapvina/mapvina-native/issues/24)
-- Symbol layer flickering after zooming out. [#16](https://github.com/mapvina/mapvina-native/issues/16)
-- Avoid throwing null pointer exception on slow initialization [#22](https://github.com/mapvina/mapvina-native/issues/22)
+- Not changing location camera mode while disabled. [#24](https://github.io/github/mapvina/mapvina-native/issues/24)
+- Symbol layer flickering after zooming out. [#16](https://github.io/github/mapvina/mapvina-native/issues/16)
+- Avoid throwing null pointer exception on slow initialization [#22](https://github.io/github/mapvina/mapvina-native/issues/22)
 
 ### Other
 
 - mapbox-gl-js submodule has been replaced with mapvina-gl-js
-- Removed Telemetry [#7](https://github.com/mapvina/mapvina-native/pull/7)
+- Removed Telemetry [#7](https://github.io/github/mapvina/mapvina-native/pull/7)
 
 ## 9.3.0 - January 6, 2021
 

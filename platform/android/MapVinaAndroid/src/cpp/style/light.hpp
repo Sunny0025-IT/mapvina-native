@@ -16,7 +16,7 @@ using namespace style;
 
 class Light : private mbgl::util::noncopyable {
 public:
-    static constexpr auto Name() { return "org/mapvina/android/style/light/Light"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/style/light/Light"; };
 
     static void registerNative(jni::JNIEnv&);
 

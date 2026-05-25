@@ -32,7 +32,7 @@ jobs:
             # Pixel 4a Android 12, Pixel 7 Pro Android 13
             devicePool: "arn:aws:devicefarm:us-west-2:373521797162:devicepool:20687d72-0e46-403e-8f03-0941850665bc/55db2b56-930a-4485-bdc0-03409a5a6060",
             # android-render-test.yml
-            # see https://github.com/mapvina/ci-runners/tree/main/aws-device-farm/custom-test-envs
+            # see https://github.io/github/mapvina/ci-runners/tree/main/aws-device-farm/custom-test-envs
             testSpecArn: "arn:aws:devicefarm:us-west-2:373521797162:upload:20687d72-0e46-403e-8f03-0941850665bc/c1fc7d3e-dfe3-4a31-9ee0-7b0f71b08872"
           },
           {
@@ -40,12 +40,12 @@ jobs:
             testFile: "MapVinaAndroidTestApp-opengl-release-androidTest.apk",
             appFile: "MapVinaAndroidTestApp-opengl-release.apk",
             name: "Android Benchmark",
-            testFilter: "com.mapvina.android.benchmark.Benchmark",
+            testFilter: "io.github.mapvina.android.benchmark.Benchmark",
             # Google Pixel 7 Pro
             # query with `aws list-device-pools --arn <project_arn>`
             devicePool: "arn:aws:devicefarm:us-west-2:373521797162:devicepool:20687d72-0e46-403e-8f03-0941850665bc/9692fe7f-86a9-4ecc-908f-175600968564",
             # benchmark-android.yaml
-            # see https://github.com/mapvina/ci-runners/tree/main/aws-device-farm/custom-test-envs
+            # see https://github.io/github/mapvina/ci-runners/tree/main/aws-device-farm/custom-test-envs
             testSpecArn: "arn:aws:devicefarm:us-west-2:373521797162:upload:20687d72-0e46-403e-8f03-0941850665bc/14862afb-cf88-44aa-9f1e-5131cbb22f01"
           },
           {

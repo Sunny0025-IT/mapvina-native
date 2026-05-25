@@ -74,7 +74,7 @@ jobs:
             deployment_arch: "x86_64;arm64"
             compiler: ""
           # disabled due to https://github.com/llvm/llvm-project/issues/77653
-          # https://github.com/mapvina/mapvina-native/pull/3879#issuecomment-3406495279
+          # https://github.io/github/mapvina/mapvina-native/pull/3879#issuecomment-3406495279
           # - name: macOS_LLVM
           #   os: macos-14
           #   build_type: RelWithDebInfo

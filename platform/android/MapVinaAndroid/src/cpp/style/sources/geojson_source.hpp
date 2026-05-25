@@ -42,7 +42,7 @@ struct Update {
 class GeoJSONSource : public Source {
 public:
     using SuperTag = Source;
-    static constexpr auto Name() { return "org/mapvina/android/style/sources/GeoJsonSource"; };
+    static constexpr auto Name() { return "io/github/mapvina/android/style/sources/GeoJsonSource"; };
 
     static void registerNative(jni::JNIEnv&);
 

@@ -5,7 +5,7 @@
 This example shows how to configure a maximum and a minimum zoom level.
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/MaxMinZoomActivity.kt:zoomPreference"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/MaxMinZoomActivity.kt:zoomPreference"
 ```
 
 ## Bonus: Add Click Listener
@@ -13,7 +13,7 @@ This example shows how to configure a maximum and a minimum zoom level.
 As a bonus, this example also shows how you can define a click listener to the map.
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/MaxMinZoomActivity.kt:addOnMapClickListener"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/MaxMinZoomActivity.kt:addOnMapClickListener"
 ```
 
 You can remove a click listener again with `MapVinaMap.removeOnMapClickListener`. To use this API you need to assign the click listener to a variable, since you need to pass the listener to that method.

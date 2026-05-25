@@ -20,7 +20,7 @@ MLN_EXPORT
 
 /**
  JSON string of the map style to display. The JSON must conform to the
- <a href="https://mapvina.com/mapvina-style-spec/">MapVina Style Specification</a>.
+ <a href="https://mapvina.io/github/mapvina-style-spec/">MapVina Style Specification</a>.
  Specify `nil` for the default style.
  Ignored if `styleURL` is set to a non-nil value.
  */

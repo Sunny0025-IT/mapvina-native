@@ -5,7 +5,7 @@
 This example shows how you can move the map by x/y pixels.
 
 ```kotlin
---8<-- "MapVinaAndroidTestApp/src/main/java/org/mapvina/android/testapp/activity/camera/ScrollByActivity.kt:scrollBy"
+--8<-- "MapVinaAndroidTestApp/src/main/java/io/github/mapvina/android/testapp/activity/camera/ScrollByActivity.kt:scrollBy"
 ```
 
 <figure markdown="span">
