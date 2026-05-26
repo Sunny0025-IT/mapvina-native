@@ -271,8 +271,8 @@ class BottomSheetActivity : AppCompatActivity() {
     }
 
     companion object {
-        private const val TAG_MAIN_FRAGMENT = "com.mapbox.mapboxsdk.fragment.tag.main"
-        private const val TAG_BOTTOM_FRAGMENT = "com.mapbox.mapboxsdk.fragment.tag.bottom"
+        private const val TAG_MAIN_FRAGMENT = "com.mapvina.fragment.tag.main"
+        private const val TAG_BOTTOM_FRAGMENT = "com.mapvina.fragment.tag.bottom"
         private const val AMOUNT_OF_MAIN_MAP_FRAGMENTS = "Amount of main map fragments: %s"
     }
 }

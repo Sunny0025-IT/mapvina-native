@@ -68,7 +68,7 @@ class MapSnapshotterActivity : AppCompatActivity() {
     private fun startSnapshot(row: Int, column: Int) {
         // # --8<-- [start:styleBuilder]
         val styles = arrayOf(
-            TestStyles.DEMOTILES,
+            TestStyles.MAPVINA_STREETS,
             TestStyles.AMERICANA,
             TestStyles.OPENFREEMAP_LIBERTY,
             TestStyles.AWS_OPEN_DATA_STANDARD_LIGHT,

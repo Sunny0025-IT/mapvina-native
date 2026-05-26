@@ -38,7 +38,7 @@ class PrintActivity : AppCompatActivity(), MapVinaMap.SnapshotReadyCallback {
     override fun onSnapshotReady(snapshot: Bitmap) {
         val photoPrinter = PrintHelper(this)
         photoPrinter.scaleMode = PrintHelper.SCALE_MODE_FIT
-        photoPrinter.printBitmap("map.jpg - mapbox print job", snapshot)
+        photoPrinter.printBitmap("map.jpg - mapvina print job", snapshot)
     }
 
     override fun onStart() {

@@ -7,7 +7,7 @@
         17.65431710431244,
         32.954120326746775
     ],
-    "glyphs": "https://demotiles.mapvina.com/font/{fontstack}/{range}.pbf",
+    "glyphs": "https://maps.mapvina.com/font/{fontstack}/{range}.pbf",
     "layers": [
         {
             "id": "background",
@@ -537,8 +537,9 @@
     "bearing": 0,
     "sources": {
         "mapvina": {
-            "url": "https://demotiles.mapvina.com/tiles/tiles.json",
-            "type": "vector"
+            "url": "https://maps.mapvina.com/tiles/v2/composite.json?key=public_key",
+            "type": "vector",
+            "encoding": "mlt"
         },
         "crimea": {
             "type": "geojson",

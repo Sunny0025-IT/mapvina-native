@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="io.github.mapvina.mapboxsdk.testapp.activity.camera.GestureDetectorActivity">
+    tools:context="io.github.mapvina.android.testapp.activity.camera.GestureDetectorActivity">
 
     <io.github.mapvina.android.maps.MapView
         android:id="@id/mapView"

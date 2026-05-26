@@ -75,7 +75,7 @@ class StyleFileActivity : AppCompatActivity() {
      */
     private fun loadStyleFileTask(context: Context): String =
         try {
-            ResourceUtils.readRawResource(context, R.raw.demotiles)
+            ResourceUtils.readRawResource(context, R.raw.mapvina_streets)
         } catch (exception: Exception) {
             Timber.e(exception, "Can't load local file style")
             ""

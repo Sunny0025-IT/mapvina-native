@@ -30,18 +30,9 @@ class SimpleMapActivity : AppCompatActivity() {
         mapView = findViewById(R.id.mapView)
         mapView.onCreate(savedInstanceState)
         mapView.getMapAsync {
-            val key = ApiKeyUtils.getApiKey(applicationContext)
-            if (key == null || key == "YOUR_API_KEY_GOES_HERE") {
-                it.setStyle(
+            it.setStyle(
                     Style.Builder().fromUri("https://maps.mapvina.com/styles/v2/streets.json?key=public_key")
                 )
-            } else {
-                val styles = Style.getPredefinedStyles()
-                if (styles.isNotEmpty()) {
-                    val styleUrl = styles[0].url
-                    it.setStyle(Style.Builder().fromUri(styleUrl))
-                }
-            }
         }
     }
 

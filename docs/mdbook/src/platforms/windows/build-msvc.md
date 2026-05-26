@@ -51,7 +51,7 @@ Once configure is done, open the file `build-windows-<preset>\MapVina Native.sln
 If all went well and target `mbgl-render` or `ALL_BUILD` was chosen, there should now be a `build-windows-<preset>\bin\mbgl-render.exe` binary that you can run to generate map tile images. To test that it is working properly, run the following command.
 
 ```cmd
-.\build-windows-<preset>\bin\mbgl-render.exe --style https://raw.githubusercontent.io/github/mapvina/demotiles/gh-pages/style.json --output out.png
+.\build-windows-<preset>\bin\mbgl-render.exe --style https://maps.mapvina.com/styles/v2/streets.json?key=public_key --output out.png
 ```
 
 This should produce an `out.png` map tile image with the default MapVina styling from [the MapVina demo](https://mapvina.io/github/mapvina-gl-js/docs/examples/display-a-map/).

@@ -47,7 +47,7 @@ class SymbolLayerActivity : AppCompatActivity(), OnMapClickListener, OnMapReadyC
     private var markerSource: GeoJsonSource? = null
     private var markerCollection: FeatureCollection? = null
     private var markerSymbolLayer: SymbolLayer? = null
-    private var mapboxSignSymbolLayer: SymbolLayer? = null
+    private var mapvinaSignSymbolLayer: SymbolLayer? = null
     private var numberFormatSymbolLayer: SymbolLayer? = null
     private lateinit var mapvinaMap: MapVinaMap
     private lateinit var mapView: MapView
@@ -132,11 +132,11 @@ class SymbolLayerActivity : AppCompatActivity(), OnMapClickListener, OnMapReadyC
                 PropertyFactory.textSize(10f)
             )
 
-        // mapbox sign layer
-        val mapboxSignSource: Source =
-            GeoJsonSource(MAPBOX_SIGN_SOURCE, Point.fromLngLat(4.91638, 52.3510))
-        mapboxSignSymbolLayer = SymbolLayer(MAPBOX_SIGN_LAYER, MAPBOX_SIGN_SOURCE)
-        shuffleMapboxSign()
+        // MapVina sign layer
+        val mapvinaSignSource: Source =
+            GeoJsonSource(MAPVINA_SIGN_SOURCE, Point.fromLngLat(4.91638, 52.3510))
+        mapvinaSignSymbolLayer = SymbolLayer(MAPVINA_SIGN_LAYER, MAPVINA_SIGN_SOURCE)
+        shuffleMapvinaSign()
 
         // number format layer
         val numberFormatSource: Source =
@@ -155,8 +155,8 @@ class SymbolLayerActivity : AppCompatActivity(), OnMapClickListener, OnMapReadyC
             Style.Builder()
                 .fromUri("asset://streets.json")
                 .withImage("Car", carBitmap!!, false)
-                .withSources(markerSource, mapboxSignSource, numberFormatSource)
-                .withLayers(markerSymbolLayer, mapboxSignSymbolLayer, numberFormatSymbolLayer)
+                .withSources(markerSource, mapvinaSignSource, numberFormatSource)
+                .withLayers(markerSymbolLayer, mapvinaSignSymbolLayer, numberFormatSymbolLayer)
         )
 
         // Set a click-listener so we can manipulate the map
@@ -193,9 +193,9 @@ class SymbolLayerActivity : AppCompatActivity(), OnMapClickListener, OnMapReadyC
             }
             markerSource!!.setGeoJson(markerCollection)
         } else {
-            val mapboxSignFeatures = mapvinaMap.queryRenderedFeatures(screenLoc, MAPBOX_SIGN_LAYER)
-            if (!mapboxSignFeatures.isEmpty()) {
-                shuffleMapboxSign()
+            val mapvinaSignFeatures = mapvinaMap.queryRenderedFeatures(screenLoc, MAPVINA_SIGN_LAYER)
+            if (!mapvinaSignFeatures.isEmpty()) {
+                shuffleMapvinaSign()
             }
         }
         return false
@@ -236,9 +236,9 @@ class SymbolLayerActivity : AppCompatActivity(), OnMapClickListener, OnMapReadyC
         }
     }
 
-    private fun shuffleMapboxSign() {
-        if (mapboxSignSymbolLayer != null) {
-            mapboxSignSymbolLayer!!.setProperties(
+    private fun shuffleMapvinaSign() {
+        if (mapvinaSignSymbolLayer != null) {
+            mapvinaSignSymbolLayer!!.setProperties(
                 PropertyFactory.textField(
                     Expression.format(
                         Expression.formatEntry("M", FormatOption.formatFontScale(2.0)),
@@ -352,10 +352,10 @@ class SymbolLayerActivity : AppCompatActivity(), OnMapClickListener, OnMapReadyC
         // layer & source constants
         private const val MARKER_SOURCE = "marker-source"
         private const val MARKER_LAYER = "marker-layer"
-        private const val MAPBOX_SIGN_SOURCE = "mapbox-sign-source"
-        private const val MAPBOX_SIGN_LAYER = "mapbox-sign-layer"
-        private const val NUMBER_FORMAT_SOURCE = "mapbox-number-source"
-        private const val NUMBER_FORMAT_LAYER = "mapbox-number-layer"
+        private const val MAPVINA_SIGN_SOURCE = "mapvina-sign-source"
+        private const val MAPVINA_SIGN_LAYER = "mapvina-sign-layer"
+        private const val NUMBER_FORMAT_SOURCE = "mapvina-number-source"
+        private const val NUMBER_FORMAT_LAYER = "mapvina-number-layer"
         private val TEXT_FIELD_EXPRESSION = Expression.switchCase(
             Expression.toBool(Expression.get(SELECTED_FEATURE_PROPERTY)),
             Expression.format(

@@ -12,7 +12,7 @@ To get started we will show how to use the map snapshotter with a local style.
   ![Map Snapshotter with Local Style](https://github.com/user-attachments/assets/897452c6-52e3-4e58-828c-4f7366b3ba90){ width="300" }
 </figure>
 
-Add the [source code of the Demotiles style](https://github.io/github/mapvina/demotiles/blob/gh-pages/style.json) as `demotiles.json` to the `res/raw` directory of our app[^1]. First we will read this style:
+Add the [source code of the MapVina Streets style](https://maps.mapvina.com/styles/v2/streets.json?key=public_key) as `mapvina_streets.json` to the `res/raw` directory of our app[^1]. First we will read this style:
 
 [^1]: See [App resources overview](https://developer.android.com/guide/topics/resources/providing-resources) for this and other ways you can provide resources to your app.
 

@@ -161,11 +161,11 @@ Test commands are the same for both OpenGL and Vulkan builds, just adjust the di
 ```powershell
 # For OpenGL:
 cd build-windows-arm64-opengl\bin\Release
-.\mbgl-render.exe --style https://raw.githubusercontent.io/github/mapvina/demotiles/gh-pages/style.json --output test.png
+.\mbgl-render.exe --style https://maps.mapvina.com/styles/v2/streets.json?key=public_key --output test.png
 
 # For Vulkan:
 cd build-windows-arm64-vulkan\bin\Release
-.\mbgl-render.exe --style https://raw.githubusercontent.io/github/mapvina/demotiles/gh-pages/style.json --output test.png
+.\mbgl-render.exe --style https://maps.mapvina.com/styles/v2/streets.json?key=public_key --output test.png
 ```
 
 ### Run Tests

@@ -7,7 +7,7 @@ class UserMap: MLNMapView, MLNMapViewDelegate {
     private var RANDOM = RandomNumberGeneratorWithSeed(seed: 42)
 
     private let STYLES = [
-        DEMOTILES_STYLE,
+        MAPVINA_STREETS_STYLE,
         AMERICANA_STYLE,
         OPENFREEMAP_LIBERTY_STYLE,
         OPENFREEMAP_BRIGHT_STYLE,

@@ -2,7 +2,7 @@ import Foundation
 
 // #-example-code(ExampleStyles)
 
-let DEMOTILES_STYLE = URL(string: "https://maps.mapvina.com/styles/v2/streets.json?key=public_key")
+let MAPVINA_STREETS_STYLE = URL(string: "https://maps.mapvina.com/styles/v2/streets.json?key=public_key")
 let AMERICANA_STYLE = URL(string: "https://americanamap.org/style.json")
 let OPENFREEMAP_LIBERTY_STYLE = URL(string: "https://tiles.openfreemap.org/styles/liberty")
 let OPENFREEMAP_BRIGHT_STYLE = URL(string: "https://tiles.openfreemap.org/styles/bright")

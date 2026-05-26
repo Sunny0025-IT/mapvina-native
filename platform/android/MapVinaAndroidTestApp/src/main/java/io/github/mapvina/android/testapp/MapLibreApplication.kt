@@ -27,7 +27,7 @@ open class MapVinaApplication : MultiDexApplication() {
         super.onCreate()
         initializeLogger()
         initializeStrictMode()
-        initializeMapbox()
+        initializeMapVina()
     }
 
     private fun initializeLogger() {
@@ -56,7 +56,7 @@ open class MapVinaApplication : MultiDexApplication() {
         )
     }
 
-    private fun initializeMapbox() {
+    private fun initializeMapVina() {
         val apiKey = ApiKeyUtils.getApiKey(applicationContext)
         if (apiKey != null) {
             validateApiKey(apiKey)

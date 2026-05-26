@@ -39,7 +39,7 @@ class UserMap : SupportMapFragment() {
         private val RANDOM = Random(RANDOM_SEED)
 
         private val STYLES = arrayListOf(
-            TestStyles.DEMOTILES,
+            TestStyles.MAPVINA_STREETS,
             TestStyles.AMERICANA,
             TestStyles.OPENFREEMAP_LIBERTY,
             TestStyles.OPENFREEMAP_BRIGHT,

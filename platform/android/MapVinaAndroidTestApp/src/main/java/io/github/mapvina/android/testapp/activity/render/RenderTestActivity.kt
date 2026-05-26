@@ -234,7 +234,7 @@ class RenderTestActivity : AppCompatActivity() {
         fun createTestResultRootFolder(): File {
             val testResultDir = File(
                 Environment.getExternalStorageDirectory()
-                    .toString() + File.separator + "mapbox" + File.separator + "render"
+                    .toString() + File.separator + "mapvina" + File.separator + "render"
             )
             if (testResultDir.exists()) {
                 // cleanup old files

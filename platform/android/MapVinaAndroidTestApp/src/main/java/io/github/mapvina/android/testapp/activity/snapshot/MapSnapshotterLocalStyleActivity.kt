@@ -38,7 +38,7 @@ class MapSnapshotterLocalStyleActivity : AppCompatActivity() {
                 override fun onGlobalLayout() {
                     container.viewTreeObserver.removeOnGlobalLayoutListener(this)
                     // # --8<-- [start:readStyleJson]
-                    val styleJson = resources.openRawResource(R.raw.demotiles).reader().readText()
+                    val styleJson = resources.openRawResource(R.raw.mapvina_streets).reader().readText()
                     // # --8<-- [end:readStyleJson]
                     Timber.i("Starting snapshot")
                     // # --8<-- [start:createMapSnapshotter]

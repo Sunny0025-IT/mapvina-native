@@ -38,6 +38,9 @@ android {
 
     packaging {
         resources.excludes += listOf("META-INF/LICENSE.txt", "META-INF/NOTICE.txt", "LICENSE.txt")
+        jniLibs {
+            useLegacyPackaging = false
+        }
     }
 
     buildTypes {
@@ -80,6 +83,9 @@ android {
     productFlavors {
         create("opengl") {
             dimension = "renderer"
+            ndk {
+                abiFilters += "arm64-v8a"
+            }
             externalNativeBuild {
                 cmake {
                     arguments("-DMLN_WITH_OPENGL=ON")

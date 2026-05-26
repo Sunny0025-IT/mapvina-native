@@ -91,7 +91,7 @@ class MapSnapshotterWithinExpression : AppCompatActivity() {
                     binding.mapView.removeOnDidBecomeIdleListener(this)
                 }
             })
-            // Load mapbox streets and add lines and circles
+            // Load MapVina streets and add lines and circles
             setupStyle()
         }
     }

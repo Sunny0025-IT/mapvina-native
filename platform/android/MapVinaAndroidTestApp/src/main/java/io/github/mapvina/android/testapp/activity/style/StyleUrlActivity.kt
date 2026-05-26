@@ -30,7 +30,7 @@ class StyleUrlActivity : AppCompatActivity() {
         mapView.onCreate(savedInstanceState)
 
         val styles = arrayOf(
-            TestStyles.DEMOTILES,
+            TestStyles.MAPVINA_STREETS,
             TestStyles.AMERICANA,
             TestStyles.OPENFREEMAP_LIBERTY,
             TestStyles.OPENFREEMAP_BRIGHT,

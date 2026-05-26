@@ -215,21 +215,21 @@ TileServerOptions TileServerOptions::DefaultConfiguration() {
 }
 
 TileServerOptions TileServerOptions::MapVinaConfiguration() {
-    std::vector<mbgl::util::DefaultStyle> styles{// https://maps.mapvina.com/styles/v2/streets.json?key=public_key
-                                                 mbgl::util::DefaultStyle("mapvina://maps/style", "Basic", 1)};
+    std::vector<mbgl::util::DefaultStyle> styles{
+        mbgl::util::DefaultStyle("mapvina://maps/streets", "Streets", 2)};
 
     TileServerOptions options = TileServerOptions()
-                                    .withBaseURL("https://demotiles.mapvina.com")
+                                    .withBaseURL("https://maps.mapvina.com")
                                     .withUriSchemeAlias("mapvina")
-                                    .withApiKeyParameterName("")
-                                    .withSourceTemplate("/tiles/{domain}.json", "", {})
-                                    .withStyleTemplate("{path}.json", "maps", {})
+                                    .withApiKeyParameterName("key")
+                                    .withSourceTemplate("/tiles/v2/composite.json", "", {})
+                                    .withStyleTemplate("/styles/v2{path}.json", "maps", {})
                                     .withSpritesTemplate("/{path}/sprite{scale}.{format}", "", {})
                                     .withGlyphsTemplate("/font/{fontstack}/{start}-{end}.pbf", "fonts", {})
                                     .withTileTemplate("/{path}", "tiles", {})
                                     .withDefaultStyles(styles)
-                                    .withDefaultStyle("Basic")
-                                    .setRequiresApiKey(false);
+                                    .withDefaultStyle("Streets")
+                                    .setRequiresApiKey(true);
     return options;
 }
 

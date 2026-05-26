@@ -314,8 +314,8 @@ class SymbolGeneratorActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
     companion object {
-        private const val SOURCE_ID = "com.mapbox.mapboxsdk.style.layers.symbol.source.id"
-        private const val LAYER_ID = "com.mapbox.mapboxsdk.style.layers.symbol.layer.id"
+        private const val SOURCE_ID = "com.mapvina.style.layers.symbol.source.id"
+        private const val LAYER_ID = "com.mapvina.style.layers.symbol.layer.id"
         private const val FEATURE_ID = "brk_name"
         private const val FEATURE_RANK = "scalerank"
         private const val FEATURE_NAME = "name_sort"

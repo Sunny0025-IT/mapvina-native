@@ -89,6 +89,6 @@ class MapFragmentActivity :
     }
 
     companion object {
-        private const val TAG = "com.mapbox.map"
+        private const val TAG = "com.mapvina.map"
     }
 }

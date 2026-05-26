@@ -3,7 +3,7 @@ package io.github.mapvina.android.testapp.styles
 import io.github.mapvina.android.maps.Style
 
 object TestStyles {
-    const val DEMOTILES = "https://maps.mapvina.com/styles/v2/streets.json?key=public_key"
+    const val MAPVINA_STREETS = "https://maps.mapvina.com/styles/v2/streets.json?key=public_key"
 
     const val AMERICANA = "https://americanamap.org/style.json"
 

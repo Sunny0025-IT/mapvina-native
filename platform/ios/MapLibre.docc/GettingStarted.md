@@ -57,7 +57,7 @@ struct MyApp: App {
 }
 ```
 
-When running your app in the simulator you should be greeted with the default [Demotiles](https://demotiles.mapvina.com/) style:
+When running your app in the simulator you should be greeted with the default [MapVina Streets](https://maps.mapvina.com/styles/v2/streets.json?key=public_key) style:
 
 ![](DemotilesScreenshot.png)
 

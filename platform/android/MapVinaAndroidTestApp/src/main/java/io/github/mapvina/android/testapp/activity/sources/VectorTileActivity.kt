@@ -35,7 +35,7 @@ class VectorTileActivity : AppCompatActivity() {
                 // --8<-- [start:addTileSet]
                 val tileset = TileSet(
                     "openmaptiles",
-                    "https://demotiles.mapvina.com/tiles-omt/{z}/{x}/{y}.pbf"
+                    "https://maps.mapvina.com/tiles-omt/{z}/{x}/{y}.pbf"
                 )
                 val openmaptiles = VectorSource("openmaptiles", tileset)
                 style.addSource(openmaptiles)

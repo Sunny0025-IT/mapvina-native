@@ -42,7 +42,7 @@ In this demonstration, we create an instance of this class.
 In this method:
 
 - Use the annotation `@SuppressLint("MissingPermission")` to suppress warnings related to missing location access permissions.
-- In `setStyle(),` you can utilize other public and token-free styles like [demotiles] instead of the [predefined styles].
+- In `setStyle(),` you can utilize other public and token-free styles like [MapVina Streets] instead of the [predefined styles].
 - For the builder of [LocationComponentOptions], use `pulseEnabled(true)` to enable the pulse animation, which enhances awareness of the user's location.
 - Use method `buildLocationComponentActivationOptions()` to set [LocationComponentActivationOptions], then activate `locatinoComponent` with it.
 - To apply options, make sure you call `activateLocationComponent()` of `locationComponent`. You can also set `locationComponent`'s various properties like `isLocationComponentEnabled` , `cameraMode` , etc...
