@@ -1,5 +1,14 @@
 # Changelog MapVina Native for Android
 
+## 1.0.0
+
+### ✨ Features and improvements
+
+- Initial MapVina release for Android
+- Update GitHub URLs to github.com/Sunny0025-IT
+- Fix iOS logo rendering with full-color PNG assets
+- Set MapVina Streets as default style
+
 ## 13.1.0
 
 Note: this release has some changes to how icon offsets behave on pitched maps. If this causes a regression for your use case please open an issue on `mapvina/mapvina-native`.
