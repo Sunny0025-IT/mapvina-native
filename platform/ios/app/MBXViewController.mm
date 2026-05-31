@@ -2525,12 +2525,12 @@ CLLocationCoordinate2D randomWorldCoordinate(void) {
   self.styleNames = [NSMutableArray array];
   self.styleURLs = [NSMutableArray array];
 
+  [self.styleNames addObject:@"MapVina Streets"];
+  [self.styleURLs addObject:[NSURL URLWithString:@"https://maps.mapvina.com/styles/v2/streets.json?key=public_key"]];
+
   /// Style that does not require an `apiKey` nor any further configuration
   [self.styleNames addObject:@"OpenFreeMap Liberty"];
   [self.styleURLs addObject:[NSURL URLWithString:@"https://tiles.openfreemap.org/styles/liberty"]];
-
-  [self.styleNames addObject:@"MapVina Basic"];
-  [self.styleURLs addObject:[NSURL URLWithString:@"https://maps.mapvina.com/styles/v2/streets.json?key=public_key"]];
 
   /// This is hte same style as above but copied locally and the three instances of the metal
   /// plug-in layer added to the style Look for "type": "plugin-layer-metal-rendering" in the

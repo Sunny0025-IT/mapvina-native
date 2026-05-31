@@ -775,7 +775,8 @@ public:
 
   // setup logo
   //
-  UIImage *logo = [UIImage mgl_resourceImageNamed:@"mapvina-logo-stroke-gray"];
+  UIImage *logoRaw = [UIImage mgl_resourceImageNamed:@"mapvina-logo-stroke-gray"];
+  UIImage *logo = [logoRaw imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
   _logoView = [[UIImageView alloc] initWithImage:logo];
   _logoView.accessibilityTraits = UIAccessibilityTraitStaticText;
   _logoView.accessibilityLabel = NSLocalizedStringWithDefaultValue(
